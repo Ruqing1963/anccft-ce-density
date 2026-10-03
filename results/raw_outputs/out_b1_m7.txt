@@ -1,0 +1,12 @@
+﻿NUMBA threads 8
+m=7 v1              |supp|=    18  dim ker R =  15308 (0.2336)  dim ker L =  15308 (0.2336)  |G_m|=65536  | graded: ker R = 40964 (0.6251), ker L = 40964 (0.6251)  [260s]
+m=7 rand4a          |supp|=    24  dim ker R =  13331 (0.2034)  dim ker L =  13331 (0.2034)  |G_m|=65536  | graded: ker R = 13334 (0.2035), ker L = 13334 (0.2035)  [152s]
+m=7 x3              |supp|=     8  dim ker R =  10940 (0.1669)  dim ker L =  10940 (0.1669)  |G_m|=65536  | graded: ker R = 17904 (0.2732), ker L = 17904 (0.2732)  [45s]
+m=7 rand3           |supp|=    14  dim ker R =  10064 (0.1536)  dim ker L =  10064 (0.1536)  |G_m|=65536  | graded: ker R = 10064 (0.1536), ker L = 10064 (0.1536)  [88s]
+m=7 v1+c(5,6)       |supp|=    68  dim ker R =  15308 (0.2336)  dim ker L =  15308 (0.2336)  |G_m|=65536  [72s]
+m=7 J(sigmaF)       |supp|=    10  dim ker R =  10154 (0.1549)  dim ker L =  10154 (0.1549)  |G_m|=65536  [44s]
+m=7 v2              |supp|=    16  dim ker R =  15308 (0.2336)  dim ker L =  15308 (0.2336)  |G_m|=65536  | graded: ker R = 40964 (0.6251), ker L = 40964 (0.6251)  [99s]
+m=7 rand4b          |supp|=    74  dim ker R =  13329 (0.2034)  dim ker L =  13329 (0.2034)  |G_m|=65536  [69s]
+m=7 x3+c(4,5,6)     |supp|=    74  dim ker R =  10791 (0.1647)  dim ker L =  10791 (0.1647)  |G_m|=65536  [73s]
+m=7 v1+c(5,6,7,8)   |supp|=   182  dim ker R =  15308 (0.2336)  dim ker L =  15308 (0.2336)  |G_m|=65536  [80s]
+m=7 v3              |supp|=    18  dim ker R =  15308 (0.2336)  dim ker L =  15308 (0.2336)  |G_m|=65536  | graded: ker R = 40964 (0.6251), ker L = 40964 (0.6251)  [106s]

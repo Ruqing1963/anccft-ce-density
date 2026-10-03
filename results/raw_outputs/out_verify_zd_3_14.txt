@@ -1,0 +1,6 @@
+﻿x = x1.1*x2.1 + x1.2*x2.2 + x1.2*x2.4 + x1.4*x2.4; dim ker(y -> x y on u_14) = 3
+y has 105 PBW monomials; u(L): x*y = 0 terms  (0s)
+lifts: |x~| = 8, |y~| = 500  (0s)
+|x~ y~| = 3206  (1s)
+nonzero Jennings coordinates of x~y~ of weight <= 17: {}  (8s)
+control (y' = single monomial): weights of nonzero coords <= 17: {17: 567}; matches u(L) product: True  (9s)

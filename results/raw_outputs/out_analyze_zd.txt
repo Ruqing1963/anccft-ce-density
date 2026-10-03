@@ -1,0 +1,29 @@
+﻿V = 7 nonzero elements of a subspace of u_4; check it is closed under addition: True
+all products v*w (v, w in V) zero: True
+[x1.1, v] = 23 terms
+[x1.2, v] = 13 terms
+[x1.4, v] = 16 terms
+scaling by alpha^1: V -> V ? True
+scaling by alpha^2: V -> V ? True
+scaling by alpha^3: V -> V ? True
+scaling by alpha^4: V -> V ? True
+scaling by alpha^5: V -> V ? True
+scaling by alpha^6: V -> V ? True
+Galois a->a^(2^1): V -> V ? True
+Galois a->a^(2^2): V -> V ? True
+sigma(F) fixed by Galois: True ; by alpha-scaling: True
+(3,14): 14 non-injective x in u_3, min rank 1485 / 1488 (10s)
+  x = x1.1*x2.1 + x1.4*x2.1 + x1.2*x2.2 + x1.1*x2.4   dim ker on u_14 = 3, |y| = [98, 112, 107]
+  x = x1.1*x2.1 + x1.2*x2.1 + x1.2*x2.2 + x1.4*x2.2 + x1.1*x2.4   dim ker on u_14 = 3, |y| = [105, 107, 107]
+  x = x1.1*x2.1 + x1.4*x2.2 + x1.2*x2.4   dim ker on u_14 = 3, |y| = [98, 112, 107]
+  x = x1.2*x2.1 + x1.4*x2.1 + x1.1*x2.2 + x1.2*x2.2 + x1.4*x2.2 + x1.2*x2.4   dim ker on u_14 = 3, |y| = [105, 107, 107]
+  x = x1.1*x2.1 + x1.4*x2.1 + x1.1*x2.2 + x1.1*x2.4 + x1.2*x2.4   dim ker on u_14 = 3, |y| = [105, 107, 107]
+  x = x1.4*x2.1 + x1.2*x2.2 + x1.4*x2.2 + x1.1*x2.4 + x1.2*x2.4   dim ker on u_14 = 3, |y| = [98, 112, 107]
+  x = x1.2*x2.1 + x1.1*x2.2 + x1.2*x2.2 + x1.4*x2.4   dim ker on u_14 = 3, |y| = [98, 112, 107]
+  x = x1.1*x2.1 + x1.2*x2.1 + x1.4*x2.1 + x1.1*x2.2 + x1.4*x2.2 + x1.4*x2.4   dim ker on u_14 = 3, |y| = [105, 107, 107]
+  x = x1.1*x2.1 + x1.2*x2.1 + x1.4*x2.1 + x1.1*x2.2 + x1.1*x2.4 + x1.4*x2.4   dim ker on u_14 = 3, |y| = [98, 112, 107]
+  x = x1.4*x2.1 + x1.1*x2.2 + x1.2*x2.2 + x1.1*x2.4 + x1.4*x2.4   dim ker on u_14 = 3, |y| = [105, 107, 107]
+  x = x1.1*x2.1 + x1.2*x2.2 + x1.2*x2.4 + x1.4*x2.4   dim ker on u_14 = 3, |y| = [105, 107, 107]
+  x = x1.1*x2.1 + x1.2*x2.1 + x1.1*x2.2 + x1.2*x2.2 + x1.4*x2.2 + x1.2*x2.4 + x1.4*x2.4   dim ker on u_14 = 3, |y| = [98, 112, 107]
+  x = x1.2*x2.1 + x1.4*x2.2 + x1.1*x2.4 + x1.2*x2.4 + x1.4*x2.4   dim ker on u_14 = 3, |y| = [105, 107, 107]
+  x = x1.2*x2.1 + x1.4*x2.1 + x1.1*x2.2 + x1.4*x2.2 + x1.1*x2.4 + x1.2*x2.4 + x1.4*x2.4   dim ker on u_14 = 3, |y| = [98, 112, 107]

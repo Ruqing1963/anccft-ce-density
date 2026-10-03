@@ -1,0 +1,54 @@
+﻿
+=== m=5: |G|=2048, top=27, middle (top-3)/2 = 12.0, k_m = 10, total excess 30 = 0.01465|G|
+  excess below / at / above middle: 9 / 12 / 9;  whole kernel below middle 9  (bound e_m <= 2*ker_below/|G| + mid = 0.01465)
+  excess by sign of d_g - d_(g+delta): {"d<d'": 9, "d>d'": 9, "d=d'": 12}
+  excess by spread max(g)-min(g): 2: 18 (2.50% of dim), 3: 12 (7.14% of dim)
+  excess/h at the middle degree n=12: 12/166 = 0.0723
+  ker_n / h_(n-k_m) for k_m <= n <= mid: [3.0, 2.0, 2.5]
+     max ratio 3.0
+  P(deg <= mid - k_m) = 0.00488;  Hoeffding bound exp(-2 t^2/sum k^2 d_k) with t = top/2 - (mid - k_m) = 11.5: 0.0382
+
+=== m=6: |G|=16384, top=42, middle (top-3)/2 = 19.5, k_m = 15, total excess 156 = 0.00952|G|
+  excess below / at / above middle: 78 / 0 / 78;  whole kernel below middle 78  (bound e_m <= 2*ker_below/|G| + mid = 0.00952)
+  excess by sign of d_g - d_(g+delta): {"d<d'": 72, "d=d'": 12, "d>d'": 72}
+  excess by spread max(g)-min(g): 1: 12 (0.19% of dim), 2: 42 (0.70% of dim), 3: 60 (2.50% of dim), 4: 42 (11.67% of dim)
+  excess/h at the middle degree n=19: 36/969 = 0.0372
+  ker_n / h_(n-k_m) for k_m <= n <= mid: [3.0, 2.0, 2.0, 1.75, 1.714]
+     max ratio 3.0
+  P(deg <= mid - k_m) = 0.00262;  Hoeffding bound exp(-2 t^2/sum k^2 d_k) with t = top/2 - (mid - k_m) = 17.0: 0.0246
+
+=== m=7: |G|=65536, top=54, middle (top-3)/2 = 25.5, k_m = 21, total excess 162 = 0.00247|G|
+  excess below / at / above middle: 81 / 0 / 81;  whole kernel below middle 81  (bound e_m <= 2*ker_below/|G| + mid = 0.00247)
+  excess by sign of d_g - d_(g+delta): {"d<d'": 75, "d=d'": 12, "d>d'": 75}
+  excess by spread max(g)-min(g): 1: 12 (0.05% of dim), 2: 42 (0.18% of dim), 3: 66 (0.69% of dim), 4: 42 (2.92% of dim)
+  excess/h at the middle degree n=25: 39/3264 = 0.0119
+  ker_n / h_(n-k_m) for k_m <= n <= mid: [3.0, 2.0, 2.0, 1.75, 1.857]
+     max ratio 3.0
+  P(deg <= mid - k_m) = 0.00066;  Hoeffding bound exp(-2 t^2/sum k^2 d_k) with t = top/2 - (mid - k_m) = 23.0: 0.0097
+
+=== m=8: |G|=524288, top=75, middle (top-3)/2 = 36.0, k_m = 28, total excess 1136 = 0.00217|G|
+  excess below / at / above middle: 438 / 260 / 438;  whole kernel below middle 441  (bound e_m <= 2*ker_below/|G| + mid = 0.00218)
+  excess by sign of d_g - d_(g+delta): {"d<d'": 480, "d>d'": 480, "d=d'": 176}
+  excess by spread max(g)-min(g): 0: 8 (0.02% of dim), 1: 36 (0.02% of dim), 2: 222 (0.12% of dim), 3: 372 (0.37% of dim), 4: 378 (1.41% of dim), 5: 120 (4.03% of dim)
+  excess/h at the middle degree n=36: 260/20879 = 0.0125
+  ker_n / h_(n-k_m) for k_m <= n <= mid: [3.0, 2.0, 2.0, 1.75, 1.857, 1.917, 1.85, 1.875, 1.952]
+     max ratio 3.0
+  P(deg <= mid - k_m) = 0.00073;  Hoeffding bound exp(-2 t^2/sum k^2 d_k) with t = top/2 - (mid - k_m) = 29.5: 0.0096
+
+=== m=9: |G|=4194304, top=99, middle (top-3)/2 = 48.0, k_m = 35, total excess 11200 = 0.00267|G|
+  excess below / at / above middle: 4677 / 1846 / 4677;  whole kernel below middle 4677  (bound e_m <= 2*ker_below/|G| + mid = 0.00267)
+  excess by sign of d_g - d_(g+delta): {"d<d'": 4974, "d=d'": 1252, "d>d'": 4974}
+  excess by spread max(g)-min(g): 0: 208 (0.09% of dim), 1: 1116 (0.09% of dim), 2: 2442 (0.17% of dim), 3: 3054 (0.34% of dim), 4: 2652 (0.79% of dim), 5: 1398 (2.04% of dim), 6: 330 (5.46% of dim)
+  excess/h at the middle degree n=48: 1846/136788 = 0.0135
+  ker_n / h_(n-k_m) for k_m <= n <= mid: [3.0, 3.0, 3.0, 2.75, 2.714, 2.667, 2.55, 2.5, 2.4, 2.323, 2.234, 2.15, 2.072, 2.017]
+     max ratio 3.0
+  P(deg <= mid - k_m) = 0.00073;  Hoeffding bound exp(-2 t^2/sum k^2 d_k) with t = top/2 - (mid - k_m) = 36.5: 0.0091
+
+=== m=10: |G|=16777216, top=117, middle (top-3)/2 = 57.0, k_m = 36, total excess 68947 = 0.00411|G|
+  excess below / at / above middle: 30345 / 8257 / 30345;  whole kernel below middle 30345  (bound e_m <= 2*ker_below/|G| + mid = 0.00411)
+  excess by sign of d_g - d_(g+delta): {"d<d'": 31647, "d=d'": 5653, "d>d'": 31647}
+  excess by spread max(g)-min(g): 0: 1447 (0.15% of dim), 1: 8130 (0.17% of dim), 2: 16038 (0.28% of dim), 3: 18858 (0.52% of dim), 4: 15084 (1.13% of dim), 5: 7536 (2.75% of dim), 6: 1854 (7.66% of dim)
+  excess/h at the middle degree n=57: 8257/484047 = 0.0171
+  ker_n / h_(n-k_m) for k_m <= n <= mid: [3.0, 2.0, 2.0, 1.75, 1.714, 1.667, 1.55, 1.5, 1.44, 1.395, 1.336, 1.287, 1.238, 1.191, 1.149, 1.104, 1.066, 1.028, 0.992, 0.959, 0.929, 0.903]
+     max ratio 3.0
+  P(deg <= mid - k_m) = 0.00232;  Hoeffding bound exp(-2 t^2/sum k^2 d_k) with t = top/2 - (mid - k_m) = 37.5: 0.0211

@@ -1,0 +1,3 @@
+﻿m=7 (a) F*: dim = 10226  (80.3s)
+m=7 (b) F x: dim = 10226  (65.1s)
+m=7 (c) permuted x F: dim = 10226  (39.5s)

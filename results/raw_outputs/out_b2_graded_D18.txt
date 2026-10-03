@@ -1,0 +1,28 @@
+﻿i= 0: dim u_i=     1, rank ad_v: u_i -> u_(i+4) =      0, ker =     1;  coker (a,b)->av+vb in u_4: 20;  (a,b)->a w+v b: 19  [12s]
+i= 1: dim u_i=     3, rank ad_v: u_i -> u_(i+4) =      3, ker =     0;  coker (a,b)->av+vb in u_5: 30;  (a,b)->a w+v b: 30  [12s]
+i= 2: dim u_i=     6, rank ad_v: u_i -> u_(i+4) =      6, ker =     0;  coker (a,b)->av+vb in u_6: 48;  (a,b)->a w+v b: 48  [12s]
+i= 3: dim u_i=    12, rank ad_v: u_i -> u_(i+4) =      9, ker =     3;  coker (a,b)->av+vb in u_7: 78;  (a,b)->a w+v b: 78  [12s]
+i= 4: dim u_i=    21, rank ad_v: u_i -> u_(i+4) =     18, ker =     3;  coker (a,b)->av+vb in u_8: 114;  (a,b)->a w+v b: 114  [12s]
+i= 5: dim u_i=    36, rank ad_v: u_i -> u_(i+4) =     33, ker =     3;  coker (a,b)->av+vb in u_9: 165;  (a,b)->a w+v b: 165  [12s]
+i= 6: dim u_i=    60, rank ad_v: u_i -> u_(i+4) =     47, ker =    13;  coker (a,b)->av+vb in u_10: 255;  (a,b)->a w+v b: 255  [12s]
+i= 7: dim u_i=    96, rank ad_v: u_i -> u_(i+4) =     81, ker =    15;  coker (a,b)->av+vb in u_11: 360;  (a,b)->a w+v b: 360  [12s]
+i= 8: dim u_i=   150, rank ad_v: u_i -> u_(i+4) =    129, ker =    21;  coker (a,b)->av+vb in u_12: 528;  (a,b)->a w+v b: 528  [12s]
+i= 9: dim u_i=   228, rank ad_v: u_i -> u_(i+4) =    183, ker =    45;  coker (a,b)->av+vb in u_13: 732;  (a,b)->a w+v b: 732  [13s]
+i=10: dim u_i=   342, rank ad_v: u_i -> u_(i+4) =    285, ker =    57;  coker (a,b)->av+vb in u_14: 1026;  (a,b)->a w+v b: 1026  [15s]
+i=11: dim u_i=   504, rank ad_v: u_i -> u_(i+4) =    396, ker =   108;  coker (a,b)->av+vb in u_15: 1434;  (a,b)->a w+v b: 1434  [17s]
+i=12: dim u_i=   732, rank ad_v: u_i -> u_(i+4) =    584, ker =   148;  coker (a,b)->av+vb in u_16: 1962;  (a,b)->a w+v b: 1962  [22s]
+i=13: dim u_i=  1050, rank ad_v: u_i -> u_(i+4) =    828, ker =   222;  coker (a,b)->av+vb in u_17: 2679;  (a,b)->a w+v b: 2679  [32s]
+i=14: dim u_i=  1488, rank ad_v: u_i -> u_(i+4) =   1161, ker =   327;  coker (a,b)->av+vb in u_18: 3618;  (a,b)->a w+v b: 3618  [48s]
+
+Obstruction spaces H_w = ker(ad_v | u_w) / im(ad_v | u_{w-4}):
+  w= 4: dim u_w=    21  dim ker ad_v=    3  dim im ad_v=    0  dim H_w=   3
+  w= 5: dim u_w=    36  dim ker ad_v=    3  dim im ad_v=    3  dim H_w=   0
+  w= 6: dim u_w=    60  dim ker ad_v=   13  dim im ad_v=    6  dim H_w=   7
+  w= 7: dim u_w=    96  dim ker ad_v=   15  dim im ad_v=    9  dim H_w=   6
+  w= 8: dim u_w=   150  dim ker ad_v=   21  dim im ad_v=   18  dim H_w=   3
+  w= 9: dim u_w=   228  dim ker ad_v=   45  dim im ad_v=   33  dim H_w=  12
+  w=10: dim u_w=   342  dim ker ad_v=   57  dim im ad_v=   47  dim H_w=  10
+  w=11: dim u_w=   504  dim ker ad_v=  108  dim im ad_v=   81  dim H_w=  27
+  w=12: dim u_w=   732  dim ker ad_v=  148  dim im ad_v=  129  dim H_w=  19
+  w=13: dim u_w=  1050  dim ker ad_v=  222  dim im ad_v=  183  dim H_w=  39
+  w=14: dim u_w=  1488  dim ker ad_v=  327  dim im ad_v=  285  dim H_w=  42

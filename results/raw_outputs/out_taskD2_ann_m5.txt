@@ -1,0 +1,11 @@
+﻿m=5: 3 subalgebras kept: [(['y1.0', 'y2.1', 'y3.0+y3.1'], 4), (['y1.1', 'y2.2', 'y3.0'], 4), (['y1.2', 'y2.0', 'y3.1'], 4)]
+   ['y1.0', 'y2.1', 'y3.0+y3.1']: dim K=4, rows 128 [1s]
+   ['y1.1', 'y2.2', 'y3.0']: dim K=4, rows 128 [1s]
+   ['y1.2', 'y2.0', 'y3.1']: dim K=4, rows 128 [1s]
+m=5: |G|=2048 ker=547 B^Q=517 excess=30 (0.01465); sum a=360 (0.17578); structural bound S=541 (S-B^Q = 24, 0.01172); unexplained ker-S = 6 (0.00293); blocks with excess 24, blocks with ker > S: 3  [5s]
+   by degree n: (excess, S-B^Q, unexplained, a)
+     n=10: [3, 3, 0, 3]
+     n=11: [6, 6, 0, 6]
+     n=12: [12, 6, 6, 9]
+     n=13: [6, 6, 0, 15]
+     n=14: [3, 3, 0, 21]

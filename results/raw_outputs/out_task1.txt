@@ -1,0 +1,5 @@
+﻿m=2: |G_m|=8, |supp F_m|=8, rank=1, dim C_m=7, dim C_m/n_m=0.291667, build 0.0s, rank 10.1s
+m=3: |G_m|=64, |supp F_m|=42, rank=27, dim C_m=37, dim C_m/n_m=0.192708, build 0.0s, rank 0.0s
+m=4: |G_m|=256, |supp F_m|=154, rank=156, dim C_m=100, dim C_m/n_m=0.130208, build 0.1s, rank 0.0s
+m=5: |G_m|=2048, |supp F_m|=154, rank=1501, dim C_m=547, dim C_m/n_m=0.089030, build 0.2s, rank 0.0s
+m=6: |G_m|=16384, |supp F_m|=154, rank=13214, dim C_m=3170, dim C_m/n_m=0.064494, build 1.1s, rank 2.3s

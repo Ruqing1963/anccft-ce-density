@@ -1,0 +1,13 @@
+﻿NUMBA threads 8
+m=5 F               |supp|=   154  dim ker R =    547 (0.2671)  dim ker L =    547 (0.2671)  |G_m|=2048  [5s]
+m=5 v1              |supp|=    18  dim ker R =    768 (0.3750)  dim ker L =    768 (0.3750)  |G_m|=2048  | graded: ker R = 1284 (0.6270), ker L = 1284 (0.6270)  [0s]
+m=5 v2              |supp|=    16  dim ker R =    768 (0.3750)  dim ker L =    768 (0.3750)  |G_m|=2048  | graded: ker R = 1284 (0.6270), ker L = 1284 (0.6270)  [0s]
+m=5 v3              |supp|=    18  dim ker R =    767 (0.3745)  dim ker L =    767 (0.3745)  |G_m|=2048  | graded: ker R = 1284 (0.6270), ker L = 1284 (0.6270)  [0s]
+m=5 v1+c(5,6)       |supp|=    58  dim ker R =    767 (0.3745)  dim ker L =    767 (0.3745)  |G_m|=2048  [0s]
+m=5 v1+c(5,6,7,8)   |supp|=   140  dim ker R =    768 (0.3750)  dim ker L =    768 (0.3750)  |G_m|=2048  [0s]
+m=5 x3              |supp|=     8  dim ker R =    552 (0.2695)  dim ker L =    552 (0.2695)  |G_m|=2048  | graded: ker R = 688 (0.3359), ker L = 688 (0.3359)  [0s]
+m=5 x3+c(4,5,6)     |supp|=    64  dim ker R =    552 (0.2695)  dim ker L =    552 (0.2695)  |G_m|=2048  [0s]
+m=5 rand4a          |supp|=    24  dim ker R =    680 (0.3320)  dim ker L =    680 (0.3320)  |G_m|=2048  | graded: ker R = 680 (0.3320), ker L = 680 (0.3320)  [0s]
+m=5 rand4b          |supp|=    66  dim ker R =    680 (0.3320)  dim ker L =    680 (0.3320)  |G_m|=2048  [0s]
+m=5 rand3           |supp|=    14  dim ker R =    515 (0.2515)  dim ker L =    515 (0.2515)  |G_m|=2048  | graded: ker R = 515 (0.2515), ker L = 515 (0.2515)  [0s]
+m=5 J(sigmaF)       |supp|=    10  dim ker R =    538 (0.2627)  dim ker L =    538 (0.2627)  |G_m|=2048  [0s]

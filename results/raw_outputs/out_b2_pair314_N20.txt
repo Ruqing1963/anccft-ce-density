@@ -1,0 +1,9 @@
+﻿JTable N=20: loaded C:\Users\LAPPIE\Desktop\KMS\Find New Math\ce_compute\tables\jt_20.npz, D=26578, nnz=21364336
+x = ['x1.1*x2.1', 'x1.2*x2.2', 'x1.2*x2.4', 'x1.4*x2.4']; dim ker(L_x on u_14) = 3  [0s]
+y = kernel combination 1: start I^18, max reached I^18; nodes 1; visits {18: 1}; obstructed {18: 1}; a-kernel dims {}; sampled at []  [1s]
+y = kernel combination 2: start I^18, max reached I^18; nodes 1; visits {18: 1}; obstructed {18: 1}; a-kernel dims {}; sampled at []  [1s]
+y = kernel combination 3: start I^18, max reached I^18; nodes 1; visits {18: 1}; obstructed {18: 1}; a-kernel dims {}; sampled at []  [1s]
+y = kernel combination 4: start I^18, max reached I^18; nodes 1; visits {18: 1}; obstructed {18: 1}; a-kernel dims {}; sampled at []  [1s]
+y = kernel combination 5: start I^18, max reached I^18; nodes 1; visits {18: 1}; obstructed {18: 1}; a-kernel dims {}; sampled at []  [1s]
+y = kernel combination 6: start I^18, max reached I^18; nodes 1; visits {18: 1}; obstructed {18: 1}; a-kernel dims {}; sampled at []  [1s]
+y = kernel combination 7: start I^18, max reached I^18; nodes 1; visits {18: 1}; obstructed {18: 1}; a-kernel dims {}; sampled at []  [1s]

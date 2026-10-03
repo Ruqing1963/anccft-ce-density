@@ -1,0 +1,10 @@
+﻿m=4 block (3, 2, 1) (n=6): dim 3 -> 3, rank 2, dim ker 1
+   kernel element (ascending-order PBW, y{k}.{bit}): y1.1*y2.2*y3.1 + y1.1*y2.2*y3.2
+m=5 block (5, 3, 2) (n=10): dim 3 -> 4, rank 2, dim ker 1
+   kernel element (ascending-order PBW, y{k}.{bit}): y1.1*y2.2*y3.1*y4.1 + y1.1*y2.2*y3.2*y4.1
+m=6 block (7, 5, 3) (n=15): dim 3 -> 5, rank 2, dim ker 1
+   kernel element (ascending-order PBW, y{k}.{bit}): y1.1*y2.2*y3.1*y4.1*y5.2 + y1.1*y2.2*y3.2*y4.1*y5.2
+m=7 block (9, 7, 5) (n=21): dim 12 -> 16, rank 11, dim ker 1
+   kernel element (ascending-order PBW, y{k}.{bit}): y1.1*y2.2*y3.1*y4.1*y5.2*y6.1 + y1.1*y2.2*y3.2*y4.1*y5.2*y6.1 + y1.1*y2.2*y3.1*y4.1*y5.2*y6.2 + y1.1*y2.2*y3.2*y4.1*y5.2*y6.2
+m=8 block (12, 9, 7) (n=28): dim 13 -> 19, rank 12, dim ker 1
+   kernel element (ascending-order PBW, y{k}.{bit}): y1.1*y2.2*y3.1*y4.1*y5.2*y6.1*y7.1 + y1.1*y2.2*y3.2*y4.1*y5.2*y6.1*y7.1 + y1.1*y2.2*y3.1*y4.1*y5.2*y6.2*y7.1 + y1.1*y2.2*y3.2*y4.1*y5.2*y6.2*y7.1

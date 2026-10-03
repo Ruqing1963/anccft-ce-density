@@ -1,0 +1,3 @@
+﻿m=5: 232 blocks; best-over-F2 has excess on 12 blocks: [(3, 3, 5), (3, 5, 3), (5, 3, 3), (3, 5, 5), (5, 3, 5), (5, 5, 3), (3, 4, 5), (3, 5, 4), (4, 3, 5), (4, 5, 3), (5, 3, 4), (5, 4, 3)]
+  F_2^4: blocks still without a maximal-rank specialization: 0: []  [9s]
+m=5: CERTIFIED: the generic element of weight delta has maximal rank on every Q-block (excess 0).

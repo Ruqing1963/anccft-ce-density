@@ -1,0 +1,5 @@
+﻿block (12, 17, 18) (n=47): dims 15 -> 15; ranks over F_2^16 (6 random elements): [14, 14, 14, 14, 14, 14]
+block (12, 18, 17) (n=47): dims 15 -> 15; ranks over F_2^16 (6 random elements): [14, 14, 14, 14, 14, 14]
+block (14, 15, 20) (n=49): dims 15 -> 15; ranks over F_2^16 (6 random elements): [14, 14, 14, 14, 14, 14]
+block (13, 16, 19) (n=48): dims 43 -> 43; ranks over F_2^16 (6 random elements): [42, 42, 42, 42, 42, 42]
+block (13, 19, 16) (n=48): dims 43 -> 43; ranks over F_2^16 (6 random elements): [42, 42, 42, 42, 42, 42]

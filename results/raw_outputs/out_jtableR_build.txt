@@ -1,0 +1,4 @@
+﻿JTable N=18: loaded C:\Users\LAPPIE\Desktop\KMS\Find New Math\ce_compute\tables\jt_18.npz, D=13714, nnz=7101381
+JTable N=18: right tables built, nnz=7214552, 46s
+JTable N=20: loaded C:\Users\LAPPIE\Desktop\KMS\Find New Math\ce_compute\tables\jt_20.npz, D=26578, nnz=21364336
+JTable N=20: right tables built, nnz=22895689, 175s

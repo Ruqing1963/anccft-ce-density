@@ -1,0 +1,3 @@
+﻿(1) 60 random PBW products with total degree 7..11 agree with F2[G_12]  (1s)
+(2) split: associativity on 371 random triples, total degree <= 14  (1s)
+(2) F8: associativity on 366 random triples, total degree <= 14  (1s)

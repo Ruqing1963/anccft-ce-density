@@ -1,0 +1,3 @@
+﻿JAlg selftest N=8: 150 products agree with group algebra F2[G_8] (Jennings coords, weight < 8); 200 associativity triples ok (0.4s)
+JAlg selftest N=10: 150 products agree with group algebra F2[G_10] (Jennings coords, weight < 10); 200 associativity triples ok (1.1s)
+JAlg selftest N=12: 150 products agree with group algebra F2[G_12] (Jennings coords, weight < 12); 200 associativity triples ok (3.8s)

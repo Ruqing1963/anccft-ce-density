@@ -1,0 +1,8 @@
+﻿V element #1: |supp v~| = 18, |supp v~^2| (G_10) = 278, weight-9 part r_9 has 117 PBW terms (equal to JTable value: True); rank ad_v(u_5) = 33; r_9 in ad_v(u_5)? False; ad_v(r_9) = 0 in u_13? True
+V element #2: |supp v~| = 16, |supp v~^2| (G_10) = 232, weight-9 part r_9 has 111 PBW terms (equal to JTable value: True); rank ad_v(u_5) = 33; r_9 in ad_v(u_5)? False; ad_v(r_9) = 0 in u_13? True
+V element #3: |supp v~| = 18, |supp v~^2| (G_10) = 294, weight-9 part r_9 has 123 PBW terms (equal to JTable value: True); rank ad_v(u_5) = 33; r_9 in ad_v(u_5)? False; ad_v(r_9) = 0 in u_13? True
+V element #4: |supp v~| = 20, |supp v~^2| (G_10) = 336, weight-9 part r_9 has 105 PBW terms (equal to JTable value: True); rank ad_v(u_5) = 33; r_9 in ad_v(u_5)? False; ad_v(r_9) = 0 in u_13? True
+V element #5: |supp v~| = 20, |supp v~^2| (G_10) = 376, weight-9 part r_9 has 109 PBW terms (equal to JTable value: True); rank ad_v(u_5) = 33; r_9 in ad_v(u_5)? False; ad_v(r_9) = 0 in u_13? True
+V element #6: |supp v~| = 18, |supp v~^2| (G_10) = 294, weight-9 part r_9 has 115 PBW terms (equal to JTable value: True); rank ad_v(u_5) = 33; r_9 in ad_v(u_5)? False; ad_v(r_9) = 0 in u_13? True
+V element #7: |supp v~| = 22, |supp v~^2| (G_10) = 424, weight-9 part r_9 has 114 PBW terms (equal to JTable value: True); rank ad_v(u_5) = 33; r_9 in ad_v(u_5)? False; ad_v(r_9) = 0 in u_13? True
+[2s]

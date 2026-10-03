@@ -1,0 +1,21 @@
+﻿m=7: N=65536, BFS depth 14, setup 3.8s
+  k= 1: |supp F^k|=   154  rank R_(F^k)= 55310   (build 1.3s, rank 42.4s)
+  k= 2: |supp F^k|= 10794  rank R_(F^k)= 45266   (build 1.9s, rank 43.0s)
+  k= 3: |supp F^k|= 33484  rank R_(F^k)= 35721   (build 5.0s, rank 77.9s)
+  k= 4: |supp F^k|= 32728  rank R_(F^k)= 26659   (build 7.2s, rank 71.0s)
+  k= 5: |supp F^k|= 32248  rank R_(F^k)= 20581   (build 5.1s, rank 27.9s)
+  k= 6: |supp F^k|= 32580  rank R_(F^k)= 15268   (build 5.2s, rank 23.3s)
+  k= 7: |supp F^k|= 33196  rank R_(F^k)= 10802   (build 5.3s, rank 18.1s)
+  k= 8: |supp F^k|= 32868  rank R_(F^k)=  7164   (build 5.5s, rank 13.8s)
+  k= 9: |supp F^k|= 32540  rank R_(F^k)=  4722   (build 6.8s, rank 24.2s)
+  k=10: |supp F^k|= 32116  rank R_(F^k)=  2938   (build 7.6s, rank 15.3s)
+  k=11: |supp F^k|= 33316  rank R_(F^k)=  1684   (build 7.6s, rank 11.5s)
+  k=12: |supp F^k|= 32976  rank R_(F^k)=   852   (build 8.1s, rank 7.4s)
+  k=13: |supp F^k|= 32584  rank R_(F^k)=   444   (build 8.2s, rank 3.3s)
+  k=14: |supp F^k|= 32752  rank R_(F^k)=   198   (build 5.7s, rank 1.6s)
+  k=15: |supp F^k|= 33792  rank R_(F^k)=    78   (build 5.8s, rank 1.3s)
+m=7: |G_m|=65536  N_F=16  Loewy length=55 (ceil(LL/3)=19)
+m=7: ranks r_k (k=0..N_F) = [65536, 55310, 45266, 35721, 26659, 20581, 15268, 10802, 7164, 4722, 2938, 1684, 852, 444, 198, 78, 0]
+m=7: |supp F^k| = [154, 10794, 33484, 32728, 32248, 32580, 33196, 32868, 32540, 32116, 33316, 32976, 32584, 32752, 33792]
+m=7: Jordan blocks {size: count} = {1: 182, 2: 499, 3: 483, 4: 2984, 5: 765, 6: 847, 7: 828, 8: 1196, 9: 658, 10: 530, 11: 422, 12: 424, 13: 162, 14: 126, 15: 42, 16: 78}
+m=7: #blocks = dim C_m = 10226;  |G|/N_F = 4096.00;  dim C_m / (|G|/N_F) = 2.4966;  mean block size = 6.409   [475.3s]

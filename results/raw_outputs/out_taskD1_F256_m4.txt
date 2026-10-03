@@ -1,0 +1,20 @@
+﻿
+  F_2^8 sample 0 coeffs [186, 1, 31, 34, 50, 36]: ker=97 (0.37891) excess=0 (0.00000) blocks with excess 0  [10s]
+     excess blocks (g, excess, dim g, dim g+delta): []
+  F_2^8 sample 1 coeffs [194, 98, 89, 159, 234, 214]: ker=97 (0.37891) excess=0 (0.00000) blocks with excess 0  [10s]
+     excess blocks (g, excess, dim g, dim g+delta): []
+  F_2^8 sample 2 coeffs [116, 33, 209, 143, 82, 70]: ker=97 (0.37891) excess=0 (0.00000) blocks with excess 0  [10s]
+     excess blocks (g, excess, dim g, dim g+delta): []
+  F_2^8 sample 3 coeffs [108, 211, 124, 164, 186, 55]: ker=97 (0.37891) excess=0 (0.00000) blocks with excess 0  [11s]
+     excess blocks (g, excess, dim g, dim g+delta): []
+  F_2^8 sample 4 coeffs [120, 11, 126, 126, 20, 83]: ker=97 (0.37891) excess=0 (0.00000) blocks with excess 0  [11s]
+     excess blocks (g, excess, dim g, dim g+delta): []
+  F_2^8 sample 5 coeffs [79, 247, 169, 199, 175, 193]: ker=97 (0.37891) excess=0 (0.00000) blocks with excess 0  [11s]
+     excess blocks (g, excess, dim g, dim g+delta): []
+  F_2^8 sample 6 coeffs [14, 255, 108, 197, 156, 193]: ker=97 (0.37891) excess=0 (0.00000) blocks with excess 0  [11s]
+     excess blocks (g, excess, dim g, dim g+delta): []
+  F_2^8 sample 7 coeffs [254, 129, 250, 100, 149, 23]: ker=97 (0.37891) excess=0 (0.00000) blocks with excess 0  [11s]
+     excess blocks (g, excess, dim g, dim g+delta): []
+
+
+

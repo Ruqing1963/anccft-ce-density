@@ -1,0 +1,15 @@
+﻿x (deg 4) = x1.1*x1.2*x2.1 + x1.2*x1.4*x2.1 + x1.2*x1.4*x2.2 + x1.1*x1.2*x2.4 + x1.1*x1.4*x2.4 + x1.2*x1.4*x2.4 + x2.1*x2.4 + x2.2*x2.4
+side L: dim ker of y->xy on u_4 = 3
+   y = x1.1*x1.2*x2.1 + x1.2*x1.4*x2.1 + x1.2*x1.4*x2.2 + x1.1*x1.2*x2.4 + x1.1*x1.4*x2.4 + x1.2*x1.4*x2.4 + x2.1*x2.4 + x2.2*x2.4
+   y = x1.1*x1.2*x2.1 + x1.1*x1.4*x2.1 + x1.2*x1.4*x2.1 + x1.1*x1.4*x2.2 + x1.2*x1.4*x2.4 + x4.2
+   y = x1.1*x1.4*x2.1 + x1.2*x1.4*x2.1 + x1.1*x1.2*x2.2 + x1.2*x1.4*x2.2 + x2.1*x2.2 + x1.1*x1.2*x2.4 + x4.1 + x4.4
+   group algebra F2[G_9]: |supp lift x|=18, |supp lift y|=18, |supp product|=278; nonzero Jennings coords of weight <= 8: {}
+   -> product lies in I^9; its weight-9 part has 115 PBW terms
+   (u(L) product in degree 8 is 0 terms, i.e. zero)
+side R: dim ker of y->yx on u_4 = 3
+   y = x1.1*x1.2*x2.1 + x1.2*x1.4*x2.1 + x1.2*x1.4*x2.2 + x1.1*x1.2*x2.4 + x1.1*x1.4*x2.4 + x1.2*x1.4*x2.4 + x2.1*x2.4 + x2.2*x2.4
+   y = x1.1*x1.2*x2.1 + x1.1*x1.4*x2.1 + x1.2*x1.4*x2.1 + x1.1*x1.4*x2.2 + x1.2*x1.4*x2.4 + x4.2
+   y = x1.1*x1.4*x2.1 + x1.2*x1.4*x2.1 + x1.1*x1.2*x2.2 + x1.2*x1.4*x2.2 + x2.1*x2.2 + x1.1*x1.2*x2.4 + x4.1 + x4.4
+   group algebra F2[G_9]: |supp lift x|=18, |supp lift y|=18, |supp product|=278; nonzero Jennings coords of weight <= 8: {}
+   -> product lies in I^9; its weight-9 part has 115 PBW terms
+   (u(L) product in degree 8 is 0 terms, i.e. zero)

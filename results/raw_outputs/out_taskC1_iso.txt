@@ -1,0 +1,14 @@
+﻿[Lie level, letters of degree <= 10] psi preserves all 351 brackets and 27 2-maps of basis letters; psi is bijective in every degree <= 10  -> L (x) F8 ~= L_split (x) F8 (restricted, graded)
+letter images (degrees 1,2):
+   x1.1 -> 1*y1.0 + 1*y1.1 + 1*y1.2
+   x1.2 -> a*y1.0 + a4*y1.1 + a2*y1.2
+   x1.4 -> a2*y1.0 + a*y1.1 + a4*y1.2
+   x2.1 -> 1*y2.0 + 1*y2.1 + 1*y2.2
+   x2.2 -> a*y2.0 + a4*y2.1 + a2*y2.2
+   x2.4 -> a2*y2.0 + a*y2.1 + a4*y2.2
+Q-weights of split letters: {'y1.0': (1, 0, 0), 'y1.1': (0, 1, 0), 'y1.2': (0, 0, 1), 'y2.0': (1, 0, 1), 'y2.1': (1, 1, 0), 'y2.2': (0, 1, 1), 'y3.0': (1, 1, 1), 'y3.1': (1, 1, 1), 'y4.0': (2, 1, 1), 'y4.1': (1, 2, 1), 'y4.2': (1, 1, 2), 'y5.0': (2, 1, 2), 'y5.1': (2, 2, 1), 'y5.2': (1, 2, 2), 'y6.0': (2, 2, 2), 'y6.1': (2, 2, 2)}
+
+sigma(F)' = psi(sigma F) has 4 split PBW terms:
+  Q-degree (1, 1, 1): 1*y1.0*y1.1*y1.2 + 1*y1.2*y2.1 + 1*y1.0*y2.2 + 1*y3.1
+Q-homogeneous of degree delta=(1,1,1): True
+[algebra level] psi(YZ) = psi(Y)psi(Z) and psi(y sigmaF) = psi(y) sigmaF' on 88 random products (deg <= 10): OK

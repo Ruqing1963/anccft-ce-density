@@ -1,0 +1,12 @@
+﻿m=2: |G_m|=8, top degree 3, graded coker dims by degree [1, 3, 3, 0]
+m=2: dim coker(R_sigma(F) on gr F2[G_m]) = 7   vs dim C_m = 7   ratio 1.0000   /n_m = 0.291667   (6.3s, memo 0)
+m=3: |G_m|=64, top degree 9, graded coker dims by degree [1, 3, 6, 9, 9, 6, 3, 0, 0, 0]
+m=3: dim coker(R_sigma(F) on gr F2[G_m]) = 37   vs dim C_m = 37   ratio 1.0000   /n_m = 0.192708   (0.0s, memo 241)
+m=4: |G_m|=256, top degree 15, graded coker dims by degree [1, 3, 6, 11, 15, 18, 19, 15, 9, 3, 0, 0, 0, 0, 0, 0]
+m=4: dim coker(R_sigma(F) on gr F2[G_m]) = 100   vs dim C_m = 100   ratio 1.0000   /n_m = 0.130208   (0.0s, memo 1311)
+m=5: |G_m|=2048, top degree 27, graded coker dims by degree [1, 3, 6, 11, 18, 27, 37, 48, 57, 63, 66, 63, 54, 42, 27, 15, 6, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+m=5: dim coker(R_sigma(F) on gr F2[G_m]) = 547   vs dim C_m = 547   ratio 1.0000   /n_m = 0.089030   (0.3s, memo 12370)
+m=6: |G_m|=16384, top degree 42, graded coker dims by degree [1, 3, 6, 11, 18, 30, 46, 66, 90, 117, 150, 183, 216, 243, 264, 280, 282, 273, 248, 213, 171, 121, 72, 36, 21, 12, 6, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+m=6: dim coker(R_sigma(F) on gr F2[G_m]) = 3182   vs dim C_m = 3170   ratio 1.0038   /n_m = 0.064738   (7.3s, memo 103661)
+m=7: |G_m|=65536, top degree 54, graded coker dims by degree [1, 3, 6, 11, 18, 30, 48, 72, 102, 139, 186, 243, 309, 378, 450, 525, 600, 669, 723, 759, 777, 777, 750, 693, 609, 504, 387, 256, 120, 39, 21, 12, 6, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+m=7: dim coker(R_sigma(F) on gr F2[G_m]) = 10226   vs dim C_m = 10226   ratio 1.0000   /n_m = 0.052012   (66.2s, memo 426267)

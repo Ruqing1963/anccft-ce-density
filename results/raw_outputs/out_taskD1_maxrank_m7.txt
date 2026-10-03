@@ -1,0 +1,3 @@
+﻿m=7: 799 blocks; best-over-F2 has excess on 6 blocks: [(8, 8, 9), (8, 9, 8), (9, 8, 8), (8, 9, 9), (9, 8, 9), (9, 9, 8)]
+  F_2^4: blocks still without a maximal-rank specialization: 0: []  [9s]
+m=7: CERTIFIED: the generic element of weight delta has maximal rank on every Q-block (excess 0).

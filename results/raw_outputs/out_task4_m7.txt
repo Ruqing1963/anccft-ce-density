@@ -1,0 +1,1 @@
+﻿m=7: |G_m|=65536, |supp F_m|=154, rank=55310, dim C_m=10226, dim C_m/n_m=0.052012, build 6.9s, rank 79.6s

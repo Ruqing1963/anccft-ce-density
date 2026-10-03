@@ -1,0 +1,5 @@
+﻿m=11 n=42: h_n=500268, 55 blocks, largest computed 46717; kernel (known blocks) = 0; uncertified blocks: []; kernel blocks: {}  [24s]
+m=11 n=43: h_n=565374, 48 blocks, largest computed 77430; kernel (known blocks) = 0; uncertified blocks: []; kernel blocks: {}  [60s]
+m=11 n=44: h_n=636015, 54 blocks, largest computed 86335; kernel (known blocks) = 0; uncertified blocks: []; kernel blocks: {}  [107s]
+m=11 n=45: h_n=712261, 55 blocks, largest computed 115786; kernel (known blocks) = 0; uncertified blocks: []; kernel blocks: {}  [237s]
+m=11 n=46: h_n=794097, 48 blocks, largest computed 106386; kernel (known blocks) = 3; uncertified blocks: []; kernel blocks: {(12, 19, 15): 1, (15, 12, 19): 1, (19, 15, 12): 1}  [326s]

@@ -1,0 +1,8 @@
+﻿m=10 block (29, 26, 29): dim 2011, direct rank 1213, stored (from rep (26, 29, 29)) 1213  OK  (9.9s)
+m=10 block (23, 19, 19): dim 2794, direct rank 2539, stored (from rep (19, 19, 23)) 2539  OK  (0.0s)
+m=10 block (26, 22, 24): dim 4087, direct rank 3118, stored (from rep (22, 24, 26)) 3118  OK  (0.0s)
+m=10 block (29, 30, 28): dim 5461, direct rank 3294, stored (from rep (28, 29, 30)) 3294  OK  (0.0s)
+m=10 block (27, 29, 27): dim 7794, direct rank 5064, stored (from rep (27, 27, 29)) 5064  OK  (0.0s)
+m=10 block (24, 26, 23): dim 11597, direct rank 8918, stored (from rep (23, 24, 26)) 8918  OK  (0.1s)
+m=10 block (26, 24, 26): dim 16966, direct rank 12556, stored (from rep (24, 26, 26)) 12556  OK  (0.2s)
+m=10 block (26, 25, 24): dim 22935, direct rank 17366, stored (from rep (24, 26, 25)) 17366  OK  (0.3s)

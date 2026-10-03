@@ -1,0 +1,10 @@
+﻿block (12, 17, 18): dim 15, common left kernel of the 6 basis elements: 0
+   individual coranks: [3, 3, 15, 5, 3, 1]
+block (12, 18, 17): dim 15, common left kernel of the 6 basis elements: 0
+   individual coranks: [3, 3, 15, 3, 5, 5]
+block (14, 15, 20): dim 15, common left kernel of the 6 basis elements: 0
+   individual coranks: [3, 3, 15, 11, 3, 1]
+block (13, 16, 19): dim 43, common left kernel of the 6 basis elements: 0
+   individual coranks: [9, 9, 43, 23, 9, 1]
+block (13, 19, 16): dim 43, common left kernel of the 6 basis elements: 0
+   individual coranks: [9, 9, 43, 9, 23, 23]

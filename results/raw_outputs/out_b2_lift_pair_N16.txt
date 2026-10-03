@@ -1,0 +1,445 @@
+﻿JTable N=16: loaded C:\Users\LAPPIE\Desktop\KMS\Find New Math\ce_compute\tables\jt_16.npz, D=6817, nnz=2215464
+N=16, D=6817, setup 0s
+pair (v1,v1) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [3s]
+pair (v1,v2) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v1,v3) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v1,v4) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v1,v5) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v1,v6) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v1,v7) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v2,v1) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v2,v2) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v2,v3) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v2,v4) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v2,v5) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v2,v6) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v2,v7) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v3,v1) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v3,v2) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v3,v3) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v3,v4) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v3,v5) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v3,v6) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v3,v7) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v4,v1) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v4,v2) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v4,v3) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v4,v4) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v4,v5) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v4,v6) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v4,v7) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v5,v1) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v5,v2) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v5,v3) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v5,v4) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v5,v5) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v5,v6) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v5,v7) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v6,v1) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v6,v2) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v6,v3) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v6,v4) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v6,v5) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v6,v6) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v6,v7) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v7,v1) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v7,v2) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v7,v3) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v7,v4) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v7,v5) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v7,v6) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+pair (v7,v7) seed 0:
+  start: residual in I^9
+  w= 9: greedy ok (rank 63, kernel 9, trial 0) -> residual in I^10
+  w=10: greedy weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: exact  weights 6..6: not in image (rank 87, #unknowns 120, kernel 33)
+  w=10: full   weights 5..6: not in image (rank 150, #unknowns 192, kernel 42)
+  OBSTRUCTED at weight 10: best achieved residual in I^10
+  [0s]
+
+SUMMARY (max k with residual in I^k):
+  (v1,v1) seed 0: 10
+  (v1,v2) seed 0: 10
+  (v1,v3) seed 0: 10
+  (v1,v4) seed 0: 10
+  (v1,v5) seed 0: 10
+  (v1,v6) seed 0: 10
+  (v1,v7) seed 0: 10
+  (v2,v1) seed 0: 10
+  (v2,v2) seed 0: 10
+  (v2,v3) seed 0: 10
+  (v2,v4) seed 0: 10
+  (v2,v5) seed 0: 10
+  (v2,v6) seed 0: 10
+  (v2,v7) seed 0: 10
+  (v3,v1) seed 0: 10
+  (v3,v2) seed 0: 10
+  (v3,v3) seed 0: 10
+  (v3,v4) seed 0: 10
+  (v3,v5) seed 0: 10
+  (v3,v6) seed 0: 10
+  (v3,v7) seed 0: 10
+  (v4,v1) seed 0: 10
+  (v4,v2) seed 0: 10
+  (v4,v3) seed 0: 10
+  (v4,v4) seed 0: 10
+  (v4,v5) seed 0: 10
+  (v4,v6) seed 0: 10
+  (v4,v7) seed 0: 10
+  (v5,v1) seed 0: 10
+  (v5,v2) seed 0: 10
+  (v5,v3) seed 0: 10
+  (v5,v4) seed 0: 10
+  (v5,v5) seed 0: 10
+  (v5,v6) seed 0: 10
+  (v5,v7) seed 0: 10
+  (v6,v1) seed 0: 10
+  (v6,v2) seed 0: 10
+  (v6,v3) seed 0: 10
+  (v6,v4) seed 0: 10
+  (v6,v5) seed 0: 10
+  (v6,v6) seed 0: 10
+  (v6,v7) seed 0: 10
+  (v7,v1) seed 0: 10
+  (v7,v2) seed 0: 10
+  (v7,v3) seed 0: 10
+  (v7,v4) seed 0: 10
+  (v7,v5) seed 0: 10
+  (v7,v6) seed 0: 10
+  (v7,v7) seed 0: 10

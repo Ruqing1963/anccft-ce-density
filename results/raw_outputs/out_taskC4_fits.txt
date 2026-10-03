@@ -1,0 +1,20 @@
+﻿m=3: Gamma=(3, 3, 3); duality rank R(g) = rank R(theta(Gamma-g-delta)) fails on 0 of 40 blocks
+m=4: Gamma=(5, 5, 5); duality rank R(g) = rank R(theta(Gamma-g-delta)) fails on 0 of 78 blocks
+m=5: Gamma=(9, 9, 9); duality rank R(g) = rank R(theta(Gamma-g-delta)) fails on 0 of 232 blocks
+m=6: Gamma=(14, 14, 14); duality rank R(g) = rank R(theta(Gamma-g-delta)) fails on 0 of 555 blocks
+m=7: Gamma=(18, 18, 18); duality rank R(g) = rank R(theta(Gamma-g-delta)) fails on 0 of 799 blocks
+m=8: Gamma=(25, 25, 25); duality rank R(g) = rank R(theta(Gamma-g-delta)) fails on 0 of 1562 blocks
+m=9: Gamma=(33, 33, 33); duality rank R(g) = rank R(theta(Gamma-g-delta)) fails on 0 of 2776 blocks
+m=10: Gamma=(39, 39, 39); duality rank R(g) = rank R(theta(Gamma-g-delta)) fails on 0 of 3538 blocks
+
+x_m = graded coker / |G_m| (= 3 * graded bound on dim C_m / n_m): {2: 0.875, 3: 0.578125, 4: 0.390625, 5: 0.26709, 6: 0.194214, 7: 0.156036, 8: 0.122482, 9: 0.100949, 10: 0.090967}
+successive ratios: {3: 0.6607, 4: 0.6757, 5: 0.6837, 6: 0.7271, 7: 0.8034, 8: 0.785, 9: 0.8242, 10: 0.9011}
+local exponents log(x_{m-1}/x_m)/log(m/(m-1)): {3: 1.022, 4: 1.363, 5: 1.704, 6: 1.748, 7: 1.42, 8: 1.813, 9: 1.642, 10: 0.988}
+power law C m^-a on m=[4, 5, 6, 7, 8]: C=3.877, a=1.660, rms(log)=0.0122; predicts x_9=0.1010, x_10=0.0848, x_12=0.0626
+   c + C m^-a best: c=0.0125 (c_e=0.0042), C=4.368, a=1.766, rms=0.0114
+power law C m^-a on m=[4, 5, 6, 7, 8, 9, 10]: C=3.603, a=1.616, rms(log)=0.0233; predicts x_9=0.1033, x_10=0.0871, x_12=0.0649
+   c + C m^-a best: c=0.0230 (c_e=0.0077), C=4.953, a=1.873, rms=0.0163
+power law C m^-a on m=[6, 7, 8, 9, 10]: C=3.055, a=1.538, rms(log)=0.0217; predicts x_9=0.1040, x_10=0.0885, x_12=0.0668
+   c + C m^-a best: c=0.0315 (c_e=0.0105), C=6.389, a=2.041, rms=0.0188
+power law C m^-a on m=[8, 9, 10]: C=1.961, a=1.339, rms(log)=0.0171; predicts x_9=0.1034, x_10=0.0898, x_12=0.0704
+A4 predictions (fit on exact m=4..7) vs truth: power law C=3.86 a=1.66 -> x_9 = 0.1006  x_10 = 0.0844 ; truth 0.1009 0.091

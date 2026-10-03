@@ -1,0 +1,1 @@
+﻿m=4: 78 blocks; best-over-F2 has excess on 0 blocks: []

@@ -1,0 +1,41 @@
+﻿m=3, n=3: dim u'_n=10, dim ker R_sigma = 3
+   4 PBW terms; letter-degree patterns of the terms: [(1, 2)]
+   x1.1*x2.1 + x1.2*x2.2 + x1.2*x2.4 + x1.4*x2.4
+     sigma*v == 0 ? False
+   5 PBW terms; letter-degree patterns of the terms: [(1, 2)]
+   x1.2*x2.1 + x1.4*x2.2 + x1.1*x2.4 + x1.2*x2.4 + x1.4*x2.4
+     sigma*v == 0 ? False
+   5 PBW terms; letter-degree patterns of the terms: [(1, 2)]
+   x1.4*x2.1 + x1.1*x2.2 + x1.2*x2.2 + x1.1*x2.4 + x1.4*x2.4
+     sigma*v == 0 ? False
+m=4, n=6: dim u'_n=31, dim ker R_sigma = 3
+   10 PBW terms; letter-degree patterns of the terms: [(1, 2, 3)]
+   x1.1*x2.1*x3.2 + x1.2*x2.2*x3.2 + x1.2*x2.4*x3.2 + x1.4*x2.4*x3.2 + x1.1*x2.1*x3.4 + x1.2*x2.1*x3.4 + x1.4*x2.1*x3.4 + x1.1*x2.2*x3.4 + x1.4*x2.2*x3.4 + x1.4*x2.4*x3.4
+     sigma*v == 0 ? False
+   10 PBW terms; letter-degree patterns of the terms: [(1, 2, 3)]
+   x1.2*x2.1*x3.2 + x1.4*x2.2*x3.2 + x1.1*x2.4*x3.2 + x1.2*x2.4*x3.2 + x1.4*x2.4*x3.2 + x1.1*x2.1*x3.4 + x1.4*x2.1*x3.4 + x1.1*x2.2*x3.4 + x1.1*x2.4*x3.4 + x1.2*x2.4*x3.4
+     sigma*v == 0 ? False
+   9 PBW terms; letter-degree patterns of the terms: [(1, 2, 3)]
+   x1.4*x2.1*x3.2 + x1.1*x2.2*x3.2 + x1.2*x2.2*x3.2 + x1.1*x2.4*x3.2 + x1.4*x2.4*x3.2 + x1.1*x2.1*x3.4 + x1.2*x2.2*x3.4 + x1.2*x2.4*x3.4 + x1.4*x2.4*x3.4
+     sigma*v == 0 ? False
+m=5, n=10: dim u'_n=135, dim ker R_sigma = 3
+   29 PBW terms; letter-degree patterns of the terms: [(1, 2, 3, 4)]
+     sigma*v == 0 ? False
+   29 PBW terms; letter-degree patterns of the terms: [(1, 2, 3, 4)]
+     sigma*v == 0 ? False
+   30 PBW terms; letter-degree patterns of the terms: [(1, 2, 3, 4)]
+     sigma*v == 0 ? False
+m=6, n=15: dim u'_n=671, dim ker R_sigma = 3
+   91 PBW terms; letter-degree patterns of the terms: [(1, 2, 3, 4, 5)]
+     sigma*v == 0 ? False
+   91 PBW terms; letter-degree patterns of the terms: [(1, 2, 3, 4, 5)]
+     sigma*v == 0 ? False
+   93 PBW terms; letter-degree patterns of the terms: [(1, 2, 3, 4, 5)]
+     sigma*v == 0 ? False
+m=7, n=21: dim u'_n=2533, dim ker R_sigma = 3
+   184 PBW terms; letter-degree patterns of the terms: [(1, 2, 3, 4, 5, 6)]
+     sigma*v == 0 ? False
+   183 PBW terms; letter-degree patterns of the terms: [(1, 2, 3, 4, 5, 6)]
+     sigma*v == 0 ? False
+   184 PBW terms; letter-degree patterns of the terms: [(1, 2, 3, 4, 5, 6)]
+     sigma*v == 0 ? False

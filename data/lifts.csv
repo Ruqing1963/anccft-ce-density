@@ -1,0 +1,10 @@
+m,element,kernel_density_F2[G_m],graded_kernel_density
+5,lift of v (v^2=0 in gr),0.375,0.627
+6,lift of v (v^2=0 in gr),0.2789,0.6252
+7,lift of v (v^2=0 in gr),0.2336,0.6251
+5,random element of I^4,0.332,0.332
+6,random element of I^4,0.244,0.2442
+7,random element of I^4,0.2034,0.2035
+5,F,0.2671,
+6,F,0.1935,
+7,F,0.156,

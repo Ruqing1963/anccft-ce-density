@@ -1,0 +1,4 @@
+﻿m=4: 300 products agree with ULie('split') and are Q-homogeneous; 200 associativity triples OK; sigma' = y3.0 + y2.2*y1.0 + y2.1*y1.2 + y1.0*y1.1*y1.2;  rho(sigma') == sigma': True
+m=5: 300 products agree with ULie('split') and are Q-homogeneous; 200 associativity triples OK; sigma' = y3.0 + y2.2*y1.0 + y2.1*y1.2 + y1.0*y1.1*y1.2;  rho(sigma') == sigma': True
+m=6: 300 products agree with ULie('split') and are Q-homogeneous; 200 associativity triples OK; sigma' = y3.0 + y2.2*y1.0 + y2.1*y1.2 + y1.0*y1.1*y1.2;  rho(sigma') == sigma': True
+m=7: 300 products agree with ULie('split') and are Q-homogeneous; 200 associativity triples OK; sigma' = y3.0 + y2.2*y1.0 + y2.1*y1.2 + y1.0*y1.1*y1.2;  rho(sigma') == sigma': True
