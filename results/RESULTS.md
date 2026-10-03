@@ -671,3 +671,91 @@ e_m → 0 remains open.  Files (Task D): `taskD_common.py`, `gf2null.py`, `taskD
 `taskD1_check9.py`, `taskD1_common9.py`, `taskD1_m10.py`, `taskD2_ideals.py`, `taskD2_ann.py`, `taskD2_module.py`,
 `taskD3_locate.py`, `taskD4_bound.py`, `taskD5_analyze.py`; outputs `out_taskD*.txt`; pickles `taskD1_m*_F2*.pkl`,
 `taskD1_m10_sample.pkl`, `taskD2_m{5..10}.pkl`, `taskD2_module_m*.pkl`.
+
+---------------------------------------------------------------------------------------------------
+## Task E — proving (H2)
+
+(H2): k_m ≥ d(m) − 1. Proofs and labels are in THEORY §6. All runs used NUMBA_NUM_THREADS = 8, peak RAM < 3 GB, and no run
+took more than 22 min.
+
+**Verdict.** (H2) is **not proved**, neither for all m nor for any infinite subsequence. No unconditional bound k_m ≥ f(m) with
+f → ∞ is proved either. What was obtained:
+
+### E1. What the conditional theorem really needs  [Proved, THEORY 6.1]
+* With σ_m² = Var X_m = ¼Σ k²d_k = (2/9)m³ + O(m²), Hoeffding gives e_m ≤ 2C·exp(−(κ+3/2)²/(2σ_m²)) for any κ ≤ k_m, under
+  (H1_C). Equivalently, use the single hypothesis (H1'_{C,κ}): ker_n ≤ C·h_{n−κ} for all n ≤ mid.
+* **Weakest sufficient hypothesis on k_m: k_m / m^{3/2} → ∞ along an infinite set of m on which (H1) holds** (C fixed).
+  k_m ≥ c·m² gives e_m ≤ 2C·e^{−(9/4)c²m + O(1)}; k_m ≥ m^{3/2}ψ(m) gives e^{−(9/4)ψ²(1+o(1))}.
+* **This is sharp for the method.** If k_m = O(m^{3/2}) on the subsequence, then P(X_m ≤ mid − k_m) stays ≥ Φ(−3A/√2) − o(1)
+  by Lindeberg's CLT, so the bound does not go to 0. A linear bound k_m ≥ cm is useless for the application. So (H2) can be
+  weakened from ~m²/3 to "ω(m^{3/2})" but not further.
+
+### E2. Structural results  [Proved, THEORY 6.2–6.5]
+* **Dichotomy.** k_m → ∞ ⟺ R_σ' is injective on U = u(n̂) ⟺ k_m ≥ m − 3 for all m. Otherwise k_m is eventually constant,
+  equal to K ≥ 57, the least degree of the kernel on U.
+* **Window lemma.** For n < k_a + a, reduction gives ker^{(m)}_n ↪ ker^{(a)}_n. Consequences:
+  - at the free steps (3 | m, m ≠ 3·2^r) (H2) and P(m) propagate to m+1;
+  - (H2) for all m ⟺ at every jump step m ∈ 𝓗_{m+1}, the threshold jumps by ≥ m − 1.
+* **Connecting map** δ_m : ker^{(m)}_n → L_m ⊗ coker R^{(m)}_{n+3−m}. It is left u_m-linear, and ker^{(m+1)}_n ↪ ker δ_m for
+  n < k_m + m.
+* **Closed form on the column integrals.** ω̂_0σ' = c_m·ζ_0 with ζ_0 = X·T^{N−⌊m/3⌋}·(y1.1y1.2 + y2.2), X·T^{N−⌊m/3⌋}·y1.2 or X
+  (m ≡ 1, 2 mod 3, or m = 3·2^R). Hand proof, plus a machine check for m = 3..17 (`taskE_zeta2.py`, `out_taskE_zeta2.txt`).
+* **Exact lifting algorithm** (`taskE_lift.py M a nmin nmax`, needs 2a ≥ M). It computes ker R^{(M)} on each Q-block exactly
+  from explicit kernels and echelon forms at level a, layer by layer in Λ(L_{≥a}). Every output vector is re-checked to satisfy
+  yσ' = 0.
+
+### E3. The main obstruction found  [Verified]
+* ζ_0·Θ'(ω_{j'}) = 0 for all j' at m = 7, 8, 10, while it is nonzero for m = 3..6 (`taskE_zeta.py`, `out_taskE_zeta.txt`).
+  By the detection criterion (ζ ∉ uσ' ⟺ ζ·ker L_σ' ≠ 0), the "row" annihilator part Θ'(A) of ker L_σ' cannot witness the
+  death of ω at a jump step from m = 7 on. **The jump mechanism is governed by cancellation-type (η-like) kernel elements of
+  the dual problem.** No argument built only on column/row integrals can prove (H2).
+* **Structure of η (m = 9).** η ≡ c^{(0)}_7·ω^{(8)}_2 = y7.0·ω_2 (mod L_8), and η = c^{(0)}_7·ω̂_2 + y8.0·w. This is an element
+  of the A-part at the upper edge d(8) + 7 = d(9) − 1 of the window, on which δ_8 vanishes. So δ_8 is not injective on
+  A^{(8)} ∩ window. η dies at the free step 9 → 10.
+
+### E4. m = 12  [Verified]  (`taskE_lift.py 12 10 46 51` / `52 57`, outputs `out_taskE_lift_M12_a10_*.txt`, pickles `taskE_lift_M12_a10_*.pkl`)
+* Validation of the method against known kernels: M = 9 from 8, M = 10 from 9, and M = 11 from 9 and from 10
+  (`out_taskE_lift_M9_a8.txt`, `out_taskE_lift_M11_a9.txt`, `out_taskE_lift_M11_a10.txt`). All agree exactly, including η at
+  (9, n = 35) and its death at level 10.
+* Level 12 from level 10 (I = L_10 ⊕ L_11). Per ρ-orbit representative:
+
+| n | 46 | 47 | 48 | 49 | 50 | 51 | 52 | 53 | 54 | 55 | 56 | 57 |
+|---|----|----|----|----|----|----|----|----|----|----|----|----|
+| blocks with E_1 ≠ 0 | 13 | 13 | 15 | 13 | 14 | 16 | 16 | 16 | 17 | 16 | 16 | 18 |
+| dim E_1 | 154 | 220 | 328 | 425 | 580 | 850 | 1044 | 1379 | 2004 | 2351 | 3035 | 4384 |
+| E_2 bound | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 3 | 7 | 14 | 26 |
+| **exact ker** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **1** |
+
+  Degrees ≤ 45 were already certified (C3(c)). The kernel at n = 57 is the single monomial
+  y11.2·y10.1·y8.2·y7.1·y6.0·y5.2·y4.1·y3.0·y2.2·y1.1 = ω^{(12)}_1 (+ rotations).
+  **k_12 = d(12) = 57, and ker at 57 = span{ω_j}, i.e. P(12) holds.** There is no η-type defect at m = 12 = 3·2²; this
+  settles the open row m = 12 of C2.
+* Updated table: k_m = d(m) for m = 2..8, 10, 11, 12, and k_9 = d(9) − 1 = 35. So (H2) is verified for m ≤ 12, and
+  R_σ' is injective in degrees ≤ 56 for every m ≥ 12.
+* m ≥ 13 is out of reach with this method. From a ≤ 11, the E_1 page contains the upper-half (maximal-rank) kernel of level a,
+  tens of thousands of dense vectors per degree, and level-12 echelon forms of blocks of 60k–410k.
+
+### E5. Approaches that failed (details in THEORY 6.7)
+* **Induced modules F2 ⊗_{u(K)} u_m.** The bound k_m ≥ k(M_K) is valid for every subalgebra K but collapses for non-ideal K
+  (`taskE_induced.py`, `out_taskE_induced.txt`):
+
+  | m (k_m) | Cartan tower | row reals | row subalgebra | upper real letters |
+  |---|---|---|---|---|
+  | 6 (15) | 12 | 8 | 6 | 3 |
+  | 7 (21) | 12 | – | 9 | – |
+
+* **PBW monomial orders.** For four lexicographic orders, w ↦ lead(wσ') is not injective already in degree 2 (m = 6;
+  `taskE_lead.py`, `out_taskE_lead_m6.txt`).
+* **Weight filtrations.** They can never make c_3 or y3.1 the sole leading term of σ' (proved, since [y1.0, y2.2] = y3.1).
+* **Powers of σ'.** The nilpotency index of σ' is 3, 5, 10, 12, 16, 24, 31 for m = 3..9; the powers give no test
+  functionals.
+* **Frobenius doubling.** Fr(σ') ≠ σ'². Even an exact relation would only yield a linear bound.
+* **Plain E_2 bounds.** Not sharp at M = 11: E_2 = 1 and 3 at n = 45, 46 where the true kernels are 0 and 1.
+
+### E6. Refined conjecture  [Conjecture, THEORY 6.8]
+k_m = d(m) − 1 exactly when 3 | m, m ≥ 9 and m ≠ 3·2^r; otherwise P(m). The defect is the lift of a window-edge element
+c_{m−2}·ω^{(m−1)} (η at m = 9). This is consistent with all data (m ≤ 12). The next tests, m = 13, 14 (predicted d) and
+m = 15 (predicted d − 1 = 95), are not computable with the present tools.
+
+Files (Task E): `taskE_lift.py`, `taskE_zeta.py`, `taskE_zeta2.py`, `taskE_induced.py`, `taskE_lead.py`; outputs
+`out_taskE_*.txt`; pickles `taskE_lift_*.pkl`.

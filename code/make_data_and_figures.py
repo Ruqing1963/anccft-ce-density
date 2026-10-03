@@ -1,4 +1,4 @@
-"""Build the data tables (data/*.csv) and the figures (figures/*.pdf, *.png) of the paper.
+﻿"""Build the data tables (data/*.csv) and the figures (figures/*.pdf, *.png) of the paper.
 
 Exact values that required heavy computation (ranks over F2) are copied from results/RESULTS.md;
 everything else (d(m), S_m, the maximal-rank baseline B_m) is recomputed here.
@@ -71,7 +71,7 @@ def baseline(m):
 # ---------------------------------------------------------------- exact data (results/RESULTS.md)
 dimC_exact = {2: 7, 3: 37, 4: 100, 5: 547, 6: 3170, 7: 10226}
 graded = {2: 7, 3: 37, 4: 100, 5: 547, 6: 3182, 7: 10226, 8: 64216, 9: 423412, 10: 1526176}
-k_m = {2: 1, 3: 3, 4: 6, 5: 10, 6: 15, 7: 21, 8: 28, 9: 35, 10: 36, 11: 46}
+k_m = {2: 1, 3: 3, 4: 6, 5: 10, 6: 15, 7: 21, 8: 28, 9: 35, 10: 36, 11: 46, 12: 57}
 excess = {3: 0.04688, 4: 0.01172, 5: 0.01465, 6: 0.00952, 7: 0.00247, 8: 0.00217, 9: 0.00267, 10: 0.00411}
 excess_sigma_abs = {4: 3, 5: 30, 6: 156, 7: 162, 8: 1136, 9: 11200}
 excess_generic_abs = {4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 18}
@@ -88,7 +88,7 @@ with open(os.path.join(DATA, "levels.csv"), "w", newline="") as f:
     w = csv.writer(f)
     w.writerow(["m", "log2_|G_m|", "n_m", "dim_C_m_exact", "graded_cokernel", "c_e_upper_bound",
                 "k_m", "d_m", "S_m=m(m-1)/2"])
-    for m in range(2, 12):
+    for m in range(2, 13):
         n = 3 * 2 ** N(m)
         ex = dimC_exact.get(m, "")
         gr = graded.get(m, "")
@@ -168,7 +168,7 @@ a1.set_xlabel("level $m$")
 a1.set_ylabel("principal degree")
 a1.text(20.3, 345, "$m(m-1)/2$", color=INK2, fontsize=8.5, ha="right")
 a1.text(24.5, 185, "$d(m)$ (Theorem C)", color=INK, fontsize=8.5)
-a1.text(3, 95, "$k_m$ computed ($m\\leq11$);\n$k_9=35=d(9)-1$", color=INK, fontsize=8.5)
+a1.text(3, 95, "$k_m$ computed ($m\\leq12$);\n$k_9=35=d(9)-1$", color=INK, fontsize=8.5)
 a1.annotate("", xy=(9, 35), xytext=(5.8, 90), arrowprops=dict(arrowstyle="-", color=MUTED, lw=0.8))
 a1.set_title("(a) First non-injective degree of $R_{\\sigma F}$ on $u_m$", loc="left", fontsize=10, color=INK)
 
@@ -201,3 +201,4 @@ fig.savefig(os.path.join(FIG, "fig2_threshold_odometer.pdf"))
 fig.savefig(os.path.join(FIG, "fig2_threshold_odometer.png"), dpi=200)
 plt.close(fig)
 print("data and figures written to", DATA, FIG)
+

@@ -1,0 +1,6 @@
+﻿m=6 K=tower1: first kernel degree of sigma' on M_K = 12  [11s]
+m=6 K=rowreal0: first kernel degree of sigma' on M_K = 8  [11s]
+m=6 K=row0: first kernel degree of sigma' on M_K = 6  [11s]
+m=6 K=up012: first kernel degree of sigma' on M_K = 3  [11s]
+m=7 K=tower1: first kernel degree of sigma' on M_K = 12  [11s]
+m=7 K=row0: first kernel degree of sigma' on M_K = 9  [11s]

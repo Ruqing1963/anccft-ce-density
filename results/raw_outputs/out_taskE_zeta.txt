@@ -1,0 +1,32 @@
+﻿m=3 (m in H_(m+1): True), d(m)=3:
+   j=0: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y3.0', 1, [0, 0, 1]), ('y3.1', 1, [0, 0, 1])]
+   j=1: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y3.0', 1, [0, 2, 0])]
+   j=2: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y3.1', 1, [2, 0, 0])]
+m=4 (m in H_(m+1): True), d(m)=6:
+   j=0: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y4.0', 3, [0, 1, 0])] (ascending-product lift; equals the X*T^N closed form of taskE_zeta2: True -- lifts differ by J, delta is lift-independent)
+   j=1: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y4.1', 2, [1, 0, 0])]
+   j=2: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y4.2', 5, [0, 0, 1])]
+m=5 (m in H_(m+1): True), d(m)=10:
+   j=0: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y5.1', 1, [1, 0, 0])] (ascending-product lift; equals the X*T^N closed form of taskE_zeta2: True -- lifts differ by J, delta is lift-independent)
+   j=1: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y5.2', 2, [0, 0, 1])]
+   j=2: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y5.0', 2, [0, 1, 0])]
+m=6 (m in H_(m+1): True), d(m)=15:
+   j=0: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y6.0', 1, [0, 0, 5]), ('y6.1', 1, [0, 0, 5])]
+   j=1: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y6.0', 1, [0, 7, 0])]
+   j=2: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y6.1', 1, [4, 0, 0])]
+m=7 (m in H_(m+1): True), d(m)=21:
+   j=0: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y7.0', 10, [0, 0, 0])] (ascending-product lift; equals the X*T^N closed form of taskE_zeta2: False -- lifts differ by J, delta is lift-independent)
+   j=1: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y7.1', 4, [0, 0, 0])]
+   j=2: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y7.2', 5, [0, 0, 0])]
+m=8 (m in H_(m+1): True), d(m)=28:
+   j=0: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y8.1', 8, [0, 0, 0])] (ascending-product lift; equals the X*T^N closed form of taskE_zeta2: False -- lifts differ by J, delta is lift-independent)
+   j=1: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y8.2', 4, [0, 0, 0])]
+   j=2: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y8.0', 4, [0, 0, 0])]
+m=9 (m in H_(m+1): False), d(m)=36:
+   j=0: omega-hat*sigma' = 0
+   j=1: omega-hat*sigma' = 0
+   j=2: omega-hat*sigma' = 0
+m=10 (m in H_(m+1): True), d(m)=36:
+   j=0: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y10.0', 6, [0, 0, 0])] (ascending-product lift; equals the X*T^N closed form of taskE_zeta2: False -- lifts differ by J, delta is lift-independent)
+   j=1: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y10.1', 2, [0, 0, 0])]
+   j=2: omega-hat*sigma' = sum_c c*zeta, (c, #terms zeta, |zeta*Theta'(omega_j')| j'=0,1,2) = [('y10.2', 2, [0, 0, 0])]
