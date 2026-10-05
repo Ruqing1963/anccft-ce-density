@@ -1,0 +1,8 @@
+﻿m=6 a=3: omega_K = y5.0*y5.1*y5.2*y4.0*y4.1*y4.2*y3.0*y3.1 (degree 33, weight (11, 11, 11)); block 106; dim ker R there = 51
+one preimage w (5 terms):
+    y5.0*y5.1*y5.2*y4.1*y4.2*y3.0*y3.1*y1.0
+    y5.0*y5.1*y5.2*y4.2*y3.0*y3.1*y2.1*y2.2*y1.0
+    y5.0*y5.1*y5.2*y4.0*y4.2*y3.0*y3.1*y1.1
+    y5.0*y5.2*y4.0*y4.1*y4.2*y3.0*y3.1*y1.0*y1.1
+    y5.0*y5.2*y4.0*y4.2*y3.0*y3.1*y2.1*y2.2*y1.0*y1.1
+number of K-letters per term: {7: 3, 6: 2}

@@ -1,0 +1,10 @@
+﻿k=2: dim U_(k-1)d = 6, dim U_kd = 24, rank R = 6, dim u(h)_kd = 3, dim (U sigma' cap u(h))_kd = 0
+   [21.7s]
+k=3: dim U_(k-1)d = 24, dim U_kd = 78, rank R = 24, dim u(h)_kd = 6, dim (U sigma' cap u(h))_kd = 0
+   [0.0s]
+k=4: dim U_(k-1)d = 78, dim U_kd = 222, rank R = 78, dim u(h)_kd = 9, dim (U sigma' cap u(h))_kd = 0
+   [0.0s]
+k=5: dim U_(k-1)d = 222, dim U_kd = 576, rank R = 222, dim u(h)_kd = 14, dim (U sigma' cap u(h))_kd = 0
+   [0.0s]
+k=6: dim U_(k-1)d = 576, dim U_kd = 1392, rank R = 576, dim u(h)_kd = 22, dim (U sigma' cap u(h))_kd = 0
+   [0.0s]

@@ -1,0 +1,26 @@
+m=10: H=[1, 2, 3, 4, 5, 6, 7, 8], d(m)=36
+  j=0 p=0 block (14, 12, 9) (n=35): Ansatz dim 127, image cols 199, kernel in Ansatz = 0   [6.7s]
+  j=0 p=1 block (15, 11, 9) (n=35): Ansatz dim 6, image cols 9, kernel in Ansatz = 0   [7.0s]
+  j=0 p=2 block (15, 12, 8): empty Ansatz
+m=11: H=[1, 2, 3, 4, 5, 6, 7, 8, 10], d(m)=46
+  j=0 p=0 block (18, 15, 12) (n=45): Ansatz dim 167, image cols 259, kernel in Ansatz = 0   [7.8s]
+  j=0 p=1 block (19, 14, 12) (n=45): Ansatz dim 6, image cols 9, kernel in Ansatz = 0   [9.1s]
+  j=0 p=2 block (19, 15, 11): empty Ansatz
+m=12: H=[1, 2, 3, 4, 5, 6, 7, 8, 10, 11], d(m)=57
+  j=0 p=0 block (22, 19, 15) (n=56): Ansatz dim 201, image cols 309, kernel in Ansatz = 0   [12.6s]
+  j=0 p=1 block (23, 18, 15) (n=56): Ansatz dim 6, image cols 10, kernel in Ansatz = 0   [18.8s]
+  j=0 p=2 block (23, 19, 14): empty Ansatz
+m=13: H=[1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12], d(m)=69
+  j=0 p=0 block (26, 23, 19) (n=68): Ansatz dim 678, image cols 1114, kernel in Ansatz = 0   [23.5s]
+  j=0 p=1 block (27, 22, 19) (n=68): Ansatz dim 37, image cols 50, kernel in Ansatz = 0   [40.7s]
+  j=0 p=2 block (27, 23, 18): empty Ansatz
+m=14: H=[1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13], d(m)=82
+  j=0 p=0 block (31, 27, 23) (n=81): Ansatz dim 853, image cols 1391, kernel in Ansatz = 0   [104.6s]
+  j=0 p=1 block (32, 26, 23) (n=81): Ansatz dim 37, image cols 50, kernel in Ansatz = 0   [224.3s]
+  j=0 p=2 block (32, 27, 22): empty Ansatz
+m=15: H=[1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14], d(m)=96
+  j=0 p=0 block (36, 32, 27) (n=95): Ansatz dim 979, image cols 1579, kernel in Ansatz = 0   [370.8s]
+  j=0 p=1 block (37, 31, 27) (n=95): Ansatz dim 40, image cols 54, kernel in Ansatz = 0   [725.0s]
+  j=0 p=2 block (37, 32, 26): empty Ansatz
+
+[exited with code 0]

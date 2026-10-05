@@ -1,0 +1,804 @@
+﻿M=14 from a=10: I-letters [(13, 0), (13, 1), (13, 2), (12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+  gamma=(18, 24, 27) n=69 dim=3: layer tests (layer, #cand, rank) = [] -> ker = 0   [9.1s, total 9s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(18, 27, 24) n=69 dim=3: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.0s, total 9s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(19, 22, 28) n=69 dim=7: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.0s, total 9s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(19, 28, 22) n=69 dim=7: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.0s, total 9s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(18, 25, 26) n=69 dim=26: layer tests (layer, #cand, rank) = [(3, 1, 1)] -> ker = 0   [13.9s, total 23s]  {'t_tab': 6, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(18, 26, 25) n=69 dim=26: layer tests (layer, #cand, rank) = [(3, 1, 1)] -> ker = 0   [0.0s, total 23s]  {'t_tab': 6, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(20, 21, 28) n=69 dim=64: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.0s, total 23s]  {'t_tab': 6, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(20, 28, 21) n=69 dim=64: layer tests (layer, #cand, rank) = [(3, 2, 2)] -> ker = 0   [0.0s, total 23s]  {'t_tab': 6, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(19, 23, 27) n=69 dim=592: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.0s, total 23s]  {'t_tab': 6, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(19, 27, 23) n=69 dim=592: layer tests (layer, #cand, rank) = [(3, 30, 30), (4, 5, 5)] -> ker = 0   [0.0s, total 23s]  {'t_tab': 6, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(19, 24, 26) n=69 dim=4727: layer tests (layer, #cand, rank) = [(2, 19, 19), (3, 9, 9)] -> ker = 0   [0.1s, total 23s]  {'t_tab': 6, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(19, 26, 24) n=69 dim=4727: layer tests (layer, #cand, rank) = [(2, 48, 48), (3, 120, 120), (4, 9, 9)] -> ker = 0   [0.2s, total 24s]  {'t_tab': 6, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(20, 22, 27) n=69 dim=5740: layer tests (layer, #cand, rank) = [(2, 18, 18), (3, 5, 5)] -> ker = 0   [0.1s, total 24s]  {'t_tab': 6, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(20, 27, 22) n=69 dim=5740: layer tests (layer, #cand, rank) = [(2, 58, 58), (3, 114, 114), (4, 6, 6)] -> ker = 0   [0.2s, total 24s]  {'t_tab': 6, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(19, 25, 25) n=69 dim=8945: layer tests (layer, #cand, rank) = [(1, 1, 1), (2, 72, 72), (3, 83, 83), (4, 1, 1)] -> ker = 0   [0.2s, total 24s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(21, 21, 27) n=69 dim=11390: layer tests (layer, #cand, rank) = [(1, 3, 3), (2, 69, 69), (3, 61, 61), (4, 1, 1)] -> ker = 0   [0.3s, total 24s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(20, 23, 26) n=69 dim=62433: layer tests (layer, #cand, rank) = [(1, 22, 12), (2, 275, 275), (3, 47, 47)] -> ker = 0   [3.6s, total 28s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(20, 26, 23) n=69 dim=62433: layer tests (layer, #cand, rank) = [(1, 31, 31), (2, 569, 569), (3, 588, 588), (4, 27, 27)] -> ker = 0   [3.1s, total 31s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(20, 24, 25) n=69 dim=185515: layer tests (layer, #cand, rank) = [(1, 129, 90), (2, 929, 929), (3, 275, 275)] -> ker = 0   [6.1s, total 37s]  {'t_tab': 8, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(20, 25, 24) n=69 dim=185515: layer tests (layer, #cand, rank) = [(1, 136, 115), (2, 1233, 1233), (3, 728, 728), (4, 13, 13)] -> ker = 0   [7.8s, total 45s]  {'t_tab': 8, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(21, 22, 26) n=69 dim=198512: layer tests (layer, #cand, rank) = [(1, 130, 109), (2, 835, 835), (3, 234, 234), (4, 1, 1)] -> ker = 0   [6.2s, total 51s]  {'t_tab': 9, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(21, 26, 22) n=69 dim=198512: layer tests (layer, #cand, rank) = [(1, 140, 135), (2, 1165, 1165), (3, 639, 639), (4, 14, 14)] -> ker = 0   [7.5s, total 59s]  {'t_tab': 10, 't_ker': 0, 't_cok': 0, 't_ech': 3}
+  gamma=(21, 23, 25) n=69 dim=920773: layer tests (layer, #cand, rank) = [(1, 973, 749), (2, 3245, 3245), (3, 506, 506)] -> ker = 0   [33.7s, total 92s]  {'t_tab': 14, 't_ker': 0, 't_cok': 0, 't_ech': 7}
+  gamma=(21, 25, 23) n=69 dim=920773: layer tests (layer, #cand, rank) = [(1, 993, 823), (2, 4204, 4204), (3, 1406, 1406), (4, 17, 17)] -> ker = 0   [43.2s, total 136s]  {'t_tab': 17, 't_ker': 0, 't_cok': 0, 't_ech': 11}
+  gamma=(21, 24, 24) n=69 dim=1500635: layer tests (layer, #cand, rank) = [(1, 1818, 1229), (2, 5694, 5694), (3, 1058, 1058), (4, 2, 2)] -> ker = 0   [51.8s, total 187s]  {'t_tab': 19, 't_ker': 0, 't_cok': 0, 't_ech': 22}
+  gamma=(22, 22, 25) n=69 dim=1528914: layer tests (layer, #cand, rank) = [(1, 1807, 1401), (2, 5328, 5328), (3, 1016, 1016), (4, 4, 4)] -> ker = 0   [69.5s, total 257s]  {'t_tab': 25, 't_ker': 0, 't_cok': 0, 't_ech': 40}
+  gamma=(22, 23, 24) n=69 dim=3965501: layer tests (layer, #cand, rank) = [(1, 5732, 3087), (2, 12365, 12365), (3, 1046, 1046)] -> ker = 0   [293.1s, total 550s]  {'t_tab': 38, 't_ker': 0, 't_cok': 0, 't_ech': 190}
+  gamma=(22, 24, 23) n=69 dim=3965501: layer tests (layer, #cand, rank) = [(1, 5734, 3186), (2, 12686, 12686), (3, 1275, 1275), (4, 1, 1)] -> ker = 0   [285.0s, total 835s]  {'t_tab': 46, 't_ker': 0, 't_cok': 0, 't_ech': 326}
+  gamma=(23, 23, 23) n=69 dim=6321715: layer tests (layer, #cand, rank) = [(1, 9917, 4595), (2, 19010, 19010), (3, 1026, 1026)] -> ker = 0   [798.3s, total 1633s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+M=14 n=69: 29 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+  gamma=(18, 26, 26) n=70 dim=1: layer tests (layer, #cand, rank) = [] -> ker = 0   [1.8s, total 1635s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(19, 23, 28) n=70 dim=16: layer tests (layer, #cand, rank) = [] -> ker = 0   [6.9s, total 1642s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(19, 28, 23) n=70 dim=16: layer tests (layer, #cand, rank) = [(4, 1, 1)] -> ker = 0   [0.0s, total 1642s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(20, 22, 28) n=70 dim=308: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.0s, total 1642s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(20, 28, 22) n=70 dim=308: layer tests (layer, #cand, rank) = [(3, 13, 13), (4, 2, 2)] -> ker = 0   [0.0s, total 1642s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(19, 24, 27) n=70 dim=489: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.0s, total 1642s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(19, 27, 24) n=70 dim=489: layer tests (layer, #cand, rank) = [(3, 23, 23), (4, 7, 7)] -> ker = 0   [0.0s, total 1642s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(21, 21, 28) n=70 dim=716: layer tests (layer, #cand, rank) = [(2, 4, 4), (3, 8, 8)] -> ker = 0   [0.0s, total 1642s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(19, 25, 26) n=70 dim=2062: layer tests (layer, #cand, rank) = [(2, 11, 11), (3, 18, 18)] -> ker = 0   [0.1s, total 1642s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(19, 26, 25) n=70 dim=2062: layer tests (layer, #cand, rank) = [(2, 17, 17), (3, 54, 54), (4, 5, 5)] -> ker = 0   [0.0s, total 1642s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(20, 23, 27) n=70 dim=9640: layer tests (layer, #cand, rank) = [(2, 30, 30), (3, 7, 7)] -> ker = 0   [0.1s, total 1642s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(20, 27, 23) n=70 dim=9640: layer tests (layer, #cand, rank) = [(2, 92, 92), (3, 226, 226), (4, 25, 25)] -> ker = 0   [0.3s, total 1643s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(21, 22, 27) n=70 dim=35118: layer tests (layer, #cand, rank) = [(1, 8, 6), (2, 167, 167), (3, 81, 81), (4, 1, 1)] -> ker = 0   [0.8s, total 1643s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(21, 27, 22) n=70 dim=35118: layer tests (layer, #cand, rank) = [(1, 10, 10), (2, 263, 263), (3, 278, 278), (4, 14, 14)] -> ker = 0   [1.5s, total 1645s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(20, 24, 26) n=70 dim=56331: layer tests (layer, #cand, rank) = [(1, 18, 11), (2, 274, 274), (3, 89, 89)] -> ker = 0   [1.3s, total 1646s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(20, 26, 24) n=70 dim=56331: layer tests (layer, #cand, rank) = [(1, 22, 22), (2, 489, 488), (3, 611, 611), (4, 40, 40)] -> ker = 0   [3.0s, total 1649s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(20, 25, 25) n=70 dim=98045: layer tests (layer, #cand, rank) = [(1, 47, 35), (2, 639, 639), (3, 429, 429), (4, 8, 8)] -> ker = 0   [3.7s, total 1653s]  {'t_tab': 65, 't_ker': 2, 't_cok': 3, 't_ech': 725}
+  gamma=(21, 23, 26) n=70 dim=311035: layer tests (layer, #cand, rank) = [(1, 204, 123), (2, 1387, 1387), (3, 295, 295), (4, 1, 1)] -> ker = 0   [8.8s, total 1662s]  {'t_tab': 66, 't_ker': 3, 't_cok': 3, 't_ech': 727}
+  gamma=(21, 26, 23) n=70 dim=311035: layer tests (layer, #cand, rank) = [(1, 219, 174), (2, 2018, 2018), (3, 1279, 1279), (4, 53, 53)] -> ker = 0   [16.1s, total 1678s]  {'t_tab': 66, 't_ker': 3, 't_cok': 4, 't_ech': 727}
+  gamma=(22, 22, 26) n=70 dim=532200: layer tests (layer, #cand, rank) = [(1, 422, 289), (2, 2561, 2561), (3, 861, 861), (4, 16, 16)] -> ker = 0   [25.8s, total 1704s]  {'t_tab': 68, 't_ker': 4, 't_cok': 4, 't_ech': 729}
+  gamma=(21, 24, 25) n=70 dim=853923: layer tests (layer, #cand, rank) = [(1, 798, 407), (2, 4010, 4010), (3, 823, 823), (4, 1, 1)] -> ker = 0   [36.3s, total 1740s]  {'t_tab': 70, 't_ker': 6, 't_cok': 5, 't_ech': 732}
+  gamma=(21, 25, 24) n=70 dim=853923: layer tests (layer, #cand, rank) = [(1, 807, 478), (2, 4588, 4588), (3, 1621, 1621), (4, 27, 27)] -> ker = 0   [40.7s, total 1781s]  {'t_tab': 71, 't_ker': 7, 't_cok': 5, 't_ech': 735}
+  gamma=(22, 23, 25) n=70 dim=2323223: layer tests (layer, #cand, rank) = [(1, 2718, 1004), (2, 9932, 9932), (3, 1252, 1252), (4, 4, 4)] -> ker = 0   [115.8s, total 1896s]  {'t_tab': 75, 't_ker': 9, 't_cok': 16, 't_ech': 769}
+  gamma=(22, 25, 23) n=70 dim=2323223: layer tests (layer, #cand, rank) = [(1, 2724, 1153), (2, 10512, 10512), (3, 1918, 1918), (4, 19, 19)] -> ker = 0   [111.5s, total 2008s]  {'t_tab': 78, 't_ker': 11, 't_cok': 28, 't_ech': 797}
+  gamma=(22, 24, 24) n=70 dim=3719518: layer tests (layer, #cand, rank) = [(1, 4848, 1449), (2, 16197, 16197), (3, 1700, 1700), (4, 2, 2)] -> ker = 0   [224.9s, total 2233s]  {'t_tab': 81, 't_ker': 15, 't_cok': 28, 't_ech': 886}
+  gamma=(23, 23, 24) n=70 dim=5948691: layer tests (layer, #cand, rank) = [(1, 8463, 1936), (2, 25105, 25105), (3, 1649, 1649), (4, 1, 1)] -> ker = 0   [764.1s, total 2997s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+M=14 n=70: 26 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+  gamma=(20, 22, 29) n=71 dim=3: layer tests (layer, #cand, rank) = [] -> ker = 0   [6.1s, total 3003s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(20, 29, 22) n=71 dim=3: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.7s, total 3004s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(21, 21, 29) n=71 dim=10: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.0s, total 3004s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(19, 24, 28) n=71 dim=16: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.0s, total 3004s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(19, 28, 24) n=71 dim=16: layer tests (layer, #cand, rank) = [(4, 1, 1)] -> ker = 0   [0.0s, total 3004s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(19, 25, 27) n=71 dim=232: layer tests (layer, #cand, rank) = [(3, 2, 2)] -> ker = 0   [0.0s, total 3004s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(19, 27, 25) n=71 dim=232: layer tests (layer, #cand, rank) = [(3, 10, 10), (4, 4, 4)] -> ker = 0   [0.0s, total 3004s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(19, 26, 26) n=71 dim=508: layer tests (layer, #cand, rank) = [(2, 2, 2), (3, 15, 15), (4, 1, 1)] -> ker = 0   [0.0s, total 3004s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(20, 23, 28) n=71 dim=729: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.0s, total 3004s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(20, 28, 23) n=71 dim=729: layer tests (layer, #cand, rank) = [(3, 33, 33), (4, 10, 10)] -> ker = 0   [0.0s, total 3004s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(21, 22, 28) n=71 dim=3382: layer tests (layer, #cand, rank) = [(2, 13, 13), (3, 13, 13)] -> ker = 0   [1.2s, total 3005s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(21, 28, 22) n=71 dim=3382: layer tests (layer, #cand, rank) = [(2, 25, 25), (3, 60, 60), (4, 5, 5)] -> ker = 0   [0.1s, total 3005s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(20, 24, 27) n=71 dim=10446: layer tests (layer, #cand, rank) = [(2, 33, 33), (3, 14, 14)] -> ker = 0   [0.1s, total 3005s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(20, 27, 24) n=71 dim=10446: layer tests (layer, #cand, rank) = [(2, 89, 89), (3, 268, 268), (4, 43, 43)] -> ker = 0   [0.4s, total 3006s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(20, 25, 26) n=71 dim=34370: layer tests (layer, #cand, rank) = [(1, 7, 5), (2, 190, 190), (3, 157, 157), (4, 2, 2)] -> ker = 0   [1.1s, total 3007s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(20, 26, 25) n=71 dim=34370: layer tests (layer, #cand, rank) = [(1, 8, 8), (2, 266, 265), (3, 410, 410), (4, 31, 31)] -> ker = 0   [1.7s, total 3008s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(21, 23, 27) n=71 dim=68667: layer tests (layer, #cand, rank) = [(1, 18, 11), (2, 311, 311), (3, 102, 102), (4, 1, 1)] -> ker = 0   [2.1s, total 3010s]  {'t_tab': 90, 't_ker': 46, 't_cok': 107, 't_ech': 1218}
+  gamma=(21, 27, 23) n=71 dim=68667: layer tests (layer, #cand, rank) = [(1, 22, 22), (2, 543, 543), (3, 688, 688), (4, 63, 63)] -> ker = 0   [5.6s, total 3016s]  {'t_tab': 90, 't_ker': 47, 't_cok': 107, 't_ech': 1218}
+  gamma=(22, 22, 27) n=71 dim=123241: layer tests (layer, #cand, rank) = [(1, 48, 36), (2, 700, 700), (3, 445, 445), (4, 19, 19)] -> ker = 0   [12.0s, total 3028s]  {'t_tab': 92, 't_ker': 48, 't_cok': 108, 't_ech': 1219}
+  gamma=(21, 24, 26) n=71 dim=339747: layer tests (layer, #cand, rank) = [(1, 201, 108), (2, 1720, 1720), (3, 443, 443), (4, 1, 1)] -> ker = 0   [10.7s, total 3039s]  {'t_tab': 92, 't_ker': 48, 't_cok': 108, 't_ech': 1220}
+  gamma=(21, 26, 24) n=71 dim=339747: layer tests (layer, #cand, rank) = [(1, 211, 158), (2, 2308, 2307), (3, 1682, 1682), (4, 94, 94)] -> ker = 0   [29.1s, total 3068s]  {'t_tab': 94, 't_ker': 48, 't_cok': 108, 't_ech': 1222}
+  gamma=(21, 25, 25) n=71 dim=564254: layer tests (layer, #cand, rank) = [(1, 413, 216), (2, 3273, 3273), (3, 1301, 1301), (4, 22, 22)] -> ker = 0   [22.9s, total 3091s]  {'t_tab': 94, 't_ker': 49, 't_cok': 108, 't_ech': 1224}
+  gamma=(22, 23, 26) n=71 dim=970749: layer tests (layer, #cand, rank) = [(1, 798, 359), (2, 4860, 4860), (3, 1064, 1064), (4, 16, 16)] -> ker = 0   [40.4s, total 3131s]  {'t_tab': 95, 't_ker': 49, 't_cok': 110, 't_ech': 1227}
+  gamma=(22, 26, 23) n=71 dim=970749: layer tests (layer, #cand, rank) = [(1, 805, 440), (2, 5409, 5409), (3, 1992, 1992), (4, 70, 70)] -> ker = 0   [45.9s, total 3177s]  {'t_tab': 97, 't_ker': 50, 't_cok': 111, 't_ech': 1230}
+  gamma=(22, 24, 25) n=71 dim=2542445: layer tests (layer, #cand, rank) = [(1, 2730, 759), (2, 13164, 13164), (3, 1801, 1801), (4, 6, 6)] -> ker = 0   [111.6s, total 3289s]  {'t_tab': 99, 't_ker': 51, 't_cok': 116, 't_ech': 1256}
+  gamma=(22, 25, 24) n=71 dim=2542445: layer tests (layer, #cand, rank) = [(1, 2734, 936), (2, 13650, 13650), (3, 2666, 2666), (4, 36, 36)] -> ker = 0   [105.9s, total 3395s]  {'t_tab': 101, 't_ker': 52, 't_cok': 116, 't_ech': 1281}
+  gamma=(23, 23, 25) n=71 dim=4106207: layer tests (layer, #cand, rank) = [(1, 4885, 1202), (2, 21117, 21117), (3, 2386, 2386), (4, 19, 19)] -> ker = 0   [308.6s, total 3703s]  {'t_tab': 105, 't_ker': 57, 't_cok': 154, 't_ech': 1395}
+  gamma=(23, 24, 24) n=71 dim=6512651: layer tests (layer, #cand, rank) = [(1, 8560, 1530), (2, 33623, 33623), (3, 2427, 2427), (4, 3, 3)] -> ker = 0   [721.5s, total 4425s]  {'t_tab': 111, 't_ker': 98, 't_cok': 183, 't_ech': 1705}
+M=14 n=71: 28 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+  gamma=(19, 25, 28) n=72 dim=7: layer tests (layer, #cand, rank) = [] -> ker = 0   [3.9s, total 4429s]  {'t_tab': 111, 't_ker': 98, 't_cok': 183, 't_ech': 1705}
+  gamma=(19, 28, 25) n=72 dim=7: layer tests (layer, #cand, rank) = [] -> ker = 0   [1.2s, total 4430s]  {'t_tab': 111, 't_ker': 98, 't_cok': 183, 't_ech': 1705}
+  gamma=(20, 23, 29) n=72 dim=16: layer tests (layer, #cand, rank) = [] -> ker = 0   [1.5s, total 4431s]  {'t_tab': 111, 't_ker': 98, 't_cok': 183, 't_ech': 1705}
+  gamma=(20, 29, 23) n=72 dim=16: layer tests (layer, #cand, rank) = [(4, 1, 1)] -> ker = 0   [0.0s, total 4431s]  {'t_tab': 111, 't_ker': 98, 't_cok': 183, 't_ech': 1705}
+  gamma=(19, 26, 27) n=72 dim=55: layer tests (layer, #cand, rank) = [(3, 2, 2)] -> ker = 0   [0.0s, total 4431s]  {'t_tab': 111, 't_ker': 98, 't_cok': 183, 't_ech': 1705}
+  gamma=(19, 27, 26) n=72 dim=55: layer tests (layer, #cand, rank) = [(3, 2, 2), (4, 1, 1)] -> ker = 0   [0.0s, total 4431s]  {'t_tab': 111, 't_ker': 98, 't_cok': 183, 't_ech': 1705}
+  gamma=(21, 22, 29) n=72 dim=124: layer tests (layer, #cand, rank) = [(3, 1, 1)] -> ker = 0   [1.5s, total 4433s]  {'t_tab': 111, 't_ker': 98, 't_cok': 183, 't_ech': 1705}
+  gamma=(21, 29, 22) n=72 dim=124: layer tests (layer, #cand, rank) = [(3, 4, 4), (4, 1, 1)] -> ker = 0   [0.4s, total 4433s]  {'t_tab': 111, 't_ker': 98, 't_cok': 183, 't_ech': 1705}
+  gamma=(20, 24, 28) n=72 dim=996: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.8s, total 4434s]  {'t_tab': 111, 't_ker': 98, 't_cok': 183, 't_ech': 1705}
+  gamma=(20, 28, 24) n=72 dim=996: layer tests (layer, #cand, rank) = [(3, 44, 44), (4, 20, 20)] -> ker = 0   [0.3s, total 4434s]  {'t_tab': 111, 't_ker': 98, 't_cok': 183, 't_ech': 1705}
+  gamma=(20, 25, 27) n=72 dim=7386: layer tests (layer, #cand, rank) = [(2, 25, 25), (3, 29, 29)] -> ker = 0   [0.1s, total 4434s]  {'t_tab': 111, 't_ker': 98, 't_cok': 183, 't_ech': 1705}
+  gamma=(20, 27, 25) n=72 dim=7386: layer tests (layer, #cand, rank) = [(2, 52, 52), (3, 200, 200), (4, 40, 40)] -> ker = 0   [0.3s, total 4435s]  {'t_tab': 111, 't_ker': 98, 't_cok': 183, 't_ech': 1705}
+  gamma=(21, 23, 28) n=72 dim=8879: layer tests (layer, #cand, rank) = [(2, 27, 27), (3, 17, 17)] -> ker = 0   [0.1s, total 4435s]  {'t_tab': 111, 't_ker': 98, 't_cok': 183, 't_ech': 1705}
+  gamma=(21, 28, 23) n=72 dim=8879: layer tests (layer, #cand, rank) = [(2, 66, 66), (3, 196, 196), (4, 34, 34)] -> ker = 0   [5.1s, total 4440s]  {'t_tab': 111, 't_ker': 98, 't_cok': 183, 't_ech': 1705}
+  gamma=(20, 26, 26) n=72 dim=13716: layer tests (layer, #cand, rank) = [(1, 1, 1), (2, 83, 83), (3, 172, 172), (4, 13, 13)] -> ker = 0   [1.5s, total 4441s]  {'t_tab': 112, 't_ker': 99, 't_cok': 183, 't_ech': 1705}
+  gamma=(22, 22, 28) n=72 dim=17250: layer tests (layer, #cand, rank) = [(1, 1, 1), (2, 98, 98), (3, 130, 130), (4, 9, 9)] -> ker = 0   [4.2s, total 4446s]  {'t_tab': 112, 't_ker': 99, 't_cok': 183, 't_ech': 1706}
+  gamma=(21, 24, 27) n=72 dim=90083: layer tests (layer, #cand, rank) = [(1, 23, 12), (2, 418, 418), (3, 150, 150), (4, 1, 1)] -> ker = 0   [7.1s, total 4453s]  {'t_tab': 112, 't_ker': 99, 't_cok': 183, 't_ech': 1706}
+  gamma=(21, 27, 24) n=72 dim=90083: layer tests (layer, #cand, rank) = [(1, 27, 27), (2, 696, 694), (3, 1062, 1062), (4, 132, 132)] -> ker = 0   [10.3s, total 4463s]  {'t_tab': 113, 't_ker': 100, 't_cok': 183, 't_ech': 1707}
+  gamma=(21, 25, 26) n=72 dim=260945: layer tests (layer, #cand, rank) = [(1, 121, 57), (2, 1485, 1485), (3, 709, 709), (4, 11, 11)] -> ker = 0   [13.8s, total 4477s]  {'t_tab': 114, 't_ker': 100, 't_cok': 184, 't_ech': 1708}
+  gamma=(21, 26, 25) n=72 dim=260945: layer tests (layer, #cand, rank) = [(1, 124, 85), (2, 1747, 1745), (3, 1499, 1499), (4, 95, 95)] -> ker = 0   [19.5s, total 4496s]  {'t_tab': 114, 't_ker': 101, 't_cok': 184, 't_ech': 1710}
+  gamma=(22, 23, 27) n=72 dim=278358: layer tests (layer, #cand, rank) = [(1, 125, 68), (2, 1455, 1455), (3, 588, 588), (4, 20, 20)] -> ker = 0   [15.5s, total 4512s]  {'t_tab': 115, 't_ker': 101, 't_cok': 184, 't_ech': 1711}
+  gamma=(22, 27, 23) n=72 dim=278358: layer tests (layer, #cand, rank) = [(1, 129, 92), (2, 1753, 1753), (3, 1322, 1322), (4, 99, 99)] -> ker = 0   [18.3s, total 4530s]  {'t_tab': 116, 't_ker': 102, 't_cok': 184, 't_ech': 1712}
+  gamma=(22, 24, 26) n=72 dim=1250299: layer tests (layer, #cand, rank) = [(1, 969, 290), (2, 6957, 6957), (3, 1425, 1425), (4, 17, 17)] -> ker = 0   [47.1s, total 4577s]  {'t_tab': 117, 't_ker': 103, 't_cok': 185, 't_ech': 1716}
+  gamma=(22, 26, 24) n=72 dim=1250299: layer tests (layer, #cand, rank) = [(1, 976, 460), (2, 7648, 7647), (3, 3151, 3151), (4, 146, 146)] -> ker = 0   [79.7s, total 4657s]  {'t_tab': 119, 't_ker': 103, 't_cok': 186, 't_ech': 1736}
+  gamma=(22, 25, 25) n=72 dim=2019041: layer tests (layer, #cand, rank) = [(1, 1814, 519), (2, 11919, 11919), (3, 2762, 2762), (4, 42, 42)] -> ker = 0   [75.9s, total 4733s]  {'t_tab': 121, 't_ker': 105, 't_cok': 186, 't_ech': 1747}
+  gamma=(23, 23, 26) n=72 dim=2055363: layer tests (layer, #cand, rank) = [(1, 1822, 574), (2, 11738, 11738), (3, 2594, 2594), (4, 74, 74)] -> ker = 0   [84.6s, total 4817s]  {'t_tab': 123, 't_ker': 105, 't_cok': 192, 't_ech': 1762}
+  gamma=(23, 24, 25) n=72 dim=5241032: layer tests (layer, #cand, rank) = [(1, 5896, 977), (2, 30537, 30537), (3, 3174, 3174), (4, 21, 21)] -> ker = 0   [385.3s, total 5203s]  {'t_tab': 127, 't_ker': 109, 't_cok': 222, 't_ech': 1901}
+  gamma=(23, 25, 24) n=72 dim=5241032: layer tests (layer, #cand, rank) = [(1, 5896, 1094), (2, 30719, 30719), (3, 3677, 3677), (4, 39, 39)] -> ker = 0   [379.0s, total 5582s]  {'t_tab': 132, 't_ker': 123, 't_cok': 237, 't_ech': 2041}
+  gamma=(24, 24, 24) n=72 dim=8289332: layer tests (layer, #cand, rank) = [(1, 10309, 1281), (2, 48817, 48817), (3, 3444, 3444), (4, 6, 6)] -> ker = 0   [1196.4s, total 6778s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2534}
+M=14 n=72: 29 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+  gamma=(19, 26, 28) n=73 dim=1: layer tests (layer, #cand, rank) = [] -> ker = 0   [3.0s, total 6781s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2534}
+  gamma=(19, 28, 26) n=73 dim=1: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.6s, total 6782s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2534}
+  gamma=(19, 27, 27) n=73 dim=4: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.0s, total 6782s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2534}
+  gamma=(20, 24, 29) n=73 dim=32: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.0s, total 6782s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2534}
+  gamma=(20, 29, 24) n=73 dim=32: layer tests (layer, #cand, rank) = [(4, 2, 2)] -> ker = 0   [0.7s, total 6782s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2534}
+  gamma=(21, 23, 29) n=73 dim=532: layer tests (layer, #cand, rank) = [(3, 1, 1)] -> ker = 0   [3.5s, total 6786s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2534}
+  gamma=(21, 29, 23) n=73 dim=532: layer tests (layer, #cand, rank) = [(3, 21, 21), (4, 8, 8)] -> ker = 0   [1.6s, total 6788s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2534}
+  gamma=(20, 25, 28) n=73 dim=826: layer tests (layer, #cand, rank) = [(3, 2, 2)] -> ker = 0   [0.6s, total 6788s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2534}
+  gamma=(20, 28, 25) n=73 dim=826: layer tests (layer, #cand, rank) = [(3, 35, 35), (4, 20, 20)] -> ker = 0   [3.5s, total 6792s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2534}
+  gamma=(22, 22, 29) n=73 dim=1197: layer tests (layer, #cand, rank) = [(2, 5, 5), (3, 19, 19), (4, 1, 1)] -> ker = 0   [0.8s, total 6792s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2534}
+  gamma=(20, 26, 27) n=73 dim=3311: layer tests (layer, #cand, rank) = [(2, 11, 11), (3, 41, 41), (4, 2, 2)] -> ker = 0   [4.4s, total 6797s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2534}
+  gamma=(20, 27, 26) n=73 dim=3311: layer tests (layer, #cand, rank) = [(2, 16, 16), (3, 93, 93), (4, 21, 21)] -> ker = 0   [1.4s, total 6798s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2534}
+  gamma=(21, 24, 28) n=73 dim=14547: layer tests (layer, #cand, rank) = [(2, 43, 43), (3, 26, 26)] -> ker = 0   [1.0s, total 6799s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2534}
+  gamma=(21, 28, 24) n=73 dim=14547: layer tests (layer, #cand, rank) = [(2, 101, 101), (3, 361, 361), (4, 86, 86)] -> ker = 0   [3.5s, total 6803s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2534}
+  gamma=(22, 23, 28) n=73 dim=51083: layer tests (layer, #cand, rank) = [(1, 7, 4), (2, 241, 241), (3, 196, 196), (4, 10, 10)] -> ker = 0   [7.6s, total 6810s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2535}
+  gamma=(22, 28, 23) n=73 dim=51083: layer tests (layer, #cand, rank) = [(1, 8, 8), (2, 328, 327), (3, 525, 525), (4, 67, 67)] -> ker = 0   [7.1s, total 6817s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2535}
+  gamma=(21, 25, 27) n=73 dim=81069: layer tests (layer, #cand, rank) = [(1, 15, 5), (2, 392, 391), (3, 250, 250), (4, 3, 3)] -> ker = 0   [8.4s, total 6826s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2537}
+  gamma=(21, 27, 25) n=73 dim=81069: layer tests (layer, #cand, rank) = [(1, 17, 17), (2, 577, 573), (3, 1074, 1074), (4, 158, 158)] -> ker = 0   [5.8s, total 6832s]  {'t_tab': 143, 't_ker': 254, 't_cok': 354, 't_ech': 2537}
+  gamma=(21, 26, 26) n=73 dim=139297: layer tests (layer, #cand, rank) = [(1, 41, 24), (2, 850, 848), (3, 894, 894), (4, 59, 59)] -> ker = 0   [11.5s, total 6843s]  {'t_tab': 143, 't_ker': 255, 't_cok': 354, 't_ech': 2537}
+  gamma=(22, 24, 27) n=73 dim=429454: layer tests (layer, #cand, rank) = [(1, 191, 66), (2, 2324, 2324), (3, 785, 785), (4, 20, 20)] -> ker = 0   [22.1s, total 6865s]  {'t_tab': 144, 't_ker': 255, 't_cok': 355, 't_ech': 2539}
+  gamma=(22, 27, 24) n=73 dim=429454: layer tests (layer, #cand, rank) = [(1, 197, 136), (2, 2826, 2824), (3, 2480, 2480), (4, 246, 246)] -> ker = 0   [31.8s, total 6897s]  {'t_tab': 144, 't_ker': 256, 't_cok': 355, 't_ech': 2541}
+  gamma=(23, 23, 27) n=73 dim=726394: layer tests (layer, #cand, rank) = [(1, 401, 176), (2, 4272, 4272), (3, 1928, 1928), (4, 116, 116)] -> ker = 0   [36.3s, total 6933s]  {'t_tab': 145, 't_ker': 256, 't_cok': 355, 't_ech': 2543}
+  gamma=(22, 25, 26) n=73 dim=1155566: layer tests (layer, #cand, rank) = [(1, 760, 187), (2, 6963, 6962), (3, 2102, 2102), (4, 41, 41)] -> ker = 0   [56.7s, total 6990s]  {'t_tab': 147, 't_ker': 257, 't_cok': 356, 't_ech': 2546}
+  gamma=(22, 26, 25) n=73 dim=1155566: layer tests (layer, #cand, rank) = [(1, 763, 304), (2, 7346, 7344), (3, 3526, 3526), (4, 185, 185)] -> ker = 0   [74.6s, total 7065s]  {'t_tab': 148, 't_ker': 257, 't_cok': 356, 't_ech': 2561}
+  gamma=(23, 24, 26) n=73 dim=3084095: layer tests (layer, #cand, rank) = [(1, 2679, 491), (2, 18919, 18919), (3, 3317, 3317), (4, 76, 76)] -> ker = 0   [141.7s, total 7206s]  {'t_tab': 152, 't_ker': 260, 't_cok': 365, 't_ech': 2592}
+  gamma=(23, 26, 24) n=73 dim=3084095: layer tests (layer, #cand, rank) = [(1, 2680, 664), (2, 19263, 19262), (3, 4610, 4610), (4, 172, 172)] -> ker = 0   [269.3s, total 7476s]  {'t_tab': 158, 't_ker': 263, 't_cok': 375, 't_ech': 2710}
+  gamma=(23, 25, 25) n=73 dim=4898031: layer tests (layer, #cand, rank) = [(1, 4815, 730), (2, 30965, 30965), (3, 4611, 4611), (4, 66, 66)] -> ker = 0   [268.5s, total 7744s]  {'t_tab': 160, 't_ker': 265, 't_cok': 375, 't_ech': 2790}
+  gamma=(24, 24, 25) n=73 dim=7771395: layer tests (layer, #cand, rank) = [(1, 8505, 934), (2, 49628, 49628), (3, 4874, 4874), (4, 42, 42)] -> ker = 0   [789.9s, total 8534s]  {'t_tab': 167, 't_ker': 290, 't_cok': 440, 't_ech': 3090}
+M=14 n=73: 28 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+  gamma=(21, 23, 30) n=74 dim=7: layer tests (layer, #cand, rank) = [] -> ker = 0   [7.1s, total 8541s]  {'t_tab': 167, 't_ker': 290, 't_cok': 440, 't_ech': 3090}
+  gamma=(21, 30, 23) n=74 dim=7: layer tests (layer, #cand, rank) = [] -> ker = 0   [1.8s, total 8543s]  {'t_tab': 167, 't_ker': 290, 't_cok': 440, 't_ech': 3090}
+  gamma=(22, 22, 30) n=74 dim=23: layer tests (layer, #cand, rank) = [(3, 1, 1)] -> ker = 0   [1.3s, total 8544s]  {'t_tab': 167, 't_ker': 290, 't_cok': 440, 't_ech': 3090}
+  gamma=(20, 25, 29) n=74 dim=32: layer tests (layer, #cand, rank) = [] -> ker = 0   [2.3s, total 8547s]  {'t_tab': 167, 't_ker': 290, 't_cok': 440, 't_ech': 3090}
+  gamma=(20, 29, 25) n=74 dim=32: layer tests (layer, #cand, rank) = [(4, 2, 2)] -> ker = 0   [0.0s, total 8547s]  {'t_tab': 167, 't_ker': 290, 't_cok': 440, 't_ech': 3090}
+  gamma=(20, 26, 28) n=74 dim=407: layer tests (layer, #cand, rank) = [(3, 4, 4)] -> ker = 0   [0.0s, total 8547s]  {'t_tab': 167, 't_ker': 290, 't_cok': 440, 't_ech': 3090}
+  gamma=(20, 28, 26) n=74 dim=407: layer tests (layer, #cand, rank) = [(3, 15, 15), (4, 12, 12)] -> ker = 0   [0.0s, total 8547s]  {'t_tab': 167, 't_ker': 290, 't_cok': 440, 't_ech': 3090}
+  gamma=(20, 27, 27) n=74 dim=863: layer tests (layer, #cand, rank) = [(2, 2, 2), (3, 23, 23), (4, 6, 6)] -> ker = 0   [0.0s, total 8547s]  {'t_tab': 167, 't_ker': 290, 't_cok': 440, 't_ech': 3090}
+  gamma=(21, 24, 29) n=74 dim=1192: layer tests (layer, #cand, rank) = [(3, 1, 1)] -> ker = 0   [4.9s, total 8552s]  {'t_tab': 167, 't_ker': 290, 't_cok': 440, 't_ech': 3090}
+  gamma=(21, 29, 24) n=74 dim=1192: layer tests (layer, #cand, rank) = [(3, 48, 48), (4, 26, 26)] -> ker = 0   [1.8s, total 8553s]  {'t_tab': 167, 't_ker': 290, 't_cok': 440, 't_ech': 3090}
+  gamma=(22, 23, 29) n=74 dim=5252: layer tests (layer, #cand, rank) = [(2, 15, 15), (3, 36, 36), (4, 2, 2)] -> ker = 0   [2.6s, total 8556s]  {'t_tab': 167, 't_ker': 290, 't_cok': 440, 't_ech': 3090}
+  gamma=(22, 29, 23) n=74 dim=5252: layer tests (layer, #cand, rank) = [(2, 26, 26), (3, 109, 109), (4, 22, 22)] -> ker = 0   [7.1s, total 8563s]  {'t_tab': 167, 't_ker': 290, 't_cok': 440, 't_ech': 3090}
+  gamma=(21, 25, 28) n=74 dim=15632: layer tests (layer, #cand, rank) = [(2, 47, 44), (3, 53, 53)] -> ker = 0   [3.5s, total 8567s]  {'t_tab': 168, 't_ker': 290, 't_cok': 440, 't_ech': 3090}
+  gamma=(21, 28, 25) n=74 dim=15632: layer tests (layer, #cand, rank) = [(2, 94, 94), (3, 414, 413), (4, 124, 124)] -> ker = 0   [8.1s, total 8575s]  {'t_tab': 168, 't_ker': 290, 't_cok': 440, 't_ech': 3090}
+  gamma=(21, 26, 27) n=74 dim=49868: layer tests (layer, #cand, rank) = [(1, 6, 2), (2, 244, 238), (3, 348, 348), (4, 21, 21)] -> ker = 0   [6.0s, total 8581s]  {'t_tab': 168, 't_ker': 290, 't_cok': 440, 't_ech': 3090}
+  gamma=(21, 27, 26) n=74 dim=49868: layer tests (layer, #cand, rank) = [(1, 6, 6), (2, 302, 296), (3, 715, 715), (4, 118, 118)] -> ker = 0   [10.5s, total 8591s]  {'t_tab': 168, 't_ker': 290, 't_cok': 440, 't_ech': 3091}
+  gamma=(22, 24, 28) n=74 dim=97530: layer tests (layer, #cand, rank) = [(1, 15, 4), (2, 446, 446), (3, 278, 278), (4, 10, 10)] -> ker = 0   [10.8s, total 8602s]  {'t_tab': 171, 't_ker': 292, 't_cok': 442, 't_ech': 3092}
+  gamma=(22, 28, 24) n=74 dim=97530: layer tests (layer, #cand, rank) = [(1, 17, 17), (2, 638, 634), (3, 1203, 1203), (4, 212, 212)] -> ker = 0   [10.1s, total 8612s]  {'t_tab': 172, 't_ker': 292, 't_cok': 442, 't_ech': 3093}
+  gamma=(23, 23, 28) n=74 dim=172604: layer tests (layer, #cand, rank) = [(1, 42, 26), (2, 960, 959), (3, 919, 919), (4, 92, 92)] -> ker = 0   [20.2s, total 8632s]  {'t_tab': 172, 't_ker': 292, 't_cok': 442, 't_ech': 3094}
+  gamma=(22, 25, 27) n=74 dim=465839: layer tests (layer, #cand, rank) = [(1, 179, 40), (2, 2622, 2617), (3, 1143, 1143), (4, 30, 30)] -> ker = 0   [33.2s, total 8666s]  {'t_tab': 173, 't_ker': 292, 't_cok': 442, 't_ech': 3097}
+  gamma=(22, 27, 25) n=74 dim=465839: layer tests (layer, #cand, rank) = [(1, 183, 116), (2, 3035, 3028), (3, 3143, 3143), (4, 369, 369)] -> ker = 0   [42.4s, total 8708s]  {'t_tab': 174, 't_ker': 293, 't_cok': 443, 't_ech': 3101}
+  gamma=(22, 26, 26) n=74 dim=766035: layer tests (layer, #cand, rank) = [(1, 372, 117), (2, 4762, 4756), (3, 2802, 2802), (4, 161, 161)] -> ker = 0   [54.3s, total 8762s]  {'t_tab': 174, 't_ker': 293, 't_cok': 443, 't_ech': 3107}
+  gamma=(23, 24, 27) n=74 dim=1302530: layer tests (layer, #cand, rank) = [(1, 746, 175), (2, 7848, 7848), (3, 2541, 2541), (4, 120, 120)] -> ker = 0   [64.8s, total 8827s]  {'t_tab': 175, 't_ker': 294, 't_cok': 444, 't_ech': 3109}
+  gamma=(23, 27, 24) n=74 dim=1302530: layer tests (layer, #cand, rank) = [(1, 748, 285), (2, 8195, 8193), (3, 4153, 4153), (4, 332, 332)] -> ker = 0   [94.7s, total 8922s]  {'t_tab': 176, 't_ker': 294, 't_cok': 445, 't_ech': 3129}
+  gamma=(23, 25, 26) n=74 dim=3353601: layer tests (layer, #cand, rank) = [(1, 2604, 353), (2, 21632, 21631), (3, 4566, 4566), (4, 115, 115)] -> ker = 0   [178.0s, total 9100s]  {'t_tab': 179, 't_ker': 295, 't_cok': 449, 't_ech': 3153}
+  gamma=(23, 26, 25) n=74 dim=3353601: layer tests (layer, #cand, rank) = [(1, 2605, 515), (2, 21899, 21897), (3, 6143, 6143), (4, 267, 267)] -> ker = 0   [284.8s, total 9385s]  {'t_tab': 180, 't_ker': 296, 't_cok': 449, 't_ech': 3277}
+  gamma=(24, 24, 26) n=74 dim=5371214: layer tests (layer, #cand, rank) = [(1, 4729, 601), (2, 35336, 35335), (3, 6044, 6044), (4, 180, 180)] -> ker = 0   [626.6s, total 10011s]  {'t_tab': 184, 't_ker': 299, 't_cok': 477, 't_ech': 3606}
+  gamma=(24, 25, 25) n=74 dim=8455776: layer tests (layer, #cand, rank) = [(1, 8362, 703), (2, 56943, 56943), (3, 6725, 6725), (4, 89, 89)] -> ker = 0   [771.1s, total 10782s]  {'t_tab': 191, 't_ker': 330, 't_cok': 500, 't_ech': 3869}
+M=14 n=74: 28 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+time limit reached before (20, 26, 29)
+M=14 from a=10: I-letters [(13, 0), (13, 1), (13, 2), (12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+  gamma=(20, 26, 29) n=75 dim=16: layer tests (layer, #cand, rank) = [] -> ker = 0   [11.5s, total 12s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(20, 29, 26) n=75 dim=16: layer tests (layer, #cand, rank) = [(4, 1, 1)] -> ker = 0   [7.9s, total 20s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(21, 24, 30) n=75 dim=31: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.0s, total 20s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(21, 30, 24) n=75 dim=31: layer tests (layer, #cand, rank) = [(4, 2, 2)] -> ker = 0   [10.7s, total 30s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(20, 27, 28) n=75 dim=106: layer tests (layer, #cand, rank) = [(3, 2, 2), (4, 1, 1)] -> ker = 0   [0.0s, total 30s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(20, 28, 27) n=75 dim=106: layer tests (layer, #cand, rank) = [(3, 2, 2), (4, 4, 4)] -> ker = 0   [0.0s, total 30s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(22, 23, 30) n=75 dim=222: layer tests (layer, #cand, rank) = [(3, 3, 3)] -> ker = 0   [0.0s, total 30s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(22, 30, 23) n=75 dim=222: layer tests (layer, #cand, rank) = [(3, 8, 8), (4, 3, 3)] -> ker = 0   [10.6s, total 41s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(21, 25, 29) n=75 dim=1595: layer tests (layer, #cand, rank) = [(3, 5, 5)] -> ker = 0   [11.0s, total 52s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(21, 29, 25) n=75 dim=1595: layer tests (layer, #cand, rank) = [(3, 63, 63), (4, 44, 44)] -> ker = 0   [11.7s, total 64s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(21, 26, 28) n=75 dim=11123: layer tests (layer, #cand, rank) = [(2, 32, 27), (3, 81, 81), (4, 3, 3)] -> ker = 0   [21.6s, total 85s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(21, 28, 26) n=75 dim=11123: layer tests (layer, #cand, rank) = [(2, 52, 52), (3, 301, 300), (4, 111, 111)] -> ker = 0   [12.1s, total 98s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(22, 24, 29) n=75 dim=13232: layer tests (layer, #cand, rank) = [(2, 35, 31), (3, 59, 59), (4, 2, 2)] -> ker = 0   [11.1s, total 109s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(22, 29, 24) n=75 dim=13232: layer tests (layer, #cand, rank) = [(2, 68, 68), (3, 314, 314), (4, 94, 94)] -> ker = 0   [13.1s, total 122s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(21, 27, 27) n=75 dim=20323: layer tests (layer, #cand, rank) = [(1, 1, 1), (2, 93, 86), (3, 305, 305), (4, 54, 54)] -> ker = 0   [12.8s, total 135s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 3}
+  gamma=(23, 23, 29) n=75 dim=25241: layer tests (layer, #cand, rank) = [(1, 1, 1), (2, 113, 111), (3, 260, 260), (4, 38, 38)] -> ker = 0   [15.3s, total 150s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 4}
+  gamma=(22, 25, 28) n=75 dim=126395: layer tests (layer, #cand, rank) = [(1, 17, 1), (2, 580, 569), (3, 441, 441), (4, 12, 12)] -> ker = 0   [20.6s, total 171s]  {'t_tab': 7, 't_ker': 1, 't_cok': 0, 't_ech': 6}
+  gamma=(22, 28, 25) n=75 dim=126395: layer tests (layer, #cand, rank) = [(1, 19, 19), (2, 786, 778), (3, 1762, 1761), (4, 383, 383)] -> ker = 0   [28.6s, total 199s]  {'t_tab': 8, 't_ker': 1, 't_cok': 0, 't_ech': 8}
+  gamma=(22, 26, 27) n=75 dim=358020: layer tests (layer, #cand, rank) = [(1, 101, 22), (2, 2010, 1992), (3, 1579, 1579), (4, 94, 94)] -> ker = 0   [36.2s, total 235s]  {'t_tab': 8, 't_ker': 1, 't_cok': 0, 't_ech': 12}
+  gamma=(22, 27, 26) n=75 dim=358020: layer tests (layer, #cand, rank) = [(1, 102, 56), (2, 2182, 2167), (3, 2743, 2743), (4, 364, 364)] -> ker = 0   [43.5s, total 279s]  {'t_tab': 9, 't_ker': 2, 't_cok': 0, 't_ech': 17}
+  gamma=(23, 24, 28) n=75 dim=380660: layer tests (layer, #cand, rank) = [(1, 109, 34), (2, 2065, 2060), (3, 1338, 1338), (4, 100, 100)] -> ker = 0   [39.6s, total 318s]  {'t_tab': 9, 't_ker': 3, 't_cok': 0, 't_ech': 21}
+  gamma=(23, 28, 24) n=75 dim=380660: layer tests (layer, #cand, rank) = [(1, 110, 67), (2, 2270, 2265), (3, 2484, 2484), (4, 343, 343)] -> ker = 0   [43.9s, total 362s]  {'t_tab': 10, 't_ker': 3, 't_cok': 1, 't_ech': 27}
+  gamma=(23, 25, 27) n=75 dim=1661475: layer tests (layer, #cand, rank) = [(1, 878, 118), (2, 10273, 10267), (3, 3447, 3447), (4, 144, 144)] -> ker = 0   [130.1s, total 492s]  {'t_tab': 12, 't_ker': 4, 't_cok': 2, 't_ech': 58}
+  gamma=(23, 27, 25) n=75 dim=1661475: layer tests (layer, #cand, rank) = [(1, 880, 287), (2, 10670, 10663), (3, 6264, 6264), (4, 597, 597)] -> ker = 0   [153.6s, total 646s]  {'t_tab': 14, 't_ker': 6, 't_cok': 3, 't_ech': 95}
+  gamma=(23, 26, 26) n=75 dim=2660986: layer tests (layer, #cand, rank) = [(1, 1660, 258), (2, 17312, 17305), (3, 6156, 6156), (4, 319, 319)] -> ker = 0   [242.9s, total 889s]  {'t_tab': 16, 't_ker': 8, 't_cok': 3, 't_ech': 173}
+  gamma=(24, 24, 27) n=75 dim=2706442: layer tests (layer, #cand, rank) = [(1, 1688, 307), (2, 17391, 17389), (3, 5781, 5781), (4, 368, 368)] -> ker = 0   [289.3s, total 1178s]  {'t_tab': 20, 't_ker': 10, 't_cok': 8, 't_ech': 286}
+  gamma=(24, 25, 26) n=75 dim=6795867: layer tests (layer, #cand, rank) = [(1, 5569, 438), (2, 46227, 46225), (3, 7997, 7997), (4, 228, 228)] -> ker = 0   [1039.5s, total 2218s]  {'t_tab': 27, 't_ker': 14, 't_cok': 38, 't_ech': 813}
+  gamma=(24, 26, 25) n=75 dim=6795867: layer tests (layer, #cand, rank) = [(1, 5569, 520), (2, 46310, 46308), (3, 8916, 8916), (4, 316, 316)] -> ker = 0   [1069.5s, total 3287s]  {'t_tab': 33, 't_ker': 32, 't_cok': 55, 't_ech': 1387}
+  gamma=(25, 25, 25) n=75 dim=10671314: layer tests (layer, #cand, rank) = [(1, 9839, 540), (2, 74483, 74483), (3, 9285, 9285), (4, 147, 147)] -> ker = 0   [1725.4s, total 5013s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1912}
+M=14 n=75: 29 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+  gamma=(22, 23, 31) n=76 dim=1: layer tests (layer, #cand, rank) = [] -> ker = 0   [10.5s, total 5023s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1912}
+  gamma=(22, 31, 23) n=76 dim=1: layer tests (layer, #cand, rank) = [] -> ker = 0   [4.8s, total 5028s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1912}
+  gamma=(20, 27, 29) n=76 dim=3: layer tests (layer, #cand, rank) = [] -> ker = 0   [4.3s, total 5032s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1912}
+  gamma=(20, 29, 27) n=76 dim=3: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.0s, total 5032s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1912}
+  gamma=(20, 28, 28) n=76 dim=10: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.0s, total 5032s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1912}
+  gamma=(21, 25, 30) n=76 dim=58: layer tests (layer, #cand, rank) = [] -> ker = 0   [1.7s, total 5034s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1912}
+  gamma=(21, 30, 25) n=76 dim=58: layer tests (layer, #cand, rank) = [(4, 4, 4)] -> ker = 0   [4.9s, total 5039s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1912}
+  gamma=(22, 24, 30) n=76 dim=868: layer tests (layer, #cand, rank) = [(3, 4, 4)] -> ker = 0   [4.9s, total 5044s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1912}
+  gamma=(22, 30, 24) n=76 dim=868: layer tests (layer, #cand, rank) = [(3, 31, 31), (4, 20, 20)] -> ker = 0   [10.8s, total 5055s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1912}
+  gamma=(21, 26, 29) n=76 dim=1328: layer tests (layer, #cand, rank) = [(3, 8, 8)] -> ker = 0   [4.1s, total 5059s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1912}
+  gamma=(21, 29, 26) n=76 dim=1328: layer tests (layer, #cand, rank) = [(3, 47, 47), (4, 46, 46)] -> ker = 0   [5.7s, total 5064s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1912}
+  gamma=(23, 23, 30) n=76 dim=1902: layer tests (layer, #cand, rank) = [(2, 4, 4), (3, 35, 35), (4, 7, 7)] -> ker = 0   [7.2s, total 5072s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1912}
+  gamma=(21, 27, 28) n=76 dim=5102: layer tests (layer, #cand, rank) = [(2, 14, 12), (3, 72, 72), (4, 13, 13)] -> ker = 0   [5.8s, total 5077s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1912}
+  gamma=(21, 28, 27) n=76 dim=5102: layer tests (layer, #cand, rank) = [(2, 17, 17), (3, 132, 132), (4, 60, 60)] -> ker = 0   [10.1s, total 5088s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1912}
+  gamma=(22, 25, 29) n=76 dim=21216: layer tests (layer, #cand, rank) = [(2, 57, 40), (3, 118, 118), (4, 2, 2)] -> ker = 0   [6.2s, total 5094s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1913}
+  gamma=(22, 29, 25) n=76 dim=21216: layer tests (layer, #cand, rank) = [(2, 101, 101), (3, 539, 537), (4, 213, 213)] -> ker = 0   [12.2s, total 5106s]  {'t_tab': 51, 't_ker': 173, 't_cok': 186, 't_ech': 1913}
+  gamma=(23, 24, 29) n=76 dim=72113: layer tests (layer, #cand, rank) = [(1, 6, 3), (2, 302, 290), (3, 450, 450), (4, 47, 47)] -> ker = 0   [11.0s, total 5117s]  {'t_tab': 52, 't_ker': 174, 't_cok': 187, 't_ech': 1915}
+  gamma=(23, 29, 24) n=76 dim=72113: layer tests (layer, #cand, rank) = [(1, 6, 6), (2, 367, 360), (3, 906, 906), (4, 201, 201)] -> ker = 0   [13.9s, total 5131s]  {'t_tab': 52, 't_ker': 174, 't_cok': 187, 't_ech': 1917}
+  gamma=(22, 26, 28) n=76 dim=113465: layer tests (layer, #cand, rank) = [(1, 11, 0), (2, 503, 454), (3, 666, 666), (4, 32, 32)] -> ker = 0   [13.3s, total 5144s]  {'t_tab': 54, 't_ker': 175, 't_cok': 188, 't_ech': 1919}
+  gamma=(22, 28, 26) n=76 dim=113465: layer tests (layer, #cand, rank) = [(1, 12, 12), (2, 627, 613), (3, 1716, 1714), (4, 447, 447)] -> ker = 0   [21.3s, total 5165s]  {'t_tab': 54, 't_ker': 175, 't_cok': 188, 't_ech': 1920}
+  gamma=(22, 27, 27) n=76 dim=192764: layer tests (layer, #cand, rank) = [(1, 30, 12), (2, 1021, 988), (3, 1664, 1664), (4, 235, 235)] -> ker = 0   [22.1s, total 5188s]  {'t_tab': 55, 't_ker': 177, 't_cok': 188, 't_ech': 1924}
+  gamma=(23, 25, 28) n=76 dim=579022: layer tests (layer, #cand, rank) = [(1, 161, 22), (2, 3153, 3126), (3, 1929, 1929), (4, 111, 111)] -> ker = 0   [50.7s, total 5238s]  {'t_tab': 56, 't_ker': 177, 't_cok': 188, 't_ech': 1930}
+  gamma=(23, 28, 25) n=76 dim=579022: layer tests (layer, #cand, rank) = [(1, 163, 94), (2, 3463, 3449), (3, 4382, 4381), (4, 755, 755)] -> ker = 0   [70.5s, total 5309s]  {'t_tab': 56, 't_ker': 177, 't_cok': 189, 't_ech': 1938}
+  gamma=(24, 24, 28) n=76 dim=969177: layer tests (layer, #cand, rank) = [(1, 347, 102), (2, 5710, 5701), (3, 3923, 3923), (4, 423, 423)] -> ker = 0   [95.8s, total 5405s]  {'t_tab': 57, 't_ker': 178, 't_cok': 190, 't_ech': 1954}
+  gamma=(23, 26, 27) n=76 dim=1530322: layer tests (layer, #cand, rank) = [(1, 662, 78), (2, 9361, 9332), (3, 4667, 4667), (4, 286, 286)] -> ker = 0   [136.4s, total 5541s]  {'t_tab': 58, 't_ker': 178, 't_cok': 191, 't_ech': 1982}
+  gamma=(23, 27, 26) n=76 dim=1530322: layer tests (layer, #cand, rank) = [(1, 663, 173), (2, 9572, 9549), (3, 6789, 6789), (4, 747, 747)] -> ker = 0   [138.6s, total 5680s]  {'t_tab': 58, 't_ker': 178, 't_cok': 191, 't_ech': 2008}
+  gamma=(24, 25, 27) n=76 dim=4013453: layer tests (layer, #cand, rank) = [(1, 2424, 219), (2, 26276, 26268), (3, 7661, 7661), (4, 412, 412)] -> ker = 0   [519.7s, total 6199s]  {'t_tab': 63, 't_ker': 181, 't_cok': 200, 't_ech': 2254}
+  gamma=(24, 27, 25) n=76 dim=4013453: layer tests (layer, #cand, rank) = [(1, 2424, 345), (2, 26443, 26436), (3, 9760, 9760), (4, 748, 748)] -> ker = 0   [487.7s, total 6687s]  {'t_tab': 66, 't_ker': 184, 't_cok': 211, 't_ech': 2459}
+  gamma=(24, 26, 26) n=76 dim=6327736: layer tests (layer, #cand, rank) = [(1, 4410, 325), (2, 42962, 42954), (3, 10626, 10626), (4, 493, 493)] -> ker = 0   [915.9s, total 7603s]  {'t_tab': 68, 't_ker': 186, 't_cok': 211, 't_ech': 2895}
+  gamma=(25, 25, 26) n=76 dim=9967147: layer tests (layer, #cand, rank) = [(1, 7892, 386), (2, 69590, 69587), (3, 12030, 12030), (4, 382, 382)] -> ker = 0   [2015.5s, total 9618s]  {'t_tab': 76, 't_ker': 211, 't_cok': 272, 't_ech': 3906}
+M=14 n=76: 30 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+time limit reached before (22, 24, 31)
+M=14 from a=10: I-letters [(13, 0), (13, 1), (13, 2), (12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+  gamma=(22, 24, 31) n=77 dim=15: layer tests (layer, #cand, rank) = [] -> ker = 0   [13.2s, total 14s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(22, 31, 24) n=77 dim=15: layer tests (layer, #cand, rank) = [(4, 1, 1)] -> ker = 0   [19.7s, total 33s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(23, 23, 31) n=77 dim=46: layer tests (layer, #cand, rank) = [(3, 1, 1), (4, 1, 1)] -> ker = 0   [11.6s, total 45s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(21, 26, 30) n=77 dim=58: layer tests (layer, #cand, rank) = [] -> ker = 0   [7.7s, total 52s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(21, 30, 26) n=77 dim=58: layer tests (layer, #cand, rank) = [(4, 4, 4)] -> ker = 0   [4.0s, total 57s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(21, 27, 29) n=77 dim=674: layer tests (layer, #cand, rank) = [(3, 7, 7), (4, 1, 1)] -> ker = 0   [7.5s, total 64s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(21, 29, 27) n=77 dim=674: layer tests (layer, #cand, rank) = [(3, 19, 19), (4, 28, 28)] -> ker = 0   [3.9s, total 68s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(21, 28, 28) n=77 dim=1396: layer tests (layer, #cand, rank) = [(2, 3, 3), (3, 32, 32), (4, 18, 18)] -> ker = 0   [7.5s, total 75s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(22, 25, 30) n=77 dim=1860: layer tests (layer, #cand, rank) = [(3, 10, 10)] -> ker = 0   [3.9s, total 79s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(22, 30, 25) n=77 dim=1860: layer tests (layer, #cand, rank) = [(3, 66, 66), (4, 57, 57)] -> ker = 0   [12.0s, total 91s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(23, 24, 30) n=77 dim=7836: layer tests (layer, #cand, rank) = [(2, 18, 15), (3, 77, 77), (4, 11, 11)] -> ker = 0   [22.9s, total 114s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(23, 30, 24) n=77 dim=7836: layer tests (layer, #cand, rank) = [(2, 26, 26), (3, 168, 168), (4, 63, 63)] -> ker = 0   [12.1s, total 126s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(22, 26, 29) n=77 dim=22630: layer tests (layer, #cand, rank) = [(2, 56, 32), (3, 180, 180), (4, 5, 5)] -> ker = 0   [12.5s, total 139s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 3}
+  gamma=(22, 29, 26) n=77 dim=22630: layer tests (layer, #cand, rank) = [(2, 89, 89), (3, 587, 583), (4, 297, 297), (5, 1, 1)] -> ker = 0   [13.6s, total 152s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 4}
+  gamma=(22, 27, 28) n=77 dim=70283: layer tests (layer, #cand, rank) = [(1, 3, 0), (2, 283, 232), (3, 719, 719), (4, 92, 92)] -> ker = 0   [15.3s, total 168s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 5}
+  gamma=(22, 28, 27) n=77 dim=70283: layer tests (layer, #cand, rank) = [(1, 3, 3), (2, 320, 300), (3, 1125, 1124), (4, 336, 336)] -> ker = 0   [18.6s, total 186s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 7}
+  gamma=(23, 25, 29) n=77 dim=134766: layer tests (layer, #cand, rank) = [(1, 11, 1), (2, 559, 505), (3, 762, 762), (4, 51, 51)] -> ker = 0   [18.2s, total 205s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 9}
+  gamma=(23, 29, 25) n=77 dim=134766: layer tests (layer, #cand, rank) = [(1, 12, 12), (2, 688, 672), (3, 1917, 1915), (4, 555, 555), (5, 1, 1)] -> ker = 0   [24.5s, total 229s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 11}
+  gamma=(24, 24, 29) n=77 dim=235505: layer tests (layer, #cand, rank) = [(1, 33, 17), (2, 1160, 1137), (3, 1747, 1747), (4, 291, 291)] -> ker = 0   [30.0s, total 259s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 14}
+  gamma=(23, 26, 28) n=77 dim=623963: layer tests (layer, #cand, rank) = [(1, 145, 12), (2, 3304, 3216), (3, 2721, 2721), (4, 178, 178)] -> ker = 0   [50.7s, total 310s]  {'t_tab': 7, 't_ker': 1, 't_cok': 0, 't_ech': 20}
+  gamma=(23, 28, 26) n=77 dim=623963: layer tests (layer, #cand, rank) = [(1, 146, 76), (2, 3544, 3510), (3, 5322, 5320), (4, 1091, 1091), (5, 1, 1)] -> ker = 0   [73.2s, total 383s]  {'t_tab': 8, 't_ker': 1, 't_cok': 0, 't_ech': 29}
+  gamma=(23, 27, 27) n=77 dim=1017036: layer tests (layer, #cand, rank) = [(1, 306, 56), (2, 5859, 5795), (3, 5408, 5408), (4, 651, 651)] -> ker = 0   [84.9s, total 468s]  {'t_tab': 8, 't_ker': 2, 't_cok': 0, 't_ech': 37}
+  gamma=(24, 25, 28) n=77 dim=1710690: layer tests (layer, #cand, rank) = [(1, 637, 77), (2, 10144, 10108), (3, 5575, 5575), (4, 471, 471)] -> ker = 0   [145.9s, total 614s]  {'t_tab': 10, 't_ker': 3, 't_cok': 1, 't_ech': 75}
+  gamma=(24, 28, 25) n=77 dim=1710690: layer tests (layer, #cand, rank) = [(1, 637, 165), (2, 10326, 10307), (3, 7864, 7863), (4, 1074, 1074)] -> ker = 0   [179.3s, total 793s]  {'t_tab': 12, 't_ker': 5, 't_cok': 2, 't_ech': 120}
+  gamma=(24, 26, 27) n=77 dim=4337353: layer tests (layer, #cand, rank) = [(1, 2292, 147), (2, 28044, 28011), (3, 10139, 10139), (4, 640, 640)] -> ker = 0   [385.2s, total 1178s]  {'t_tab': 14, 't_ker': 6, 't_cok': 6, 't_ech': 281}
+  gamma=(24, 27, 26) n=77 dim=4337353: layer tests (layer, #cand, rank) = [(1, 2292, 249), (2, 28169, 28144), (3, 12496, 12496), (4, 1132, 1132)] -> ker = 0   [377.1s, total 1555s]  {'t_tab': 15, 't_ker': 8, 't_cok': 6, 't_ech': 430}
+  gamma=(25, 25, 27) n=77 dim=6894058: layer tests (layer, #cand, rank) = [(1, 4228, 260), (2, 46217, 46204), (3, 13422, 13422), (4, 850, 850)] -> ker = 0   [849.4s, total 2405s]  {'t_tab': 19, 't_ker': 12, 't_cok': 26, 't_ech': 870}
+  gamma=(25, 26, 26) n=77 dim=10780032: layer tests (layer, #cand, rank) = [(1, 7572, 272), (2, 74751, 74741), (3, 15790, 15790), (4, 676, 676)] -> ker = 0   [1694.7s, total 4099s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1695}
+M=14 n=77: 28 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+  gamma=(21, 27, 30) n=78 dim=31: layer tests (layer, #cand, rank) = [] -> ker = 0   [8.2s, total 4108s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1695}
+  gamma=(21, 30, 27) n=78 dim=31: layer tests (layer, #cand, rank) = [(4, 2, 2)] -> ker = 0   [3.5s, total 4111s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1695}
+  gamma=(22, 25, 31) n=78 dim=55: layer tests (layer, #cand, rank) = [] -> ker = 0   [8.0s, total 4119s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1695}
+  gamma=(22, 31, 25) n=78 dim=55: layer tests (layer, #cand, rank) = [(4, 4, 4)] -> ker = 0   [5.3s, total 4124s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1695}
+  gamma=(21, 28, 29) n=78 dim=189: layer tests (layer, #cand, rank) = [(3, 4, 4), (4, 2, 2)] -> ker = 0   [6.2s, total 4131s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1695}
+  gamma=(21, 29, 28) n=78 dim=189: layer tests (layer, #cand, rank) = [(3, 4, 4), (4, 8, 8)] -> ker = 0   [5.4s, total 4136s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1695}
+  gamma=(23, 24, 31) n=78 dim=372: layer tests (layer, #cand, rank) = [(3, 4, 4), (4, 1, 1)] -> ker = 0   [6.6s, total 4142s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1695}
+  gamma=(23, 31, 24) n=78 dim=372: layer tests (layer, #cand, rank) = [(3, 10, 10), (4, 10, 10)] -> ker = 0   [10.9s, total 4153s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1695}
+  gamma=(22, 26, 30) n=78 dim=2446: layer tests (layer, #cand, rank) = [(3, 18, 18)] -> ker = 0   [11.7s, total 4165s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1695}
+  gamma=(22, 30, 26) n=78 dim=2446: layer tests (layer, #cand, rank) = [(3, 80, 80), (4, 94, 93), (5, 2, 2)] -> ker = 0   [11.7s, total 4177s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1695}
+  gamma=(22, 27, 29) n=78 dim=16188: layer tests (layer, #cand, rank) = [(2, 35, 22), (3, 177, 177), (4, 18, 18)] -> ker = 0   [13.3s, total 4190s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1697}
+  gamma=(22, 29, 27) n=78 dim=16188: layer tests (layer, #cand, rank) = [(2, 48, 48), (3, 409, 406), (4, 258, 258), (5, 2, 2)] -> ker = 0   [12.9s, total 4203s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1697}
+  gamma=(23, 25, 30) n=78 dim=19053: layer tests (layer, #cand, rank) = [(2, 43, 26), (3, 162, 162), (4, 12, 12)] -> ker = 0   [12.5s, total 4215s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1699}
+  gamma=(23, 30, 25) n=78 dim=19053: layer tests (layer, #cand, rank) = [(2, 66, 66), (3, 445, 443), (4, 228, 228), (5, 1, 1)] -> ker = 0   [13.3s, total 4229s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1699}
+  gamma=(22, 28, 28) n=78 dim=29163: layer tests (layer, #cand, rank) = [(2, 96, 83), (3, 481, 481), (4, 154, 154)] -> ker = 0   [13.8s, total 4243s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1700}
+  gamma=(24, 24, 30) n=78 dim=35760: layer tests (layer, #cand, rank) = [(1, 1, 1), (2, 125, 113), (3, 450, 450), (4, 116, 116)] -> ker = 0   [14.5s, total 4257s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1701}
+  gamma=(23, 26, 29) n=78 dim=172727: layer tests (layer, #cand, rank) = [(1, 12, 0), (2, 684, 548), (3, 1204, 1204), (4, 71, 71)] -> ker = 0   [20.9s, total 4278s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1704}
+  gamma=(23, 29, 26) n=78 dim=172727: layer tests (layer, #cand, rank) = [(1, 13, 13), (2, 815, 786), (3, 2656, 2649), (4, 953, 953), (5, 7, 7)] -> ker = 0   [29.8s, total 4308s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1706}
+  gamma=(23, 27, 28) n=78 dim=479661: layer tests (layer, #cand, rank) = [(1, 77, 7), (2, 2344, 2178), (3, 3306, 3306), (4, 382, 382)] -> ker = 0   [42.6s, total 4350s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1709}
+  gamma=(23, 28, 27) n=78 dim=479661: layer tests (layer, #cand, rank) = [(1, 77, 32), (2, 2441, 2353), (3, 4625, 4623), (4, 1058, 1058), (5, 2, 2)] -> ker = 0   [58.1s, total 4408s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1714}
+  gamma=(24, 25, 29) n=78 dim=508250: layer tests (layer, #cand, rank) = [(1, 85, 15), (2, 2495, 2408), (3, 2878, 2878), (4, 343, 343)] -> ker = 0   [45.5s, total 4454s]  {'t_tab': 24, 't_ker': 34, 't_cok': 43, 't_ech': 1718}
+  gamma=(24, 29, 25) n=78 dim=508250: layer tests (layer, #cand, rank) = [(1, 85, 43), (2, 2612, 2567), (3, 4286, 4284), (4, 949, 949), (5, 2, 2)] -> ker = 0   [58.7s, total 4513s]  {'t_tab': 25, 't_ker': 35, 't_cok': 43, 't_ech': 1726}
+  gamma=(24, 26, 28) n=78 dim=2162368: layer tests (layer, #cand, rank) = [(1, 732, 44), (2, 12555, 12424), (3, 7817, 7817), (4, 620, 620)] -> ker = 0   [162.9s, total 4676s]  {'t_tab': 27, 't_ker': 36, 't_cok': 43, 't_ech': 1767}
+  gamma=(24, 28, 26) n=78 dim=2162368: layer tests (layer, #cand, rank) = [(1, 732, 156), (2, 12755, 12702), (3, 11465, 11463), (4, 1851, 1851), (5, 2, 2)] -> ker = 0   [209.5s, total 4885s]  {'t_tab': 28, 't_ker': 37, 't_cok': 44, 't_ech': 1826}
+  gamma=(24, 27, 27) n=78 dim=3437674: layer tests (layer, #cand, rank) = [(1, 1409, 113), (2, 21045, 20951), (3, 12723, 12723), (4, 1289, 1289)] -> ker = 0   [271.0s, total 5156s]  {'t_tab': 29, 't_ker': 38, 't_cok': 44, 't_ech': 1901}
+  gamma=(25, 25, 28) n=78 dim=3493128: layer tests (layer, #cand, rank) = [(1, 1433, 141), (2, 21384, 21337), (3, 12040, 12039), (4, 1273, 1273)] -> ker = 0   [369.8s, total 5526s]  {'t_tab': 32, 't_ker': 39, 't_cok': 47, 't_ech': 2062}
+  gamma=(25, 26, 27) n=78 dim=8650200: layer tests (layer, #cand, rank) = [(1, 4879, 166), (2, 57343, 56836), (3, 19283, 19283), (4, 1148, 1148)] -> ker = 0   [1157.6s, total 6683s]  {'t_tab': 35, 't_ker': 42, 't_cok': 62, 't_ech': 2588}
+  gamma=(25, 27, 26) n=78 dim=8650200: layer tests (layer, #cand, rank) = [(1, 4879, 210), (2, 57374, 56874), (3, 20624, 20624), (4, 1437, 1437)] -> ker = 0   [1104.8s, total 7788s]  {'t_tab': 39, 't_ker': 56, 't_cok': 76, 't_ech': 3096}
+  gamma=(26, 26, 26) n=78 dim=13494357: layer tests (layer, #cand, rank) = [(1, 8737, 186), (2, 92766, 91341), (3, 24711, 24711), (4, 1044, 1044)] -> ker = 0   [2822.0s, total 10610s]  {'t_tab': 51, 't_ker': 144, 't_cok': 156, 't_ech': 4186}
+M=14 n=78: 29 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+time limit reached before (23, 24, 32)
+M=14 from a=10: I-letters [(13, 0), (13, 1), (13, 2), (12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+  gamma=(23, 24, 32) n=79 dim=3: layer tests (layer, #cand, rank) = [] -> ker = 0   [13.0s, total 13s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(23, 32, 24) n=79 dim=3: layer tests (layer, #cand, rank) = [] -> ker = 0   [12.2s, total 25s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(21, 28, 30) n=79 dim=7: layer tests (layer, #cand, rank) = [] -> ker = 0   [8.1s, total 34s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(21, 30, 28) n=79 dim=7: layer tests (layer, #cand, rank) = [] -> ker = 0   [4.0s, total 38s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(21, 29, 29) n=79 dim=22: layer tests (layer, #cand, rank) = [(4, 1, 1)] -> ker = 0   [16.0s, total 54s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(22, 26, 31) n=79 dim=99: layer tests (layer, #cand, rank) = [] -> ker = 0   [3.9s, total 58s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(22, 31, 26) n=79 dim=99: layer tests (layer, #cand, rank) = [(4, 9, 9)] -> ker = 0   [11.9s, total 69s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(23, 25, 31) n=79 dim=1348: layer tests (layer, #cand, rank) = [(3, 11, 11), (4, 1, 1)] -> ker = 0   [12.0s, total 81s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(23, 31, 25) n=79 dim=1348: layer tests (layer, #cand, rank) = [(3, 40, 40), (4, 46, 46)] -> ker = 0   [11.9s, total 93s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(22, 27, 30) n=79 dim=2043: layer tests (layer, #cand, rank) = [(3, 18, 18), (4, 1, 1)] -> ker = 0   [12.0s, total 105s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(22, 30, 27) n=79 dim=2043: layer tests (layer, #cand, rank) = [(3, 58, 58), (4, 91, 90), (5, 4, 4)] -> ker = 0   [21.1s, total 126s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 8}
+  gamma=(24, 24, 31) n=79 dim=2887: layer tests (layer, #cand, rank) = [(2, 5, 5), (3, 50, 50), (4, 24, 24)] -> ker = 0   [13.9s, total 140s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 8}
+  gamma=(22, 28, 29) n=79 dim=7575: layer tests (layer, #cand, rank) = [(2, 12, 10), (3, 118, 118), (4, 40, 40)] -> ker = 0   [12.9s, total 153s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 9}
+  gamma=(22, 29, 28) n=79 dim=7575: layer tests (layer, #cand, rank) = [(2, 14, 14), (3, 180, 179), (4, 137, 137), (5, 1, 1)] -> ker = 0   [13.5s, total 167s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 9}
+  gamma=(23, 26, 30) n=79 dim=29975: layer tests (layer, #cand, rank) = [(2, 62, 32), (3, 283, 283), (4, 15, 15)] -> ker = 0   [14.1s, total 181s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 10}
+  gamma=(23, 30, 26) n=79 dim=29975: layer tests (layer, #cand, rank) = [(2, 92, 92), (3, 721, 714), (4, 472, 471), (5, 10, 10)] -> ker = 0   [16.2s, total 197s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 11}
+  gamma=(24, 25, 30) n=79 dim=98960: layer tests (layer, #cand, rank) = [(1, 3, 1), (2, 345, 277), (3, 932, 932), (4, 152, 152)] -> ker = 0   [19.9s, total 217s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 13}
+  gamma=(24, 30, 25) n=79 dim=98960: layer tests (layer, #cand, rank) = [(1, 3, 3), (2, 385, 356), (3, 1418, 1416), (4, 502, 502), (5, 4, 4)] -> ker = 0   [22.2s, total 239s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 15}
+  gamma=(23, 27, 29) n=79 dim=154667: layer tests (layer, #cand, rank) = [(1, 8, 0), (2, 551, 399), (3, 1461, 1461), (4, 143, 143)] -> ker = 0   [22.0s, total 261s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 18}
+  gamma=(23, 29, 27) n=79 dim=154667: layer tests (layer, #cand, rank) = [(1, 8, 8), (2, 626, 571), (3, 2541, 2532), (4, 1062, 1062), (5, 14, 14)] -> ker = 0   [30.4s, total 292s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 20}
+  gamma=(23, 28, 28) n=79 dim=260156: layer tests (layer, #cand, rank) = [(1, 21, 5), (2, 1087, 923), (3, 2958, 2957), (4, 681, 681), (5, 1, 1)] -> ker = 0   [38.5s, total 330s]  {'t_tab': 7, 't_ker': 0, 't_cok': 0, 't_ech': 24}
+  gamma=(24, 26, 29) n=79 dim=763081: layer tests (layer, #cand, rank) = [(1, 125, 7), (2, 3645, 3219), (3, 4743, 4743), (4, 420, 420)] -> ker = 0   [64.0s, total 394s]  {'t_tab': 7, 't_ker': 1, 't_cok': 0, 't_ech': 31}
+  gamma=(24, 29, 26) n=79 dim=763081: layer tests (layer, #cand, rank) = [(1, 125, 59), (2, 3813, 3566), (3, 7459, 7452), (4, 1943, 1943), (5, 16, 16)] -> ker = 0   [86.6s, total 481s]  {'t_tab': 8, 't_ker': 1, 't_cok': 0, 't_ech': 43}
+  gamma=(25, 25, 29) n=79 dim=1265169: layer tests (layer, #cand, rank) = [(1, 274, 50), (2, 6604, 6084), (3, 8183, 8181), (4, 1243, 1243), (5, 2, 2)] -> ker = 0   [119.2s, total 600s]  {'t_tab': 10, 't_ker': 2, 't_cok': 0, 't_ech': 68}
+  gamma=(24, 27, 28) n=79 dim=1984795: layer tests (layer, #cand, rank) = [(1, 530, 29), (2, 10803, 9465), (3, 11535, 11535), (4, 1080, 1080)] -> ker = 0   [152.5s, total 752s]  {'t_tab': 11, 't_ker': 3, 't_cok': 0, 't_ech': 93}
+  gamma=(24, 28, 27) n=79 dim=1984795: layer tests (layer, #cand, rank) = [(1, 530, 85), (2, 10907, 9725), (3, 13924, 13922), (4, 2232, 2232), (5, 6, 6)] -> ker = 0   [213.0s, total 965s]  {'t_tab': 12, 't_ker': 4, 't_cok': 0, 't_ech': 136}
+  gamma=(25, 26, 28) n=79 dim=5123098: layer tests (layer, #cand, rank) = [(1, 2031, 82), (2, 30969, 25430), (3, 24074, 24073), (4, 1549, 1549)] -> ker = 0   [950.0s, total 1915s]  {'t_tab': 13, 't_ker': 6, 't_cok': 4, 't_ech': 415}
+  gamma=(25, 28, 26) n=79 dim=5123098: layer tests (layer, #cand, rank) = [(1, 2031, 154), (2, 31037, 25925), (3, 26352, 26350), (4, 2465, 2465), (5, 2, 2)] -> ker = 0   [930.3s, total 2846s]  {'t_tab': 15, 't_ker': 8, 't_cok': 8, 't_ech': 694}
+  gamma=(25, 27, 27) n=79 dim=8024335: layer tests (layer, #cand, rank) = [(1, 3749, 122), (2, 50696, 38809), (3, 38285, 38285), (4, 2031, 2031)] -> ker = 0   [2320.8s, total 5167s]  {'t_tab': 16, 't_ker': 9, 't_cok': 8, 't_ech': 1095}
+M=14 from a=10: I-letters [(13, 0), (13, 1), (13, 2), (12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+  gamma=(26, 26, 27) n=79 dim=12556150: layer tests (layer, #cand, rank) = [(1, 6821, 130), (2, 82643, 59408), (3, 56705, 56705), (4, 1865, 1865)] -> ker = 0   [8088.0s, total 8088s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 873}
+M=14 n=79: 30 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+  gamma=(23, 25, 32) n=80 dim=28: layer tests (layer, #cand, rank) = [] -> ker = 0   [9.1s, total 8097s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 873}
+  gamma=(23, 32, 25) n=80 dim=28: layer tests (layer, #cand, rank) = [(4, 2, 2)] -> ker = 0   [12.2s, total 8110s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 873}
+  gamma=(24, 24, 32) n=80 dim=82: layer tests (layer, #cand, rank) = [(3, 1, 1), (4, 2, 2)] -> ker = 0   [16.8s, total 8126s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 873}
+  gamma=(22, 27, 31) n=80 dim=99: layer tests (layer, #cand, rank) = [] -> ker = 0   [14.9s, total 8141s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 873}
+  gamma=(22, 31, 27) n=80 dim=99: layer tests (layer, #cand, rank) = [(4, 8, 8), (5, 1, 1)] -> ker = 0   [14.6s, total 8156s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 873}
+  gamma=(22, 28, 30) n=80 dim=1064: layer tests (layer, #cand, rank) = [(3, 13, 13), (4, 4, 4)] -> ker = 0   [14.8s, total 8171s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 873}
+  gamma=(22, 30, 28) n=80 dim=1064: layer tests (layer, #cand, rank) = [(3, 25, 25), (4, 51, 51), (5, 3, 3)] -> ker = 0   [15.8s, total 8186s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 873}
+  gamma=(22, 29, 29) n=80 dim=2160: layer tests (layer, #cand, rank) = [(2, 1, 1), (3, 47, 47), (4, 42, 42)] -> ker = 0   [15.9s, total 8202s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 873}
+  gamma=(23, 26, 31) n=80 dim=2784: layer tests (layer, #cand, rank) = [(3, 23, 23), (4, 1, 1)] -> ker = 0   [15.1s, total 8217s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 873}
+  gamma=(23, 31, 26) n=80 dim=2784: layer tests (layer, #cand, rank) = [(3, 79, 79), (4, 115, 113), (5, 7, 7)] -> ker = 0   [15.4s, total 8233s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 873}
+  gamma=(24, 25, 31) n=80 dim=11272: layer tests (layer, #cand, rank) = [(2, 20, 16), (3, 137, 137), (4, 36, 36)] -> ker = 0   [19.2s, total 8252s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 874}
+  gamma=(24, 31, 25) n=80 dim=11272: layer tests (layer, #cand, rank) = [(2, 25, 25), (3, 232, 231), (4, 147, 147), (5, 2, 2)] -> ker = 0   [16.2s, total 8268s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 874}
+  gamma=(23, 27, 30) n=80 dim=31759: layer tests (layer, #cand, rank) = [(2, 58, 32), (3, 338, 338), (4, 29, 29)] -> ker = 0   [15.2s, total 8283s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 876}
+  gamma=(23, 30, 27) n=80 dim=31759: layer tests (layer, #cand, rank) = [(2, 79, 79), (3, 751, 742), (4, 605, 603), (5, 25, 25)] -> ker = 0   [20.0s, total 8303s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 877}
+  gamma=(23, 28, 29) n=80 dim=96371: layer tests (layer, #cand, rank) = [(1, 2, 0), (2, 282, 200), (3, 1227, 1227), (4, 279, 279)] -> ker = 0   [22.5s, total 8326s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 879}
+  gamma=(23, 29, 28) n=80 dim=96371: layer tests (layer, #cand, rank) = [(1, 2, 2), (2, 303, 254), (3, 1642, 1636), (4, 776, 776), (5, 13, 13)] -> ker = 0   [26.8s, total 8353s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 881}
+  gamma=(24, 26, 30) n=80 dim=181413: layer tests (layer, #cand, rank) = [(1, 8, 0), (2, 612, 415), (3, 1692, 1692), (4, 183, 183)] -> ker = 0   [27.0s, total 8380s]  {'t_tab': 7, 't_ker': 7, 't_cok': 7, 't_ech': 884}
+  gamma=(24, 30, 26) n=80 dim=181413: layer tests (layer, #cand, rank) = [(1, 8, 8), (2, 688, 591), (3, 2865, 2854), (4, 1251, 1250), (5, 30, 30)] -> ker = 0   [39.3s, total 8419s]  {'t_tab': 8, 't_ker': 7, 't_cok': 7, 't_ech': 888}
+  gamma=(25, 25, 30) n=80 dim=313432: layer tests (layer, #cand, rank) = [(1, 22, 8), (2, 1256, 999), (3, 3290, 3288), (4, 765, 765), (5, 6, 6)] -> ker = 0   [42.7s, total 8462s]  {'t_tab': 8, 't_ker': 7, 't_cok': 7, 't_ech': 892}
+  gamma=(24, 27, 29) n=80 dim=817192: layer tests (layer, #cand, rank) = [(1, 108, 3), (2, 3622, 2496), (3, 6924, 6924), (4, 648, 648)] -> ker = 0   [66.9s, total 8529s]  {'t_tab': 9, 't_ker': 8, 't_cok': 7, 't_ech': 898}
+  gamma=(24, 29, 27) n=80 dim=817192: layer tests (layer, #cand, rank) = [(1, 108, 44), (2, 3747, 2866), (3, 9545, 9532), (4, 2657, 2657), (5, 39, 39)] -> ker = 0   [92.2s, total 8621s]  {'t_tab': 10, 't_ker': 9, 't_cok': 7, 't_ech': 908}
+  gamma=(24, 28, 28) n=80 dim=1321589: layer tests (layer, #cand, rank) = [(1, 231, 23), (2, 6367, 4318), (3, 12444, 12442), (4, 1899, 1899), (5, 6, 6)] -> ker = 0   [135.0s, total 8756s]  {'t_tab': 10, 't_ker': 10, 't_cok': 7, 't_ech': 925}
+  gamma=(25, 26, 29) n=80 dim=2200804: layer tests (layer, #cand, rank) = [(1, 501, 28), (2, 11374, 7422), (3, 16712, 16710), (4, 1500, 1500), (5, 2, 2)] -> ker = 0   [256.1s, total 9012s]  {'t_tab': 11, 't_ker': 11, 't_cok': 8, 't_ech': 974}
+time limit reached before (25, 29, 26)
+M=14 from a=10: I-letters [(13, 0), (13, 1), (13, 2), (12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+  gamma=(25, 29, 26) n=80 dim=2200804: layer tests (layer, #cand, rank) = [(1, 501, 83), (2, 11455, 7861), (3, 18975, 18968), (4, 2911, 2911), (5, 22, 22)] -> ker = 0   [293.3s, total 294s]  {'t_tab': 7, 't_ker': 13, 't_cok': 0, 't_ech': 70}
+  gamma=(25, 27, 28) n=80 dim=5503651: skipped (TASKG_MAXDIM)
+  gamma=(25, 28, 27) n=80 dim=5503651: skipped (TASKG_MAXDIM)
+  gamma=(26, 26, 28) n=80 dim=8687251: skipped (TASKG_MAXDIM)
+  gamma=(26, 27, 27) n=80 dim=13501078: skipped (TASKG_MAXDIM)
+M=14 n=80: 28 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+  gamma=(22, 28, 31) n=81 dim=55: layer tests (layer, #cand, rank) = [] -> ker = 0   [7.5s, total 301s]  {'t_tab': 7, 't_ker': 13, 't_cok': 0, 't_ech': 70}
+  gamma=(22, 31, 28) n=81 dim=55: layer tests (layer, #cand, rank) = [(4, 3, 3), (5, 1, 1)] -> ker = 0   [11.9s, total 313s]  {'t_tab': 7, 't_ker': 13, 't_cok': 0, 't_ech': 70}
+  gamma=(23, 26, 32) n=81 dim=93: layer tests (layer, #cand, rank) = [] -> ker = 0   [12.4s, total 325s]  {'t_tab': 7, 't_ker': 13, 't_cok': 0, 't_ech': 70}
+  gamma=(23, 32, 26) n=81 dim=93: layer tests (layer, #cand, rank) = [(4, 8, 8), (5, 1, 1)] -> ker = 0   [12.5s, total 338s]  {'t_tab': 7, 't_ker': 13, 't_cok': 0, 't_ech': 70}
+  gamma=(22, 29, 30) n=81 dim=318: layer tests (layer, #cand, rank) = [(3, 5, 5), (4, 7, 7)] -> ker = 0   [12.4s, total 350s]  {'t_tab': 7, 't_ker': 13, 't_cok': 0, 't_ech': 70}
+  gamma=(22, 30, 29) n=81 dim=318: layer tests (layer, #cand, rank) = [(3, 5, 5), (4, 17, 17), (5, 1, 1)] -> ker = 0   [12.4s, total 363s]  {'t_tab': 7, 't_ker': 13, 't_cok': 0, 't_ech': 70}
+  gamma=(24, 25, 32) n=81 dim=588: layer tests (layer, #cand, rank) = [(3, 8, 8), (4, 3, 3)] -> ker = 0   [13.3s, total 376s]  {'t_tab': 7, 't_ker': 13, 't_cok': 0, 't_ech': 70}
+  gamma=(24, 32, 25) n=81 dim=588: layer tests (layer, #cand, rank) = [(3, 14, 14), (4, 20, 20)] -> ker = 0   [12.7s, total 389s]  {'t_tab': 7, 't_ker': 13, 't_cok': 0, 't_ech': 70}
+  gamma=(23, 27, 31) n=81 dim=3606: layer tests (layer, #cand, rank) = [(3, 30, 30), (4, 2, 2)] -> ker = 0   [12.2s, total 401s]  {'t_tab': 7, 't_ker': 13, 't_cok': 0, 't_ech': 70}
+  gamma=(23, 31, 27) n=81 dim=3606: layer tests (layer, #cand, rank) = [(3, 92, 92), (4, 168, 164), (5, 19, 19)] -> ker = 0   [13.0s, total 414s]  {'t_tab': 7, 't_ker': 13, 't_cok': 0, 't_ech': 70}
+  gamma=(23, 28, 30) n=81 dim=22822: layer tests (layer, #cand, rank) = [(2, 33, 21), (3, 279, 279), (4, 66, 66)] -> ker = 0   [15.7s, total 430s]  {'t_tab': 7, 't_ker': 13, 't_cok': 0, 't_ech': 71}
+  gamma=(23, 30, 28) n=81 dim=22822: layer tests (layer, #cand, rank) = [(2, 40, 40), (3, 511, 503), (4, 501, 500), (5, 27, 27)] -> ker = 0   [15.5s, total 445s]  {'t_tab': 7, 't_ker': 13, 't_cok': 0, 't_ech': 72}
+  gamma=(24, 26, 31) n=81 dim=26570: layer tests (layer, #cand, rank) = [(2, 44, 27), (3, 291, 291), (4, 44, 44)] -> ker = 0   [14.8s, total 460s]  {'t_tab': 7, 't_ker': 13, 't_cok': 0, 't_ech': 74}
+  gamma=(24, 31, 26) n=81 dim=26570: layer tests (layer, #cand, rank) = [(2, 58, 58), (3, 579, 571), (4, 463, 461), (5, 22, 22)] -> ker = 0   [15.7s, total 476s]  {'t_tab': 7, 't_ker': 13, 't_cok': 0, 't_ech': 74}
+  gamma=(23, 29, 29) n=81 dim=40622: layer tests (layer, #cand, rank) = [(2, 82, 66), (3, 676, 674), (4, 366, 366), (5, 6, 6)] -> ker = 0   [18.7s, total 495s]  {'t_tab': 8, 't_ker': 13, 't_cok': 0, 't_ech': 76}
+  gamma=(25, 25, 31) n=81 dim=49148: layer tests (layer, #cand, rank) = [(2, 124, 98), (3, 714, 713), (4, 278, 278), (5, 4, 4)] -> ker = 0   [19.0s, total 514s]  {'t_tab': 8, 't_ker': 13, 't_cok': 0, 't_ech': 78}
+  gamma=(24, 27, 30) n=81 dim=230171: layer tests (layer, #cand, rank) = [(1, 9, 0), (2, 713, 419), (3, 2427, 2427), (4, 261, 261)] -> ker = 0   [30.1s, total 544s]  {'t_tab': 8, 't_ker': 13, 't_cok': 0, 't_ech': 81}
+  gamma=(24, 30, 27) n=81 dim=230171: layer tests (layer, #cand, rank) = [(1, 9, 9), (2, 785, 625), (3, 3870, 3846), (4, 1990, 1988), (5, 79, 79)] -> ker = 0   [45.4s, total 589s]  {'t_tab': 8, 't_ker': 13, 't_cok': 0, 't_ech': 84}
+  gamma=(24, 28, 29) n=81 dim=628127: layer tests (layer, #cand, rank) = [(1, 53, 2), (2, 2420, 1383), (3, 7043, 7042), (4, 1129, 1129), (5, 2, 2)] -> ker = 0   [71.4s, total 660s]  {'t_tab': 8, 't_ker': 13, 't_cok': 0, 't_ech': 90}
+  gamma=(24, 29, 28) n=81 dim=628127: layer tests (layer, #cand, rank) = [(1, 53, 16), (2, 2468, 1589), (3, 8294, 8280), (4, 2496, 2496), (5, 45, 45)] -> ker = 0   [83.4s, total 744s]  {'t_tab': 9, 't_ker': 13, 't_cok': 0, 't_ech': 97}
+  gamma=(25, 26, 30) n=81 dim=663208: layer tests (layer, #cand, rank) = [(1, 60, 5), (2, 2657, 1625), (3, 6742, 6740), (4, 975, 975), (5, 6, 6)] -> ker = 0   [68.5s, total 812s]  {'t_tab': 9, 't_ker': 13, 't_cok': 0, 't_ech': 103}
+  gamma=(25, 30, 26) n=81 dim=663208: layer tests (layer, #cand, rank) = [(1, 60, 24), (2, 2713, 1837), (3, 8095, 8084), (4, 2230, 2229), (5, 49, 49)] -> ker = 0   [96.8s, total 909s]  {'t_tab': 11, 't_ker': 13, 't_cok': 0, 't_ech': 114}
+  gamma=(25, 27, 29) n=81 dim=2758152: layer tests (layer, #cand, rank) = [(1, 562, 13), (2, 13530, 5838), (3, 26853, 26851), (4, 2017, 2017), (5, 2, 2)] -> ker = 0   [413.8s, total 1323s]  {'t_tab': 12, 't_ker': 14, 't_cok': 1, 't_ech': 179}
+  gamma=(25, 29, 27) n=81 dim=2758152: layer tests (layer, #cand, rank) = [(1, 562, 75), (2, 13612, 6892), (3, 29751, 29738), (4, 4716, 4716), (5, 63, 63)] -> ker = 0   [414.4s, total 1737s]  {'t_tab': 14, 't_ker': 16, 't_cok': 1, 't_ech': 260}
+  gamma=(25, 28, 28) n=81 dim=4355878: layer tests (layer, #cand, rank) = [(1, 1100, 40), (2, 22678, 9132), (3, 44092, 44089), (4, 3859, 3859), (5, 11, 11)] -> ker = 0   [958.8s, total 2696s]  {'t_tab': 16, 't_ker': 17, 't_cok': 3, 't_ech': 420}
+  gamma=(26, 26, 29) n=81 dim=4421886: layer tests (layer, #cand, rank) = [(1, 1128, 54), (2, 23217, 9739), (3, 43273, 43266), (4, 3700, 3700), (5, 23, 23)] -> ker = 0   [1113.0s, total 3809s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 661}
+  gamma=(26, 27, 28) n=81 dim=10813788: skipped (TASKG_MAXDIM)
+  gamma=(26, 28, 27) n=81 dim=10813788: skipped (TASKG_MAXDIM)
+  gamma=(27, 27, 27) n=81 dim=16769439: skipped (TASKG_MAXDIM)
+M=14 n=81: 29 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+  gamma=(24, 25, 33) n=82 dim=6: layer tests (layer, #cand, rank) = [] -> ker = 0   [10.2s, total 3819s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 661}
+  gamma=(24, 33, 25) n=82 dim=6: layer tests (layer, #cand, rank) = [] -> ker = 0   [12.7s, total 3832s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 661}
+  gamma=(22, 29, 31) n=82 dim=15: layer tests (layer, #cand, rank) = [(4, 1, 1)] -> ker = 0   [13.1s, total 3845s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 661}
+  gamma=(22, 31, 29) n=82 dim=15: layer tests (layer, #cand, rank) = [(4, 1, 1)] -> ker = 0   [13.2s, total 3858s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 661}
+  gamma=(22, 30, 30) n=82 dim=43: layer tests (layer, #cand, rank) = [(4, 3, 3)] -> ker = 0   [13.1s, total 3871s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 661}
+  gamma=(23, 27, 32) n=82 dim=160: layer tests (layer, #cand, rank) = [] -> ker = 0   [13.1s, total 3885s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 661}
+  gamma=(23, 32, 27) n=82 dim=160: layer tests (layer, #cand, rank) = [(4, 13, 13), (5, 4, 3)] -> ker = 1   [13.8s, total 3898s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 661}
+     kernel vector 0: 1 terms: y13.1*y12.0*y11.2*y10.1*y8.2*y7.1*y6.0*y5.2*y4.1*y3.0*y2.2*y1.1
+  gamma=(24, 26, 32) n=82 dim=2003: layer tests (layer, #cand, rank) = [(3, 19, 19), (4, 4, 4)] -> ker = 0   [13.6s, total 3912s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 661}
+  gamma=(24, 32, 26) n=82 dim=2003: layer tests (layer, #cand, rank) = [(3, 48, 48), (4, 82, 81), (5, 8, 8)] -> ker = 0   [13.2s, total 3925s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 661}
+  gamma=(23, 28, 31) n=82 dim=3020: layer tests (layer, #cand, rank) = [(3, 27, 27), (4, 6, 6)] -> ker = 0   [12.7s, total 3938s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 661}
+  gamma=(23, 31, 28) n=82 dim=3020: layer tests (layer, #cand, rank) = [(3, 66, 66), (4, 152, 149), (5, 23, 23)] -> ker = 0   [13.3s, total 3951s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 661}
+  gamma=(25, 25, 32) n=82 dim=4205: layer tests (layer, #cand, rank) = [(2, 4, 4), (3, 75, 75), (4, 52, 52), (5, 1, 1)] -> ker = 0   [15.9s, total 3967s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 661}
+  gamma=(23, 29, 30) n=82 dim=10865: layer tests (layer, #cand, rank) = [(2, 9, 7), (3, 158, 158), (4, 104, 104), (5, 1, 1)] -> ker = 0   [14.7s, total 3982s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 662}
+  gamma=(23, 30, 29) n=82 dim=10865: layer tests (layer, #cand, rank) = [(2, 10, 10), (3, 218, 214), (4, 268, 268), (5, 15, 15)] -> ker = 0   [14.0s, total 3996s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 663}
+  gamma=(24, 27, 31) n=82 dim=41103: layer tests (layer, #cand, rank) = [(2, 63, 35), (3, 454, 454), (4, 60, 60)] -> ker = 0   [16.4s, total 4012s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 665}
+  gamma=(24, 31, 27) n=82 dim=41103: layer tests (layer, #cand, rank) = [(2, 80, 80), (3, 890, 872), (4, 868, 861), (5, 74, 74)] -> ker = 0   [18.5s, total 4031s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 665}
+  gamma=(25, 26, 31) n=82 dim=132212: layer tests (layer, #cand, rank) = [(1, 2, 0), (2, 343, 213), (3, 1634, 1633), (4, 395, 395), (5, 5, 5)] -> ker = 0   [25.8s, total 4056s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 668}
+  gamma=(25, 31, 26) n=82 dim=132212: layer tests (layer, #cand, rank) = [(1, 2, 2), (2, 363, 279), (3, 2109, 2096), (4, 1060, 1058), (5, 46, 46)] -> ker = 0   [32.4s, total 4089s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 671}
+  gamma=(24, 28, 30) n=82 dim=205582: layer tests (layer, #cand, rank) = [(1, 4, 0), (2, 543, 286), (3, 2510, 2510), (4, 446, 446)] -> ker = 0   [28.2s, total 4117s]  {'t_tab': 19, 't_ker': 19, 't_cok': 6, 't_ech': 673}
+  gamma=(24, 30, 28) n=82 dim=205582: layer tests (layer, #cand, rank) = [(1, 4, 4), (2, 581, 439), (3, 3536, 3506), (4, 2119, 2117), (5, 109, 109)] -> ker = 0   [44.7s, total 4162s]  {'t_tab': 20, 't_ker': 19, 't_cok': 6, 't_ech': 676}
+  gamma=(24, 29, 29) n=82 dim=342793: layer tests (layer, #cand, rank) = [(1, 13, 2), (2, 1045, 606), (3, 4814, 4806), (4, 1612, 1612), (5, 29, 29)] -> ker = 0   [52.9s, total 4215s]  {'t_tab': 20, 't_ker': 19, 't_cok': 6, 't_ech': 680}
+  gamma=(25, 27, 30) n=82 dim=983813: layer tests (layer, #cand, rank) = [(1, 86, 1), (2, 3752, 1642), (3, 11193, 11191), (4, 1259, 1259), (5, 6, 6)] -> ker = 0   [100.6s, total 4315s]  {'t_tab': 21, 't_ker': 19, 't_cok': 6, 't_ech': 688}
+  gamma=(25, 30, 27) n=82 dim=983813: layer tests (layer, #cand, rank) = [(1, 86, 32), (2, 3826, 2216), (3, 13501, 13470), (4, 4231, 4229), (5, 152, 152)] -> ker = 0   [139.8s, total 4455s]  {'t_tab': 22, 't_ker': 19, 't_cok': 6, 't_ech': 704}
+  gamma=(26, 26, 30) n=82 dim=1617121: layer tests (layer, #cand, rank) = [(1, 199, 21), (2, 6826, 3076), (3, 19234, 19223), (4, 3121, 3120), (5, 58, 58)] -> ker = 0   [227.6s, total 4683s]  {'t_tab': 26, 't_ker': 19, 't_cok': 6, 't_ech': 745}
+  gamma=(25, 28, 29) n=82 dim=2522832: layer tests (layer, #cand, rank) = [(1, 390, 8), (2, 11146, 3780), (3, 29841, 29837), (4, 3139, 3139), (5, 9, 9)] -> ker = 0   [361.4s, total 5044s]  {'t_tab': 27, 't_ker': 20, 't_cok': 6, 't_ech': 798}
+  gamma=(25, 29, 28) n=82 dim=2522832: layer tests (layer, #cand, rank) = [(1, 390, 35), (2, 11188, 4566), (3, 31520, 31501), (4, 5475, 5475), (5, 91, 91)] -> ker = 0   [356.1s, total 5400s]  {'t_tab': 29, 't_ker': 22, 't_cok': 6, 't_ech': 852}
+  gamma=(26, 27, 29) n=82 dim=6418164: skipped (TASKG_MAXDIM)
+  gamma=(26, 29, 27) n=82 dim=6418164: skipped (TASKG_MAXDIM)
+  gamma=(26, 28, 28) n=82 dim=9993554: skipped (TASKG_MAXDIM)
+  gamma=(27, 27, 28) n=82 dim=15543600: skipped (TASKG_MAXDIM)
+M=14 n=82: 30 orbit reps, kernel dim (reps) = 1, total = 3*... see blocks
+M=14 from a=10: I-letters [(13, 0), (13, 1), (13, 2), (12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+  gamma=(25, 27, 28) n=80 dim=5503651: layer tests (layer, #cand, rank) = [(1, 1868, 51), (2, 31616, 16791), (3, 41342, 41341), (4, 2314, 2314)] -> ker = 0   [1530.2s, total 1531s]  {'t_tab': 9, 't_ker': 15, 't_cok': 0, 't_ech': 268}
+  gamma=(25, 28, 27) n=80 dim=5503651: layer tests (layer, #cand, rank) = [(1, 1868, 102), (2, 31665, 17635), (3, 43291, 43289), (4, 3553, 3553), (5, 8, 8)] -> ker = 0   [1520.0s, total 3051s]  {'t_tab': 11, 't_ker': 18, 't_cok': 0, 't_ech': 549}
+  gamma=(26, 26, 28) n=80 dim=8687251: skipped (TASKG_MAXDIM)
+  gamma=(26, 27, 27) n=80 dim=13501078: skipped (TASKG_MAXDIM)
+M=14 n=80: 28 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+  gamma=(26, 27, 28) n=81 dim=10813788: skipped (TASKG_MAXDIM)
+  gamma=(26, 28, 27) n=81 dim=10813788: skipped (TASKG_MAXDIM)
+  gamma=(27, 27, 27) n=81 dim=16769439: skipped (TASKG_MAXDIM)
+M=14 n=81: 29 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+  gamma=(26, 27, 29) n=82 dim=6418164: layer tests (layer, #cand, rank) = [(1, 1582, 25), (2, 32605, 8265), (3, 73881, 73874), (4, 4704, 4704), (5, 23, 23)] -> ker = 0   [2534.1s, total 5585s]  {'t_tab': 12, 't_ker': 18, 't_cok': 2, 't_ech': 918}
+time limit reached before (26, 29, 27)
+M=14 from a=10: I-letters [(13, 0), (13, 1), (13, 2), (12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+    after layer 0: 3517 candidates in 1 groups
+      layer 1: 3517 candidates, survivors 3425
+    after layer 1: 52487 candidates in 12 groups
+      layer 2: 52487 candidates, survivors 26367
+    after layer 2: 63823 candidates in 56 groups
+      layer 3: 63823 candidates, survivors 2
+    after layer 3: 3027 candidates in 166 groups
+      layer 4: 3027 candidates, survivors 0
+    after layer 4: 2 candidates in 2 groups
+      layer 5: 2 candidates, survivors 0
+    after layer 5: 0 candidates in 0 groups
+    after layer 6: 0 candidates in 0 groups
+    after layer 7: 0 candidates in 0 groups
+  gamma=(26, 26, 28) n=80 dim=8687251: layer tests (layer, #cand, rank) = [(1, 3517, 92), (2, 52487, 26120), (3, 63823, 63821), (4, 3027, 3027), (5, 2, 2)] -> ker = 0   [4604.9s, total 4605s]  {'t_tab': 12, 't_ker': 21, 't_cok': 11, 't_ech': 667}
+    after layer 0: 6395 candidates in 1 groups
+      layer 1: 6395 candidates, survivors 6311
+    after layer 1: 85210 candidates in 12 groups
+      layer 2: 85210 candidates, survivors 47541
+    checkpoint saved, deadline reached -> exit (state pre, layer index 2)
+M=14 from a=10: I-letters [(13, 0), (13, 1), (13, 2), (12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+    resumed at layer index 2, phase pre
+    after layer 2: 51000 candidates in 55 groups
+      layer 3: 51000 candidates, survivors 0
+    after layer 3: 2904 candidates in 162 groups
+      layer 4: 2904 candidates, survivors 0
+    after layer 4: 0 candidates in 0 groups
+    after layer 5: 0 candidates in 0 groups
+    after layer 6: 0 candidates in 0 groups
+    after layer 7: 0 candidates in 0 groups
+  gamma=(26, 27, 27) n=80 dim=13501078: layer tests (layer, #cand, rank) = [(1, 6395, 84), (2, 85210, 37669), (3, 51000, 51000), (4, 2904, 2904)] -> ker = 0   [508.5s, total 509s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+M=14 n=80: 28 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+    after layer 0: 3985 candidates in 1 groups
+      layer 1: 3985 candidates, survivors 3935
+    after layer 1: 62833 candidates in 12 groups
+      layer 2: 62833 candidates, survivors 43959
+M=14 from a=10: I-letters [(13, 0), (13, 1), (13, 2), (12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+M=14 n=80: 28 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+    resumed at layer index 2, phase pre
+    after layer 2: 60304 candidates in 55 groups
+      layer 3: 60304 candidates, survivors 2
+    after layer 3: 4099 candidates in 166 groups
+      layer 4: 4099 candidates, survivors 0
+    after layer 4: 2 candidates in 2 groups
+      layer 5: 2 candidates, survivors 0
+    after layer 5: 0 candidates in 0 groups
+    after layer 6: 0 candidates in 0 groups
+    after layer 7: 0 candidates in 0 groups
+  gamma=(26, 27, 28) n=81 dim=10813788: layer tests (layer, #cand, rank) = [(1, 3985, 50), (2, 62833, 18874), (3, 60304, 60302), (4, 4099, 4099), (5, 2, 2)] -> ker = 0   [837.7s, total 838s]  {'t_tab': 7, 't_ker': 0, 't_cok': 7, 't_ech': 264}
+    after layer 0: 3985 candidates in 1 groups
+      layer 1: 3985 candidates, survivors 3917
+    after layer 1: 62841 candidates in 12 groups
+      layer 2: 62841 candidates, survivors 43245
+M=14 from a=10: I-letters [(13, 0), (13, 1), (13, 2), (12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+M=14 n=80: 28 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+    resumed at layer index 2, phase pre
+    after layer 2: 61739 candidates in 55 groups
+      layer 3: 61739 candidates, survivors 2
+      [mem] pre-phase block (13, 18, 16) done (1/55): private 1.51 GB, tab 33 ker 4 cok 8
+      [mem] pre-phase block (13, 17, 17) done (2/55): private 1.51 GB, tab 34 ker 4 cok 8
+      [mem] pre-phase block (13, 17, 14) done (3/55): private 1.51 GB, tab 35 ker 4 cok 8
+      [mem] pre-phase block (13, 17, 16) done (4/55): private 1.51 GB, tab 36 ker 4 cok 8
+      [mem] pre-phase block (14, 18, 15) done (5/55): private 1.51 GB, tab 36 ker 4 cok 8
+      [mem] pre-phase block (15, 18, 14) done (6/55): private 1.51 GB, tab 36 ker 4 cok 8
+      [mem] pre-phase block (14, 18, 17) done (7/55): private 1.51 GB, tab 36 ker 4 cok 8
+      [mem] pre-phase block (13, 17, 15) done (8/55): private 1.51 GB, tab 37 ker 4 cok 8
+      [mem] pre-phase block (15, 19, 16) done (9/55): private 1.51 GB, tab 37 ker 4 cok 8
+      [mem] pre-phase block (14, 18, 16) done (10/55): private 1.51 GB, tab 37 ker 4 cok 8
+      [mem] pre-phase block (14, 17, 14) done (11/55): private 1.51 GB, tab 38 ker 4 cok 8
+      [mem] pre-phase block (13, 16, 16) done (12/55): private 1.51 GB, tab 39 ker 4 cok 8
+      [mem] pre-phase block (15, 18, 15) done (13/55): private 1.51 GB, tab 39 ker 4 cok 8
+      [mem] pre-phase block (14, 17, 17) done (14/55): private 1.52 GB, tab 40 ker 4 cok 8
+      [mem] pre-phase block (13, 16, 14) done (15/55): private 1.52 GB, tab 41 ker 4 cok 8
+      [mem] pre-phase block (13, 16, 15) done (16/55): private 1.52 GB, tab 42 ker 4 cok 8
+      [mem] pre-phase block (13, 15, 16) done (17/55): private 1.52 GB, tab 43 ker 4 cok 8
+      [mem] pre-phase block (14, 17, 15) done (18/55): private 1.52 GB, tab 44 ker 4 cok 8
+      [mem] pre-phase block (15, 17, 14) done (19/55): private 1.52 GB, tab 45 ker 4 cok 8
+      [mem] pre-phase block (14, 17, 16) done (20/55): private 1.53 GB, tab 46 ker 4 cok 8
+      [mem] pre-phase block (14, 16, 17) done (21/55): private 1.53 GB, tab 47 ker 4 cok 8
+      [mem] pre-phase block (16, 17, 14) done (22/55): private 1.53 GB, tab 47 ker 4 cok 8
+      [mem] pre-phase block (15, 18, 16) done (23/55): private 1.53 GB, tab 47 ker 4 cok 8
+      [mem] pre-phase block (16, 18, 15) done (24/55): private 1.53 GB, tab 47 ker 4 cok 8
+      [mem] pre-phase block (15, 18, 17) done (25/55): private 1.53 GB, tab 47 ker 4 cok 8
+      [mem] pre-phase block (15, 17, 18) done (26/55): private 1.53 GB, tab 47 ker 4 cok 8
+      [mem] pre-phase block (13, 15, 15) done (27/55): private 1.53 GB, tab 48 ker 4 cok 8
+      [mem] pre-phase block (14, 16, 14) done (28/55): private 1.54 GB, tab 49 ker 4 cok 8
+      [mem] pre-phase block (13, 15, 14) done (29/55): private 1.54 GB, tab 50 ker 4 cok 8
+      [mem] pre-phase block (14, 16, 16) done (30/55): private 1.54 GB, tab 51 ker 4 cok 8
+      [mem] pre-phase block (15, 17, 15) done (31/55): private 1.55 GB, tab 52 ker 4 cok 8
+      [mem] pre-phase block (15, 15, 17) done (32/55): private 1.55 GB, tab 53 ker 4 cok 8
+      [mem] pre-phase block (15, 17, 17) done (33/55): private 1.56 GB, tab 54 ker 4 cok 8
+      [mem] pre-phase block (16, 18, 16) done (34/55): private 1.56 GB, tab 54 ker 4 cok 8
+      [mem] pre-phase block (14, 16, 15) done (35/55): private 1.57 GB, tab 55 ker 4 cok 8
+      [mem] pre-phase block (14, 15, 16) done (36/55): private 1.57 GB, tab 56 ker 4 cok 8
+      [mem] pre-phase block (15, 16, 14) done (37/55): private 1.57 GB, tab 57 ker 4 cok 8
+      [mem] pre-phase block (15, 17, 16) done (38/55): private 1.58 GB, tab 58 ker 4 cok 8
+      [mem] pre-phase block (15, 16, 17) done (39/55): private 1.59 GB, tab 59 ker 4 cok 8
+      [mem] pre-phase block (16, 17, 15) done (40/55): private 1.60 GB, tab 60 ker 4 cok 8
+      [mem] pre-phase block (16, 18, 17) done (41/55): private 1.60 GB, tab 60 ker 4 cok 8
+      [mem] pre-phase block (14, 15, 14) done (42/55): private 1.60 GB, tab 61 ker 4 cok 8
+      [mem] pre-phase block (14, 15, 15) done (43/55): private 1.61 GB, tab 62 ker 4 cok 8
+      [mem] pre-phase block (15, 15, 14) done (44/55): private 1.62 GB, tab 63 ker 4 cok 8
+      [mem] pre-phase block (15, 16, 15) done (45/55): private 1.63 GB, tab 64 ker 4 cok 8
+      [mem] pre-phase block (15, 15, 16) done (46/55): private 1.64 GB, tab 65 ker 4 cok 8
+      [mem] pre-phase block (15, 16, 16) done (47/55): private 1.65 GB, tab 66 ker 4 cok 8
+      [mem] pre-phase block (16, 15, 16) done (48/55): private 1.66 GB, tab 67 ker 4 cok 8
+      [mem] pre-phase block (16, 16, 15) done (49/55): private 1.67 GB, tab 68 ker 4 cok 8
+      [mem] pre-phase block (16, 17, 16) done (50/55): private 1.68 GB, tab 69 ker 4 cok 8
+      [mem] pre-phase block (16, 16, 17) done (51/55): private 1.69 GB, tab 70 ker 4 cok 8
+      [mem] pre-phase block (16, 17, 17) done (52/55): private 1.71 GB, tab 71 ker 4 cok 8
+      [mem] pre-phase block (17, 17, 16) done (53/55): private 1.72 GB, tab 72 ker 4 cok 8
+      [mem] pre-phase block (15, 15, 15) done (54/55): private 1.73 GB, tab 73 ker 4 cok 8
+      [mem] pre-phase block (16, 16, 16) done (55/55): private 1.74 GB, tab 74 ker 4 cok 8
+    after layer 3: 4824 candidates in 166 groups
+      layer 4: 4824 candidates, survivors 0
+    after layer 4: 8 candidates in 6 groups
+      layer 5: 8 candidates, survivors 0
+    after layer 5: 0 candidates in 0 groups
+    after layer 6: 0 candidates in 0 groups
+    after layer 7: 0 candidates in 0 groups
+  gamma=(26, 28, 27) n=81 dim=10813788: layer tests (layer, #cand, rank) = [(1, 3985, 68), (2, 62841, 19596), (3, 61739, 61737), (4, 4824, 4824), (5, 8, 8)] -> ker = 0   [928.2s, total 929s]  {'t_tab': 9, 't_ker': 15, 't_cok': 9, 't_ech': 318}
+    after layer 0: 7260 candidates in 1 groups
+      layer 1: 7260 candidates, survivors 7212
+      [mem] pre-phase block (23, 24, 24) done (1/10): private 1.45 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (24, 23, 24) done (2/10): private 1.49 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (24, 24, 23) done (3/10): private 1.53 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (23, 24, 23) done (4/10): private 1.58 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (23, 23, 24) done (5/10): private 1.64 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (24, 23, 23) done (6/10): private 1.68 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (22, 23, 23) done (7/10): private 1.74 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (23, 22, 23) done (8/10): private 1.80 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (23, 23, 22) done (9/10): private 1.86 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (23, 23, 23) done (10/10): private 1.99 GB, tab 80 ker 4 cok 8
+    after layer 1: 102142 candidates in 12 groups
+      layer 2: 102142 candidates, survivors 75666
+      [mem] pre-phase block (18, 20, 20) done (1/32): private 2.19 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 18, 20) done (2/32): private 2.19 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 20, 18) done (3/32): private 2.19 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 21, 20) done (4/32): private 2.25 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 20, 21) done (5/32): private 2.25 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 19, 21) done (6/32): private 2.26 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (21, 19, 20) done (7/32): private 2.26 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 21, 19) done (8/32): private 2.26 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (21, 20, 19) done (9/32): private 2.26 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 20, 19) done (10/32): private 2.29 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 20, 18) done (11/32): private 2.29 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 19, 20) done (12/32): private 2.29 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 18, 20) done (13/32): private 2.29 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 18, 19) done (14/32): private 2.30 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 19, 18) done (15/32): private 2.31 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 20, 21) done (16/32): private 2.48 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 21, 20) done (17/32): private 2.48 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (21, 20, 20) done (18/32): private 2.50 GB, tab 80 ker 4 cok 8
+--- restart (kill: slow strided memmap reads fixed) 10/04/2026 21:35:35
+M=14 from a=10: I-letters [(13, 0), (13, 1), (13, 2), (12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+M=14 n=80: 28 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+    resumed at layer index 2, phase pre
+    after layer 2: 85957 candidates in 55 groups
+      layer 3: 85957 candidates, survivors 0
+    after layer 3: 4266 candidates in 164 groups
+      layer 4: 4266 candidates, survivors 0
+    after layer 4: 0 candidates in 0 groups
+    after layer 5: 0 candidates in 0 groups
+    after layer 6: 0 candidates in 0 groups
+    after layer 7: 0 candidates in 0 groups
+  gamma=(27, 27, 27) n=81 dim=16769439: layer tests (layer, #cand, rank) = [(1, 7260, 48), (2, 102142, 26476), (3, 85957, 85957), (4, 4266, 4266)] -> ker = 0   [752.0s, total 752s]  {'t_tab': 8, 't_ker': 37, 't_cok': 13, 't_ech': 37}
+M=14 n=81: 29 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+    after layer 0: 1582 candidates in 1 groups
+      layer 1: 1582 candidates, survivors 1525
+      [mem] pre-phase block (22, 26, 23) done (1/10): private 1.43 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (22, 26, 24) done (2/10): private 1.43 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (21, 25, 23) done (3/10): private 1.42 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (23, 26, 23) done (4/10): private 1.42 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (22, 25, 22) done (5/10): private 1.39 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (22, 25, 24) done (6/10): private 1.39 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (22, 25, 23) done (7/10): private 1.38 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (23, 25, 23) done (8/10): private 1.37 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (23, 25, 24) done (9/10): private 1.38 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (22, 24, 23) done (10/10): private 1.39 GB, tab 80 ker 4 cok 8
+    after layer 1: 32625 candidates in 12 groups
+      layer 2: 32625 candidates, survivors 23173
+      [mem] pre-phase block (18, 23, 20) done (1/32): private 1.51 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (17, 22, 20) done (2/32): private 1.51 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (17, 22, 19) done (3/32): private 1.48 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 23, 19) done (4/32): private 1.49 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 22, 18) done (5/32): private 1.47 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 23, 20) done (6/32): private 1.49 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 22, 21) done (7/32): private 1.48 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 22, 19) done (8/32): private 1.52 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 22, 18) done (9/32): private 1.52 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (17, 21, 20) done (10/32): private 1.52 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (17, 21, 18) done (11/32): private 1.53 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 22, 20) done (12/32): private 1.59 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (17, 21, 19) done (13/32): private 1.63 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 22, 19) done (14/32): private 1.76 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 21, 18) done (15/32): private 1.83 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 22, 21) done (16/32): private 1.90 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 22, 20) done (17/32): private 2.06 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 22, 19) done (18/32): private 2.11 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 21, 20) done (19/32): private 2.34 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 21, 19) done (20/32): private 2.56 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 21, 18) done (21/32): private 2.61 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (17, 20, 19) done (22/32): private 2.67 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 22, 20) done (23/32): private 2.81 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 21, 21) done (24/32): private 2.92 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 21, 19) done (25/32): private 3.32 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 20, 20) done (26/32): private 3.43 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 20, 18) done (27/32): private 3.53 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 21, 20) done (28/32): private 3.91 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 20, 19) done (29/32): private 4.17 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 21, 20) done (30/32): private 4.40 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 20, 20) done (31/32): private 4.60 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 20, 19) done (32/32): private 4.80 GB, tab 80 ker 4 cok 8
+    after layer 2: 75280 candidates in 56 groups
+      layer 3: 75280 candidates, survivors 13
+      [mem] pre-phase block (13, 19, 16) done (1/55): private 1.63 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (13, 18, 14) done (2/55): private 1.63 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (14, 19, 15) done (3/55): private 1.63 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 19, 14) done (4/55): private 1.63 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (13, 18, 17) done (5/55): private 1.62 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 20, 16) done (6/55): private 1.62 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (13, 18, 15) done (7/55): private 1.62 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (13, 18, 16) done (8/55): private 1.61 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (14, 19, 16) done (9/55): private 1.61 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (14, 19, 17) done (10/55): private 1.61 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (14, 18, 14) done (11/55): private 1.58 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 19, 15) done (12/55): private 1.58 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (13, 17, 14) done (13/55): private 1.57 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (13, 17, 16) done (14/55): private 1.57 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (14, 18, 15) done (15/55): private 1.57 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 18, 14) done (16/55): private 1.56 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (14, 18, 17) done (17/55): private 1.56 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (13, 17, 15) done (18/55): private 1.55 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 19, 16) done (19/55): private 1.55 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (16, 19, 15) done (20/55): private 1.55 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (14, 18, 16) done (21/55): private 1.55 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (16, 18, 14) done (22/55): private 1.55 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 19, 17) done (23/55): private 1.55 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (14, 17, 14) done (24/55): private 1.54 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (13, 16, 16) done (25/55): private 1.53 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 18, 15) done (26/55): private 1.53 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (14, 17, 17) done (27/55): private 1.52 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (16, 19, 16) done (28/55): private 1.52 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 18, 18) done (29/55): private 1.51 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (13, 16, 14) done (30/55): private 1.50 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (13, 16, 15) done (31/55): private 1.50 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (14, 17, 15) done (32/55): private 1.50 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 17, 14) done (33/55): private 1.50 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (14, 17, 16) done (34/55): private 1.48 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 18, 16) done (35/55): private 1.48 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (16, 18, 15) done (36/55): private 1.47 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 18, 17) done (37/55): private 1.47 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (16, 19, 17) done (38/55): private 1.47 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (14, 16, 14) done (39/55): private 1.47 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (14, 16, 16) done (40/55): private 1.47 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 17, 15) done (41/55): private 1.46 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 17, 17) done (42/55): private 1.46 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (16, 18, 16) done (43/55): private 1.46 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (14, 16, 15) done (44/55): private 1.46 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 16, 14) done (45/55): private 1.45 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 17, 16) done (46/55): private 1.45 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 16, 17) done (47/55): private 1.45 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (16, 17, 15) done (48/55): private 1.45 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (16, 18, 17) done (49/55): private 1.42 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (17, 18, 16) done (50/55): private 1.43 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 16, 15) done (51/55): private 1.44 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (15, 16, 16) done (52/55): private 1.45 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (16, 17, 16) done (53/55): private 1.46 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (16, 17, 17) done (54/55): private 1.47 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (16, 16, 16) done (55/55): private 1.48 GB, tab 80 ker 4 cok 8
+    after layer 3: 6702 candidates in 166 groups
+      layer 4: 6702 candidates, survivors 0
+    after layer 4: 74 candidates in 50 groups
+      layer 5: 74 candidates, survivors 0
+    after layer 5: 0 candidates in 0 groups
+    after layer 6: 0 candidates in 0 groups
+    after layer 7: 0 candidates in 0 groups
+  gamma=(26, 29, 27) n=82 dim=6418164: layer tests (layer, #cand, rank) = [(1, 1582, 57), (2, 32625, 9452), (3, 75280, 75267), (4, 6702, 6702), (5, 74, 74)] -> ker = 0   [2216.0s, total 2968s]  {'t_tab': 9, 't_ker': 38, 't_cok': 16, 't_ech': 370}
+    after layer 0: 2972 candidates in 1 groups
+      layer 1: 2972 candidates, survivors 2936
+      [mem] pre-phase block (22, 25, 25) done (1/10): private 1.15 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (21, 24, 24) done (2/10): private 1.16 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (22, 25, 24) done (3/10): private 1.16 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (22, 24, 25) done (4/10): private 1.17 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (22, 24, 24) done (5/10): private 1.19 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (23, 24, 25) done (6/10): private 1.20 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (23, 25, 24) done (7/10): private 1.21 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (22, 23, 24) done (8/10): private 1.22 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (22, 24, 23) done (9/10): private 1.23 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (23, 24, 24) done (10/10): private 1.26 GB, tab 80 ker 4 cok 8
+    after layer 1: 53546 candidates in 12 groups
+      layer 2: 53546 candidates, survivors 41866
+      [mem] pre-phase block (17, 21, 21) done (1/32): private 1.54 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 22, 21) done (2/32): private 1.58 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 21, 22) done (3/32): private 1.61 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (17, 21, 20) done (4/32): private 1.64 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (17, 20, 21) done (5/32): private 1.66 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 21, 21) done (6/32): private 1.89 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (17, 20, 20) done (7/32): private 2.02 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 21, 22) done (8/32): private 2.14 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 22, 21) done (9/32): private 2.24 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 20, 22) done (10/32): private 2.34 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 22, 20) done (11/32): private 2.44 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 21, 20) done (12/32): private 2.84 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 20, 21) done (13/32): private 3.24 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 21, 19) done (14/32): private 3.34 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 19, 21) done (15/32): private 3.43 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (17, 19, 20) done (16/32): private 3.53 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (17, 20, 19) done (17/32): private 3.63 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 21, 21) done (18/32): private 4.24 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 19, 21) done (19/32): private 4.43 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 21, 19) done (20/32): private 4.61 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 20, 20) done (21/32): private 5.34 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 21, 20) done (22/32): private 6.04 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 20, 21) done (23/32): private 6.71 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 19, 20) done (24/32): private 7.16 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 20, 19) done (25/32): private 7.61 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 21, 21) done (26/32): private 7.79 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 20, 21) done (27/32): private 8.14 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 21, 20) done (28/32): private 8.46 GB, tab 80 ker 4 cok 8
+--- restart after watchdog kill (13.0GB) 10/04/2026 23:07:17
+M=14 from a=10: I-letters [(13, 0), (13, 1), (13, 2), (12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+M=14 n=80: 28 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+M=14 n=81: 29 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+    resumed at layer index 2, phase pre
+    after layer 2: 74506 candidates in 55 groups
+      layer 3: 74506 candidates, survivors 4
+      [mem] pre-phase block (13, 18, 17) done (1/55): private 1.47 GB, tab 32 ker 4 cok 8
+      [mem] pre-phase block (13, 17, 18) done (2/55): private 1.47 GB, tab 33 ker 4 cok 8
+      [mem] pre-phase block (13, 17, 17) done (3/55): private 1.47 GB, tab 34 ker 4 cok 8
+      [mem] pre-phase block (14, 18, 18) done (4/55): private 1.47 GB, tab 34 ker 4 cok 8
+      [mem] pre-phase block (13, 17, 16) done (5/55): private 1.47 GB, tab 35 ker 4 cok 8
+      [mem] pre-phase block (13, 16, 17) done (6/55): private 1.47 GB, tab 36 ker 4 cok 8
+      [mem] pre-phase block (14, 18, 17) done (7/55): private 1.47 GB, tab 37 ker 4 cok 8
+      [mem] pre-phase block (14, 17, 18) done (8/55): private 1.47 GB, tab 38 ker 4 cok 8
+      [mem] pre-phase block (13, 17, 15) done (9/55): private 1.48 GB, tab 39 ker 4 cok 8
+      [mem] pre-phase block (13, 15, 17) done (10/55): private 1.48 GB, tab 40 ker 4 cok 8
+      [mem] pre-phase block (14, 18, 16) done (11/55): private 1.48 GB, tab 41 ker 4 cok 8
+      [mem] pre-phase block (14, 16, 18) done (12/55): private 1.48 GB, tab 42 ker 4 cok 8
+      [mem] pre-phase block (15, 17, 19) done (13/55): private 1.48 GB, tab 42 ker 4 cok 8
+      [mem] pre-phase block (15, 19, 17) done (14/55): private 1.48 GB, tab 43 ker 4 cok 8
+      [mem] pre-phase block (13, 16, 16) done (15/55): private 1.48 GB, tab 44 ker 4 cok 8
+      [mem] pre-phase block (15, 15, 18) done (16/55): private 1.48 GB, tab 45 ker 4 cok 8
+      [mem] pre-phase block (15, 18, 15) done (17/55): private 1.48 GB, tab 46 ker 4 cok 8
+      [mem] pre-phase block (14, 17, 17) done (18/55): private 1.48 GB, tab 47 ker 4 cok 8
+      [mem] pre-phase block (15, 18, 18) done (19/55): private 1.48 GB, tab 47 ker 4 cok 8
+      [mem] pre-phase block (13, 15, 16) done (20/55): private 1.49 GB, tab 48 ker 4 cok 8
+      [mem] pre-phase block (13, 16, 15) done (21/55): private 1.49 GB, tab 49 ker 4 cok 8
+      [mem] pre-phase block (14, 17, 15) done (22/55): private 1.49 GB, tab 50 ker 4 cok 8
+      [mem] pre-phase block (14, 15, 17) done (23/55): private 1.49 GB, tab 51 ker 4 cok 8
+      [mem] pre-phase block (14, 17, 16) done (24/55): private 1.49 GB, tab 52 ker 4 cok 8
+      [mem] pre-phase block (14, 16, 17) done (25/55): private 1.50 GB, tab 53 ker 4 cok 8
+      [mem] pre-phase block (15, 16, 18) done (26/55): private 1.50 GB, tab 54 ker 4 cok 8
+      [mem] pre-phase block (15, 18, 16) done (27/55): private 1.50 GB, tab 55 ker 4 cok 8
+      [mem] pre-phase block (15, 18, 17) done (28/55): private 1.50 GB, tab 56 ker 4 cok 8
+      [mem] pre-phase block (15, 17, 18) done (29/55): private 1.51 GB, tab 57 ker 4 cok 8
+      [mem] pre-phase block (13, 15, 15) done (30/55): private 1.51 GB, tab 58 ker 4 cok 8
+      [mem] pre-phase block (14, 16, 16) done (31/55): private 1.52 GB, tab 59 ker 4 cok 8
+      [mem] pre-phase block (15, 17, 15) done (32/55): private 1.52 GB, tab 60 ker 4 cok 8
+      [mem] pre-phase block (15, 15, 17) done (33/55): private 1.52 GB, tab 61 ker 4 cok 8
+      [mem] pre-phase block (15, 17, 17) done (34/55): private 1.53 GB, tab 62 ker 4 cok 8
+      [mem] pre-phase block (16, 16, 18) done (35/55): private 1.54 GB, tab 63 ker 4 cok 8
+      [mem] pre-phase block (16, 18, 16) done (36/55): private 1.54 GB, tab 64 ker 4 cok 8
+      [mem] pre-phase block (14, 15, 16) done (37/55): private 1.55 GB, tab 65 ker 4 cok 8
+      [mem] pre-phase block (14, 16, 15) done (38/55): private 1.55 GB, tab 66 ker 4 cok 8
+      [mem] pre-phase block (16, 18, 18) done (39/55): private 1.55 GB, tab 66 ker 4 cok 8

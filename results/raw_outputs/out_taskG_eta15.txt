@@ -1,0 +1,8 @@
+﻿eta_15: 85 terms
+terms without degree-14 letter: 8
+omega^(14)_0: 8 terms
+  y13.0 * omega^(14)_0: 0 terms; equal to eta mod L_14: False
+  y13.1 * omega^(14)_0: 8 terms; equal to eta mod L_14: True
+  y13.2 * omega^(14)_0: 8 terms; equal to eta mod L_14: False
+eta*sigma' = 0: True
+eta * letter != 0 for all letters: True (38/38)

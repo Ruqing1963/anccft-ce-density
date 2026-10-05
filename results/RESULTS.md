@@ -759,3 +759,79 @@ m = 15 (predicted d − 1 = 95), are not computable with the present tools.
 
 Files (Task E): `taskE_lift.py`, `taskE_zeta.py`, `taskE_zeta2.py`, `taskE_induced.py`, `taskE_lead.py`; outputs
 `out_taskE_*.txt`; pickles `taskE_lift_*.pkl`.
+
+---------------------------------------------------------------------------------------------------
+## Task F — toward (H2)
+
+Proofs are in THEORY §7. All runs used NUMBA_NUM_THREADS = 4 and peak RAM < 3 GB; the longest single run took about 6 min.
+One more run, m = 11 with a = 3 in F3, would have needed a 25 GB dense matrix. numpy refused the allocation and the run
+stopped, so m = 11 is not verified.
+
+**Verdict.**
+* **Proved: R_σ' is injective on the whole of U = u(n̂)** (and so is L_σ'). Equivalently, σF is a non-zero-divisor on both
+  sides of u(L) = gr F2[[P]], and hence F is a non-zero-divisor in F2[[P]].
+* By the dichotomy 6.2, **k_m ≥ m − 3 for every m**, so k_m → ∞. This is the first unconditional bound with f → ∞. With
+  k_12 = 57: k_m ≥ max(57, m − 3).
+* **Not proved:** (H2), or any superlinear bound (k_m/m^{3/2} → ∞). A quadratic bound k_m ≥ m²/6 − O(m) is reduced to
+  a single divisibility statement per level (Conjecture C3). C3 is verified for m ≤ 10.
+
+### F1. Injectivity on U  [Proved, THEORY 7.1]
+Four ingredients. Each is proved by hand and also machine-checked (`taskF_faithful.py`, `out_taskF_faithful.txt`):
+1. **σ' = e0e1e2 + e1e2e0 + e2e0e1** (e_i = y1.i, the Chevalley generators): the cyclic sum of the Coxeter word.
+2. **Dual natural representation** ρ*(x) = (π(x) + tr π(x)·I)^T : U → M_3(F2[t]), with e0 ↦ tE20, e1 ↦ E01, e2 ↦ E12.
+   It is restricted, graded and injective on L^s, and **ρ*(σ') = t·I**. (On the natural representation itself σ' acts as 0.)
+3. **Determinant.** On V*(t_1) ⊗ ⋯ ⊗ V*(t_r) (map Ψ_r), det Ψ_r(σ')(t, 0, …, 0) = t^{3^r}, by block-triangular induction
+   (at t_r = 0 the last factor is acted on by strictly upper triangular matrices). Checked for r ≤ 5. At random points of
+   GF(2^16)^r, Ψ_r(σ') has full rank for r ≤ 6 (`taskF_tensor.py`, `out_taskF_tensor.txt`). At t_1 = ⋯ = t_r it is
+   singular for r ≥ 2 (ranks 0, 25, 24, 189, 354 of 9, 27, 81, 243, 729), so distinct evaluation points are essential.
+4. **Faithfulness.** The matrix coefficients of ρ* generate the graded dual U^* as an algebra (graded Nakayama, since
+   P(U) = L^s and ρ* is injective on L^s). So each 0 ≠ y ∈ U_n has Ψ_r(y) ≠ 0 for some r ≤ n. Numerically: y ↦ Ψ_n(y)v is
+   injective on U_n for n ≤ 6.
+
+Then Ψ_r(yσ') = Ψ_r(y)Ψ_r(σ') ≠ 0, and the theorem follows.
+
+### F2. Why this gives only a linear bound  [THEORY 7.2]
+* Ψ_2(σ') = (t1 + t2)·I exactly, and det Ψ_3(σ') = s1^21·(s1³ + t1t2t3)² with s1 = t1 + t2 + t3 (`taskF_symb.py`,
+  `out_taskF_symb.txt`, `out_taskF_det3.txt`: the formula holds at 4 random points). The non-monomial denominators destroy
+  the per-site t-adic control needed on u_m. Single-variable evaluations have monomial denominators but only see degrees ≲ m.
+* **Cartan witnesses** do not exist in low degree: Uσ' ∩ u(ĥ) = 0 in weights kδ, k = 2..6 (`taskF_cartan.py`,
+  `out_taskF_cartan.txt`). Here u(ĥ) is the polynomial ring on the Cartan letters (dims 3, 6, 9, 14, 22).
+* **Gröbner/nil-Coxeter**: U = F2⟨e0,e1,e2⟩/(e_i², (e_ie_j)² + (e_je_i)², more relations in degrees 6, 7, 8, 10, …). The
+  normal-word counts match dim U_n for n ≤ 10. The prefix-triangularity test "lead(wσ') = w·c" fails from degree 3 or 4 on,
+  for all 6 letter orders (`taskF_words.py`, `out_taskF_words.txt`).
+
+### F3. The quadratic bound reduced to one element per level  [criterion Proved; C3 Verified m ≤ 10]
+For K_a := letters of degree m−a, …, m−1 (a restricted ideal) with integral ω_{K_a}:
+  **ker R^{(m)} ⊂ ker(π : u_m → u_{m−a})  ⟺  ω_{K_a} ∈ u_m·σ'** (Frobenius duality, THEORY 7.3).
+If this holds, then by the window lemma **k_m ≥ k_{m−a} + m − a**.
+
+`taskF_omegaK.py` (`out_taskF_omegaK.txt`): is ω_{K_a} ∈ u_mσ'?
+
+| m | a = 2 | a = 3 | a = 4 |
+|---|-------|-------|-------|
+| 5 | yes | – | – |
+| 6 | yes | **yes** (5-term preimage) | – |
+| 7 | no | **yes** | – |
+| 8 | no | **yes** | yes |
+| 9 | no | **yes** (block 21433 → 19269) | yes |
+| 10 | no | **yes** (block 80871 → 77517) | yes |
+
+(a = 1 fails for every m ≥ 6. "–" means the case was not run: the script requires 2(m − a) ≥ m.) Direct check
+(`taskF_top.py`, `out_taskF_top.txt`): dim π_{m−3}(ker R^{(m)}_n) = 0 for all n at m = 5..8 and for n ≤ 60 at m = 9. Also
+π_{m−2}(ker) ≠ 0 only in the top 7 degrees of u_{m−2} (e.g. m = 9: 13, 30, 18, 11, 6, 3, 1 at n = 48..54). The kernel
+vectors known from Task E (m = 9, 10, 11, 12) all lie in ker π_{m−2}; those at m = 11, 12 even lie in ker π_{m−1}.
+
+**Conjecture C3:** ω_{K_3} ∈ σ'u_m for all m ≥ 6. It implies k_m ≥ k_{m−3} + m − 3, hence k_m ≥ m²/6 − O(m). That satisfies
+the weakest useful form of (H2) (THEORY 6.1). Under (H1_C) it gives e_m ≤ 2C·e^{−m/16 + O(1)} and c_e = 0. The weaker
+C_a with a = O(m^{1/2−ε}) would also suffice.
+
+### F4. Cancellation-type elements  [Verified]
+η (m = 9) and all ω_j lie in ker π_{m−2}; η does not lie in ker π_{m−1}. The witnesses that make the kernel die are not
+annihilators (6.4(ii)) and not Cartan polynomials (F2). The witnesses that work are the non-graded tensor products of
+evaluation modules of F1. Explicit preimages of ω_{K_3} have no visible closed form: 5 terms at m = 6, 47 at m = 7, each
+term ω_K with one or two letters traded for lower column letters (`taskF_omegaK_show.py`, `out_taskF_omegaK_show.txt`).
+A proof of C3 would need to control the higher layers of the 3-step lift m−3 → m. The first connecting map vanishes on
+Λ_{m−3}, because R^{(m−3)} is onto near the top.
+
+Files (Task F): `taskF_faithful.py`, `taskF_tensor.py`, `taskF_symb.py`, `taskF_cartan.py`, `taskF_words.py`, `taskF_top.py`,
+`taskF_omegaK.py`, `taskF_omegaK_show.py`, `taskF_explore.py`; outputs `out_taskF_*.txt`.

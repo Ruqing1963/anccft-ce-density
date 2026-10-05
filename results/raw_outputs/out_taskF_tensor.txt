@@ -1,0 +1,6 @@
+﻿r=1: dim 3, rank at random points [3, 3, 3], rank at t_1=...=t_r: 3
+r=2: dim 9, rank at random points [9, 9, 9], rank at t_1=...=t_r: 0
+r=3: dim 27, rank at random points [27, 27, 27], rank at t_1=...=t_r: 25
+r=4: dim 81, rank at random points [81, 81, 81], rank at t_1=...=t_r: 24
+r=5: dim 243, rank at random points [243, 243, 243], rank at t_1=...=t_r: 189
+r=6: dim 729, rank at random points [729, 729, 729], rank at t_1=...=t_r: 354

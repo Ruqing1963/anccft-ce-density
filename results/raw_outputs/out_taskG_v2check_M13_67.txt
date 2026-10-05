@@ -1,0 +1,25 @@
+﻿M=13 from a=10: I-letters [(12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+  gamma=(19, 21, 27) n=67 dim=28: layer tests (layer, #cand, rank) = [] -> ker = 0   [8.3s, total 8s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(19, 27, 21) n=67 dim=28: layer tests (layer, #cand, rank) = [(3, 2, 2)] -> ker = 0   [7.6s, total 16s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(20, 20, 27) n=67 dim=79: layer tests (layer, #cand, rank) = [(2, 1, 1), (3, 2, 2)] -> ker = 0   [0.0s, total 16s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(18, 23, 26) n=67 dim=92: layer tests (layer, #cand, rank) = [] -> ker = 0   [0.0s, total 16s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(18, 26, 23) n=67 dim=92: layer tests (layer, #cand, rank) = [(3, 8, 8), (4, 1, 1)] -> ker = 0   [0.0s, total 16s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(18, 24, 25) n=67 dim=583: layer tests (layer, #cand, rank) = [(2, 7, 7), (3, 3, 3)] -> ker = 0   [0.0s, total 16s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(18, 25, 24) n=67 dim=583: layer tests (layer, #cand, rank) = [(2, 13, 13), (3, 18, 18)] -> ker = 0   [0.0s, total 16s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(19, 22, 26) n=67 dim=2207: layer tests (layer, #cand, rank) = [(2, 14, 14), (3, 1, 1)] -> ker = 0   [0.0s, total 16s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 0}
+  gamma=(19, 26, 22) n=67 dim=2207: layer tests (layer, #cand, rank) = [(2, 53, 53), (3, 76, 75), (4, 3, 3)] -> ker = 0   [2.1s, total 18s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(20, 21, 26) n=67 dim=8621: layer tests (layer, #cand, rank) = [(1, 9, 6), (2, 76, 76), (3, 20, 20)] -> ker = 0   [0.2s, total 18s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(20, 26, 21) n=67 dim=8621: layer tests (layer, #cand, rank) = [(1, 12, 12), (2, 137, 136), (3, 85, 85), (4, 1, 1)] -> ker = 0   [0.4s, total 19s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(19, 23, 25) n=67 dim=17438: layer tests (layer, #cand, rank) = [(1, 18, 9), (2, 137, 137), (3, 16, 16)] -> ker = 0   [0.3s, total 19s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(19, 25, 23) n=67 dim=17438: layer tests (layer, #cand, rank) = [(1, 26, 26), (2, 295, 292), (3, 211, 211), (4, 3, 3)] -> ker = 0   [0.7s, total 20s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(19, 24, 24) n=67 dim=32915: layer tests (layer, #cand, rank) = [(1, 51, 39), (2, 338, 337), (3, 120, 120)] -> ker = 0   [1.5s, total 21s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(20, 22, 25) n=67 dim=101347: layer tests (layer, #cand, rank) = [(1, 195, 140), (2, 567, 567), (3, 66, 66)] -> ker = 0   [3.0s, total 24s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(20, 25, 22) n=67 dim=101347: layer tests (layer, #cand, rank) = [(1, 224, 193), (2, 1039, 1035), (3, 409, 409), (4, 3, 3)] -> ker = 0   [5.0s, total 29s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 2}
+  gamma=(21, 21, 25) n=67 dim=176350: layer tests (layer, #cand, rank) = [(1, 404, 355), (2, 1045, 1044), (3, 236, 236)] -> ker = 0   [7.7s, total 37s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 3}
+  gamma=(20, 23, 24) n=67 dim=310350: layer tests (layer, #cand, rank) = [(1, 758, 677), (2, 1372, 1372), (3, 195, 195)] -> ker = 0   [9.5s, total 47s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 5}
+  gamma=(20, 24, 23) n=67 dim=310350: layer tests (layer, #cand, rank) = [(1, 779, 693), (2, 1878, 1876), (3, 463, 463), (4, 1, 1)] -> ker = 0   [16.6s, total 63s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 9}
+  gamma=(21, 22, 24) n=67 dim=874783: layer tests (layer, #cand, rank) = [(1, 2500, 2308), (2, 2488, 2488), (3, 291, 291)] -> ker = 0   [44.6s, total 108s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 30}
+  gamma=(21, 24, 22) n=67 dim=874783: layer tests (layer, #cand, rank) = [(1, 2518, 2311), (2, 3061, 3060), (3, 496, 496)] -> ker = 0   [62.0s, total 170s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 62}
+  gamma=(21, 23, 23) n=67 dim=1453478: layer tests (layer, #cand, rank) = [(1, 4432, 3885), (2, 3787, 3787), (3, 385, 385)] -> ker = 0   [99.8s, total 270s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 127}
+  gamma=(22, 22, 23) n=67 dim=2375683: layer tests (layer, #cand, rank) = [(1, 7646, 6551), (2, 4871, 4871), (3, 336, 336)] -> ker = 0   [289.5s, total 559s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 336}
+M=13 n=67: 23 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks

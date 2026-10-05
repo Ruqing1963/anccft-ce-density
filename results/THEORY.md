@@ -328,7 +328,7 @@ and ker^{(m)}_γ for a Q-block. A := Σ_j u ω_j (§5.2). P(m) is the statement 
 (H2) is the statement k_m ≥ d(m) − 1.
 
 **Status.** (H2) is **not proved**, neither for all m nor for an infinite subsequence, and no bound k_m ≥ f(m) with f → ∞ is
-proved. What is proved: the weakest form of (H2) that the conditional theorem can use (6.1); a dichotomy for the growth of
+proved. [Update, Task F, §7: R_σ' is injective on U, so k_m ≥ m − 3 → ∞ is now proved. (H2) itself remains open.] What is proved: the weakest form of (H2) that the conditional theorem can use (6.1); a dichotomy for the growth of
 k_m (6.2); a window lemma that reduces (H2) to the "jump steps" m ∈ 𝓗_{m+1} (6.3); the connecting map at a jump step and its
 closed form on the column integrals ω_j (6.4); an exact lifting method (6.5). Verified: k_12 = d(12) = 57 and P(12) (6.6).
 Section 6.7 lists the approaches that failed and why.
@@ -478,3 +478,140 @@ lift of the window-edge element c^{(j')}_{m−2}·ω^{(m−1)}_j, as for η at m
 level. Evidence: m ≤ 12 (one defect level, m = 9; m = 3, 6, 12 = 3·2^r have none, as predicted). The next informative
 levels are m = 13, 14 (predicted 69, 82) and m = 15 (predicted 95 = d(15) − 1). With the present methods they are out of
 reach: going from a = 10 or 11 to M ≥ 13 brings the upper-half kernel of level a into E_1.
+
+---------------------------------------------------------------------------------------------------
+## 7. Cancellation-type kernel elements (Task F)
+
+Notation as in §6: U = u(L^s) = u(n̂) over F2, u_m = U/I_m with I_m := U·L^s_{≥m} (two-sided ideal), π_a : u_m → u_a.
+e_i := y1.i (i = 0, 1, 2) are the Chevalley generators. Scripts: `taskF_*.py`; numbers in RESULTS, "Task F".
+
+**Summary.** (1) **R_σ' is injective on U** (Theorem 7.1). By 6.2 this gives the first unconditional bound tending to
+infinity, **k_m ≥ m − 3 for all m**. It also shows that σF is a non-zero-divisor in u(L) = gr F2[[P]], and that F is a
+non-zero-divisor in F2[[P]]. (2) The proof uses tensor products of dual evaluation modules. On them σ' acts with nonzero
+determinant, but the inverse has non-monomial denominators. That is exactly why the method gives no superlinear bound
+by itself (7.2). (3) A quadratic bound k_m ≳ m²/6 reduces to one divisibility statement per level m (7.3):
+ω_{K} ∈ σ'·u_m, where ω_K is the product of the 8 letters of degrees m−3, m−2, m−1. This statement is equivalent to
+"every kernel element of level m dies in u_{m−3}". It is verified for m ≤ 10 in all degrees, but not proved. (4) Structural
+data on kernel elements, including η, and the approaches that failed (7.4, 7.5).
+
+### 7.1 Injectivity on U  [Proved; machine checks of the ingredients in `taskF_faithful.py`]
+**Lemma 7.1a (cyclic form).** In U, σ' = e0e1e2 + e1e2e0 + e2e0e1.
+*Proof.* By §1.5, σ' = y1.0y1.1y1.2 + y1.2y2.1 + y1.0y2.2 + y3.1, with y2.1 = [e1, e0], y2.2 = [e2, e1] and
+y3.1 = [e0, [e2, e1]] (bracket formula of §1.2: e.g. [y1.0, y2.2] = e_0φ³ + e_2φ³ = y3.0 + (y3.0 + y3.1)). Expanding over F2:
+y1.2y2.1 = e2e1e0 + e2e0e1, y1.0y2.2 = e0e2e1 + e0e1e2, y3.1 = e0e2e1 + e0e1e2 + e2e1e0 + e1e2e0. Summing with e0e1e2 gives
+e0e1e2 + e1e2e0 + e2e0e1. ∎ [also machine-checked, `taskF_words.py`]
+
+**Lemma 7.1b (the dual natural representation).** Let π : A^s → M_3(F2[t]), D_kφ^k ↦ D_kΠ^k (§1.3), and
+ρ*(x) := (π(x) + tr(π(x))·I)^T. Then ρ* is an injective homomorphism of graded restricted Lie algebras
+L^s → gl_3(F2[t]). Here deg(E_pq t^k) := 3k + q − p, and the 2-map is the matrix square. It extends to an algebra map
+ρ* : U → M_3(F2[t]) with ρ*(e0) = tE20, ρ*(e1) = E01, ρ*(e2) = E12 and **ρ*(σ') = t·I**.
+*Proof.* x ↦ π(x) + tr(π x)I is a Lie map (traces of commutators vanish), kills T^s (π(t^j) = t^jI and 3 = 1), is injective
+on L^s (π(x) scalar ⇒ x ∈ T^s, §1.3), and respects squares because tr(M²) = tr(M)² in characteristic 2.
+Transposition is an anti-automorphism, hence a restricted Lie automorphism in characteristic 2 (§1.4). Grading: the
+transpose of E_ij t^n (principal degree 3n + i − j) is E_ji t^n. Finally E20E01E12 = E22, E01E12E20 = E00 and
+E12E20E01 = E11, so by 7.1a ρ*(σ') = t(E22 + E00 + E11) = tI. ∎ [machine check: graded, injective on letters of degree < 13,
+homomorphism on 300 random products, ρ*(σ') = tI; `out_taskF_faithful.txt`]
+
+For r ≥ 1 put Ψ_r := (ρ*_{t_1} ⊗ ⋯ ⊗ ρ*_{t_r}) ∘ Δ^{(r)} : U → M_3(F2[t_1]) ⊗ ⋯ ⊗ M_3(F2[t_r]) = M_{3^r}(F2[t_1,…,t_r]),
+the action on V*(t_1) ⊗ ⋯ ⊗ V*(t_r). It is an algebra homomorphism.
+
+**Lemma 7.1c (determinant).** det Ψ_r(σ') is a nonzero polynomial. More precisely det Ψ_r(σ')(t, 0, …, 0) = t^{3^r}.
+*Proof.* Induction on r; r = 1 is 7.1b. By coassociativity Ψ_r = (Ψ_{r−1} ⊗ ρ*_{t_r}) ∘ Δ. Write Δ(σ') = σ'⊗1 + Σ a_i ⊗ b_i
+with b_i ∈ U^+, which holds for any element of a connected Hopf algebra. At t_r = 0, ρ*_0 maps every letter to a strictly
+upper triangular matrix: only letters with t-free matrix survive, namely y1.1, y1.2, y2.2 ↦ E01, E12, E02, and Cartan
+letters go to 0. So ρ*_0(U^+) consists of strictly upper triangular matrices N_i. Hence
+Ψ_r(σ')|_{t_r=0} = Ψ_{r−1}(σ') ⊗ I + Σ Ψ_{r−1}(a_i) ⊗ N_i. In 3×3 block form indexed by the last tensor factor, this is
+block upper triangular with diagonal blocks Ψ_{r−1}(σ'). So det Ψ_r(σ')|_{t_r=0} = (det Ψ_{r−1}(σ'))³. ∎
+[`taskF_faithful.py` (3): t^{3^r} at (t,0,…,0) for r ≤ 5; `taskF_tensor.py`: full rank at random points of GF(2^16)^r, r ≤ 6.]
+
+**Lemma 7.1d (faithfulness).** For every 0 ≠ y ∈ U_n there is r ≤ n with Ψ_r(y) ≠ 0.
+*Proof.* Let C = ⊕_d (U_d)^* be the graded dual. It is a connected graded commutative algebra (U is cocommutative), with
+(fg)(y) = (f⊗g)(Δy). Let X ⊂ C be the span of the matrix-coefficient functionals φ_{pq,k}(y) := coefficient of t^k in
+ρ*(y)_{pq}. It is a graded subspace by 7.1b, and contains ε = φ_{00,0}. A product φ_1⋯φ_r evaluated at y is a matrix entry
+and t-coefficient of Ψ_r(y). So it suffices that X generates C as an algebra. By graded Nakayama it suffices that
+X ∩ C^+ → C^+/(C^+)² is onto. In degree d > 0, ((C^+)²)^⊥ ∩ U_d = P(U)_d, the primitives (Δ_{a,b}(y) = 0 for 0 < a < d), and
+P(U) = L^s for a restricted enveloping algebra. So (C^+/(C^+)²)_d = (L^s_d)^*, and surjectivity means that no
+0 ≠ x ∈ L^s_d is killed by all φ_{pq,k}, i.e. that ρ* is injective on L^s (7.1b). A nonzero functional of degree n is a
+sum of products of at most n factors from X ∩ C^+; pad with ε. ∎ [numerical confirmation for n ≤ 6: `out_taskF_faithful.txt` (2)]
+
+**Theorem 7.1.** R_σ' : U → U, y ↦ yσ', and L_σ' are injective. Equivalently (field extension, §1.6), R_{σF} and L_{σF}
+are injective on u(L), in every degree.
+*Proof.* Let 0 ≠ y ∈ U and choose r with Ψ_r(y) ≠ 0 (7.1d). Then Ψ_r(yσ') = Ψ_r(y)Ψ_r(σ'). Here Ψ_r(σ') is invertible over
+F2(t_1,…,t_r) (7.1c) and Ψ_r(y) is a nonzero matrix, so the product is nonzero. The same argument works for L_σ'. ∎
+
+**Corollary 7.2.** (a) **k_m ≥ m − 3 for every m**, so k_m → ∞ (Prop. 6.2, (ii) ⇒ (iii)). With §6.6 and monotonicity,
+k_m ≥ max(57, m − 3) for m ≥ 12. (b) σF is a non-zero-divisor on both sides of gr F2[[P]] = u(L) (Task 2 identification).
+(c) F is a non-zero-divisor on both sides of F2[[P]]. Indeed, if xF = 0 with x ≠ 0, the augmentation filtration is
+separated, so x has a leading form gr x ≠ 0. Then gr(x)·σF ≠ 0 would be the leading form of xF = 0, a contradiction.
+(This answers the question of Task 3 positively for σF. The "gr is a domain" route fails, but only regularity of σF
+is needed.) [Proved; (b), (c) use the Jennings–Quillen identification gr F2[[P]] ≅ u(L) of Task 2.]
+
+### 7.2 Why Theorem 7.1 alone gives only a linear bound  [Proved / Verified]
+* A t-adic version of 7.1 works on the u_m-modules ⊗_s V*[t_s]/(t_s^K) (K ≈ m/3), where L_{≥m} acts trivially. It needs a
+  polynomial B with Ψ_r(σ')B = D·I and D a **monomial** in the t_s. The determinant is not of this kind:
+  Ψ_2(σ') = (t1 + t2)·I exactly, and det Ψ_3(σ') = s1^21 (s1³ + t1t2t3)², s1 = t1 + t2 + t3 (`taskF_symb.py`,
+  `out_taskF_det3.txt`). In F2[t1,t2]/(t1^K, t2^K), multiplication by t1 + t2 has a large kernel. Concretely, for two
+  strings of length ≥ 9 the element t1t2 is not in (t1+t2)·F2[x,y]/(x³,y³). So per-site truncation is lost.
+* With a single variable (t_s = λ_s t, λ generic) the denominator is a monomial: σ' acts as t·Σ(λ) with Σ(λ) invertible.
+  But these modules only see functionals of total t-degree < K, i.e. elements of degree ≲ m. This reproduces k_m ≳ m − O(1),
+  no more.
+* (Gröbner / nil-Coxeter view.) U is a quotient of F2⟨e0,e1,e2⟩/(e_i², (e_ie_j)² + (e_je_i)²): leading words 00, 11, 22,
+  1010, 2020, 2121 in degrees 2 and 4, then words in degrees 6, 7, 8, 10, … (`out_taskF_words.txt`). σ' is the cyclic sum of
+  the Coxeter word. The prefix-triangularity criterion "lead(wσ') = w·c" fails from degree 3 or 4 on, for each of the 6
+  letter orders.
+  So there is no Gröbner proof of 7.1 of this type.
+* (Cartan witnesses.) If 0 ≠ z ∈ U σ' ∩ u(ĥ) (ĥ = span of all Cartan letters, u(ĥ) a polynomial ring and U free over it),
+  injectivity would follow at once. But Uσ' ∩ u(ĥ) = 0 in weights kδ, k ≤ 6 (`taskF_cartan.py`). The proof in 7.1 instead
+  uses non-graded modules.
+
+### 7.3 A quadratic bound reduced to one divisibility per level  [Proved criterion; Verified m ≤ 10; Conjecture]
+For 1 ≤ a < m let K_a := L^s_{[m−a, m)} (letters of degree m−a, …, m−1), a restricted ideal of L_m. Let ω_{K_a} be its
+integral, the product of all its letters, and J_a := ker π_{m−a} = u_m·K_a.
+
+**Proposition 7.3 (criterion).** ker R^{(m)} ⊂ J_a ⟺ ω_{K_a} ∈ σ'·u_m ⟺ ω_{K_a} ∈ u_m·σ'.
+*Proof.* Use the Frobenius pairing λ(ab) on u_m (§1.6). ker R_σ' = ^⊥(σ'u_m). Next, J_a^⊥ = {b : K_a b = 0}, and this
+equals ω_{K_a}·u_m by the PBW argument of §2.3 with the K_a-letters first: b = Σ f_i v_i, and K_a b = 0 iff each f_i is an
+integral of u(K_a). Taking ⊥, ker R ⊂ J_a ⟺ ω_{K_a}u_m ⊂ σ'u_m ⟺ ω_{K_a} ∈ σ'u_m. Θ' fixes σ' and ω_{K_a}, which gives
+the left version. ∎
+Equivalently, the integral Λ_{m−a} of u_{m−a} (degree top(u_{m−a})) is not π_{m−a} of a kernel element of level m. Since a
+nonzero left ideal of u_{m−a} contains Λ_{m−a}, π_{m−a}(ker R^{(m)}) ≠ 0 iff it contains Λ_{m−a}.
+
+**Corollary 7.4.** If ω_{K_a} ∈ σ'u_m, then **k_m ≥ k_{m−a} + m − a**.
+*Proof.* Window Lemma 6.3 with level m − a: for n < k_{m−a} + m − a, π_{m−a} is injective on ker^{(m)}_n, and it vanishes
+there by 7.3. ∎
+
+**Conjecture 7.5 (C3).** ω_{K_3} ∈ σ'·u_m for every m ≥ 6. That is, every kernel element of level m involves, in every PBW
+term, a letter of degree ≥ m − 3.
+*Evidence* [Verified]. (i) ω_{K_3} ∈ u_mσ' for m = 6, 7, 8, 9, 10 (`taskF_omegaK.py`; for m = 10 a rank computation in
+a block of size 80871 → 77517). The same holds for a = 4 (m = 8, 9, 10). It fails for a = 2 when m = 7, 8, 9, 10, and for
+a = 1 always. (ii) Directly: dim π_{m−3}(ker R^{(m)}_n) = 0 in **all** degrees n for m = 5..8, and for n ≤ 60 at m = 9
+(`taskF_top.py`). π_{m−2}(ker) ≠ 0 only in the 7 degrees top(u_{m−2}) − 6 … top(u_{m−2}) (m = 7, 8, 9). (iii) All kernel vectors known
+at m = 11 (n ≤ 47) and m = 12 (n = 57) even lie in J_1, and those at m = 9, 10 (n ≤ 38, 40) in J_2 (η included).
+*Consequence (conditional).* Under C3 for all m ≥ m_0: k_m ≥ k_{m−3} + m − 3, hence **k_m ≥ m²/6 − O(m)**. Then
+κ_m = k_m satisfies κ_m/m^{3/2} → ∞, which is the hypothesis of Prop. 6.1(b). Under (H1_C), e_m ≤ 2C·exp(−m/16 + O(1))
+((m²/6)²/(2·(2/9)m³) = m/16) and c_e = 0. Even C3 along an arithmetic progression of steps, or the weaker C_a with a = a(m)
+= O(m^{1/2−ε}), would suffice: iterating 7.4 gives k_m ≳ m^{2}/(2a).
+*Why C3 is plausible and where a proof should come from.* Dually (C := U^*, D := σ'⇀ with (Df)(y) = f(yσ')), C3 says that
+the top functional λ_{m−3} of u_{m−3} lies in D(C_m), C_m = u_m^* = I_m^⊥. On matrix coefficients D acts by the shift
+φ_{pq,k} ↦ φ_{pq,k−1} (because ρ*(σ') = tI). So it raises the level by one unit of t, i.e. by 3 principal degrees, which
+is where the "3" comes from. The obstruction to turning this into a proof is the non-monomial denominator of 7.2. The
+3-step lift from level m−3 to m cannot be detected by the first connecting map: d_1(Λ_{m−3}) = 0 because R^{(m−3)} is onto
+in the degrees within k_{m−3} of the top. So higher layers of the spectral sequence of §6.5 are involved.
+
+### 7.4 Cancellation-type elements: what is known  [Verified]
+* η (m = 9) lies in J_2 (every PBW term has a letter of degree 7 or 8) but not in J_1, in accordance with C3. The ω_j lie
+  in J_2 always: they contain c_{m−1} or c_{m−2}. More generally every kernel vector examined lies in J_2: all of the
+  lower half for m ≤ 9, and the lifted kernels of §6.5 for m = 10, 11, 12.
+* The preimages w with wσ' = ω_{K_3} have no closed form in the data. m = 6: 5 PBW terms, each ω_K with one or two letters
+  traded for lower column letters (`out_taskF_omegaK_show.txt`). m = 7: 47 terms, with 5–7 K-letters per term. They
+  resemble the column carries of Prop. 6.5, applied to three columns at once.
+* Cartan witnesses (7.2) and annihilator witnesses (6.4(ii)) do not exist. The working witnesses are the non-graded
+  modules V*(t_1) ⊗ ⋯ ⊗ V*(t_r), on which σ' acts as (Σ t_s)·I + N. Here N = 0 for r = 2. For r = 3, N is supported on
+  the six permutation vectors f_{π0}⊗f_{π1}⊗f_{π2}, where it consists of two 3-cycles of weight t1t2t3; it is not
+  nilpotent.
+
+### 7.5 Status of (H2) after Task F
+* Proved: k_m ≥ m − 3 for all m (k_m → ∞). With the verified k_m (m ≤ 12) and monotonicity: k_m ≥ max(k_12, m − 3).
+* Not proved: any superlinear bound. In particular (H2) and its weakest useful form k_m/m^{3/2} → ∞ (6.1) remain open.
+  Both follow from Conjecture C3 (or C_a with a = O(m^{1/2−ε})) via 7.3–7.4, and C3 is a single divisibility statement per
+  level.

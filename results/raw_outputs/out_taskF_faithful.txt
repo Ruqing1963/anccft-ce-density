@@ -1,0 +1,12 @@
+﻿(1) rho*: graded, injective on letters of degree < 13; homomorphism on 300 random products; rho*(sigma') = t I : OK
+(3) r=1: det Psi_r(sigma')(t,0,..,0) == t^(3^r): True
+(3) r=2: det Psi_r(sigma')(t,0,..,0) == t^(3^r): True
+(3) r=3: det Psi_r(sigma')(t,0,..,0) == t^(3^r): True
+(3) r=4: det Psi_r(sigma')(t,0,..,0) == t^(3^r): True
+(3) r=5: det Psi_r(sigma')(t,0,..,0) == t^(3^r): True
+(2) n=1: dim U_n = 3, rank of y -> (Psi_n(y) v1, Psi_n(y) v2) = 3
+(2) n=2: dim U_n = 6, rank of y -> (Psi_n(y) v1, Psi_n(y) v2) = 6
+(2) n=3: dim U_n = 12, rank of y -> (Psi_n(y) v1, Psi_n(y) v2) = 12
+(2) n=4: dim U_n = 21, rank of y -> (Psi_n(y) v1, Psi_n(y) v2) = 21
+(2) n=5: dim U_n = 36, rank of y -> (Psi_n(y) v1, Psi_n(y) v2) = 36
+(2) n=6: dim U_n = 60, rank of y -> (Psi_n(y) v1, Psi_n(y) v2) = 60

@@ -32,7 +32,8 @@ By Jaikin-Zapirain, `c_e = (1 − rk_P(F))/3`. The pro-2 Atiyah conjecture would
 | B | `gr P ⊗ F₈` ≅ positive part of the affine Lie algebra **A₂⁽¹⁾** (principal grading). The leading form of `F` has weight δ (the null root). | proved |
 | C | Explicit kernel `Σ u·ω_j` at every level. The threshold is `d(m) ≈ m²/3`, set by a binary odometer along the roots `3·2^r`. The kernel density is monotone in m. | proved |
 | D | `dim C₇ = 10226`; graded cokernels 64216, 423412, 1526176 for m = 8, 9, 10. Hence **c_e ≤ 0.030322** (previously 0.0645). | proof by computation |
-| E | `c_e = 0` follows from hypotheses (H1) and (H2) on the kernel of the leading form (Thm 8.4). (H1) is verified for m ≤ 10 and (H2) for m ≤ 12 (`k₁₂ = 57`). | proved (conditional) |
+| E | `c_e = 0` follows from hypotheses (H1) and (H2) on the kernel of the leading form (Thm 8.4). (H1) is verified for m ≤ 10 and (H2) for m ≤ 14 (`k₁₂ = 57, k₁₃ = 69, k₁₄ = 82`; `k₁₅ ≤ 95` via the predicted exceptional element). | proved (conditional) |
+| G | `F` is a non-zero-divisor in `F₂[[P]]`: its leading form is regular on `u(n̂)`, proved via evaluation representations of the loop algebra. Hence `k_m ≥ m − 3`. | proved |
 | F | The graded zero divisors are obstructed at the first or second lifting step in `F₂[[P]]`. | proof by computation |
 
 ![Upper bounds for c_e](figures/fig1_ce_bounds.png)
