@@ -121,7 +121,7 @@ with open(os.path.join(DATA, "thresholds.csv"), "w", newline="") as f:
     for m in range(2, 41):
         w.writerow([m, d_of(m), m * (m - 1) // 2, " ".join(map(str, sorted(H_set(m))))])
 
-# ---------------------------------------------------------------- Figure 1: bounds on c_e
+# ---------------------------------------------------------------- Figure 2: bounds on c_e
 fig, ax = plt.subplots(figsize=(6.2, 3.6))
 ms = np.arange(2, 91)
 ax.plot(ms, [base[m] / 3 for m in ms], color=AQUA, lw=2, zorder=2)
@@ -151,11 +151,11 @@ ax.annotate("maximal-rank baseline $B_m/n_m\\approx0.85\\,m^{-3/2}$", xy=(40, ba
 ax.text(10.6, 0.031, "$c_e\\leq0.0303$", color=INK, fontsize=9, va="center")
 ax.set_title("Upper bounds for the cokernel density $c_e$", loc="left", fontsize=10, color=INK)
 fig.tight_layout()
-fig.savefig(os.path.join(FIG, "fig1_ce_bounds.pdf"))
-fig.savefig(os.path.join(FIG, "fig1_ce_bounds.png"), dpi=200)
+fig.savefig(os.path.join(FIG, "fig2_ce_bounds.pdf"))
+fig.savefig(os.path.join(FIG, "fig2_ce_bounds.png"), dpi=200)
 plt.close(fig)
 
-# ---------------------------------------------------------------- Figure 2: threshold + odometer
+# ---------------------------------------------------------------- Figure 1: threshold + odometer
 fig, (a1, a2) = plt.subplots(2, 1, figsize=(6.2, 5.6), gridspec_kw={"height_ratios": [1.35, 1]})
 mm = np.arange(2, 31)
 a1.plot(mm, mm * (mm - 1) / 2, color=MUTED, lw=1.5, ls="--", zorder=1)
@@ -197,8 +197,8 @@ a2.text(15.9, -0.84, "9, 15, 18, 21: never reached", va="center", fontsize=8, co
 a2.set_title("(b) The degrees $k\\in\\mathcal{H}_m$ (filled); $d(m)$ = sum of filled $k<m$", loc="left",
              fontsize=10, color=INK)
 fig.tight_layout()
-fig.savefig(os.path.join(FIG, "fig2_threshold_odometer.pdf"))
-fig.savefig(os.path.join(FIG, "fig2_threshold_odometer.png"), dpi=200)
+fig.savefig(os.path.join(FIG, "fig1_threshold_odometer.pdf"))
+fig.savefig(os.path.join(FIG, "fig1_threshold_odometer.png"), dpi=200)
 plt.close(fig)
 print("data and figures written to", DATA, FIG)
 
