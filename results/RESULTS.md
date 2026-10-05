@@ -835,3 +835,131 @@ A proof of C3 would need to control the higher layers of the 3-step lift m−3 �
 
 Files (Task F): `taskF_faithful.py`, `taskF_tensor.py`, `taskF_symb.py`, `taskF_cartan.py`, `taskF_words.py`, `taskF_top.py`,
 `taskF_omegaK.py`, `taskF_omegaK_show.py`, `taskF_explore.py`; outputs `out_taskF_*.txt`.
+
+---------------------------------------------------------------------------------------------------
+## Task G — thresholds k_13, k_14, k_15
+
+Question: test the refined conjecture (THEORY 6.8): k_m = d(m) − 1 if 3 | m, m ≥ 9, m ≠ 3·2^r, otherwise k_m = d(m) with
+ker at d(m) = span{ω_0, ω_1, ω_2}. Predictions k_13 = 69, k_14 = 82, k_15 = 95 (d(15) = 96).
+
+**Verdict.** The conjecture survives every test made.
+* **m = 13: k_13 = 69 = d(13), and ker(R | (u_13)_69) = span{ω_0, ω_1, ω_2}, i.e. P(13) holds** [Verified, exact].
+* **m = 14: k_14 = 82 = d(14), and ker(R | (u_14)_82) = span{ω_0, ω_1, ω_2}, i.e. P(14) holds** [Verified, exact].
+* **m = 15 (partial): k_15 ≤ 95 = d(15) − 1** [Proved + computation: an explicit kernel element η_15 of degree 95,
+  verified η_15·σ' = 0]. The lower bound k_15 ≥ 95 was **not** established (proved: k_15 ≥ k_14 = 82 by monotonicity).
+  m = 15 work was stopped on request.
+
+All computations are exact over F_2 (no randomized step). Machine: 8-core Ryzen 7 5800H, 16 GB; NUMBA_NUM_THREADS = 10
+(later 14), peak private memory ≤ 12 GB (enforced by `taskG_watchdog.py`), every process ≤ 3 h (blocks longer than that
+were split by intra-block checkpoints, see G1).
+
+### G1. Method: fast exact lifting from level a = 10  (`taskG_core.py`, driver `taskG_run.py`)
+Same algorithm as THEORY 6.5 / `taskE_lift.py` (exact layer-wise lifting through u_M = Λ(I) ⊗ u_10, I = L_{≥10}/L_{≥M},
+abelian with zero 2-map since 2·10 ≥ M), re-implemented so that blocks of 10^6–1.7·10^7 dimensions are feasible:
+* R^{(M)} = Σ_T e_T ⊗ Z_T (T ⊂ I-letters); the Z_T are stored once per level-10 block as sparse "straightening tables"
+  (one PBW straightening per monomial of a level-10 block, shared by all candidates), and residuals are computed
+  bit-sliced (64 candidates per word).
+* the test "residual ∈ im R^{(10)}" uses cokernel functionals F_t (basis of {f : R_{t−δ} f = 0}), computed once per
+  level-10 block by elimination of [R^T | Id] and cached on disk (`taskG_cache/a10/`), together with the kernel bases
+  of R^{(10)} (`ker_*.npz`, dimensions checked against `taskC1_m10.pkl`);
+* the layer test is done target by target with an accumulated combination matrix; preimages are computed only for
+  the surviving combinations, from an echelon of [R_b | Id] with recorded pivots (Four-Russians replay);
+* memory: candidate groups are kept unpadded; large survivor sets are spilled to disk (memmap); intra-block
+  checkpoints (layer / target / preimage-group level) make every block resumable (`TASKG_CKPT`, `TASKG_DEADLINE`).
+* every final candidate is re-checked to satisfy yσ' = 0 at level M (all T, including T = ∅), and their independence
+  is checked by a rank computation.
+**Validation.** Reproduces exactly all previously known kernels: M = 11 from 10 (n = 44..47: 0, 0, 1 (ω), 2 per orbit;
+`out_taskG_val_M11.txt`) and M = 12 from 10 (n = 52..57: 0 except ω_1 at 57, 958 s versus 1600 s for half the range
+with `taskE_lift.py`; `out_taskG_val_M12.txt`). The memory-lean variant `lift_block2` was cross-checked against
+`lift_block` (M = 11, n = 45..47; M = 13, n = 67, identical layer statistics), and the checkpoint/resume path
+was tested by killing and resuming a block (identical result).
+Ranges needing no computation: k_m is nondecreasing (THEORY 3.1(a)), so with k_12 = 57, R is injective in degrees
+≤ 56 for all m ≥ 12; with k_13 = 69 (below) it is injective in degrees ≤ 68 for all m ≥ 13. ρ-symmetry: one block per
+rotation orbit.
+
+### G2. m = 13  (`taskG_run.py 13 10 57 69`, `out_taskG_M13.txt`, `taskG_M13_a10.pkl`, summary `out_taskG_summary_M13.txt`)
+All ρ-orbit representatives of degrees 57..69 computed exactly (I = L_10 ⊕ L_11 ⊕ L_12, 8 letters):
+
+| n | 57 | 58 | 59 | 60 | 61 | 62 | 63 | 64 | 65 | 66 | 67 | 68 | **69** |
+|---|----|----|----|----|----|----|----|----|----|----|----|----|----|
+| orbit reps | 21 | 23 | 23 | 23 | 23 | 23 | 25 | 23 | 23 | 25 | 23 | 23 | 25 |
+| largest block | 1.13M | 1.05M | 1.17M | 1.52M | 1.41M | 1.55M | 2.00M | 1.85M | 2.02M | 2.58M | 2.38M | 2.57M | 3.25M |
+| candidates through layer tests | 4604 | 6571 | 9261 | 14891 | 15320 | 18731 | 27603 | 26548 | 31107 | 44135 | 44202 | 63315 | 103896 |
+| **dim ker (all blocks)** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **3** |
+| time (s) | 55 | 197 | 200 | 371 | 249 | 215 | 496 | 500 | 500 | 960 | 633 | 800 | 1796 |
+
+Total 6973 s (2 h), one run. **k_13 = 69 = d(13).** The kernel in degree 69 is one vector per ρ-orbit, in block
+(19,27,23) (+ rotations; block dimension 153), the single PBW monomial
+y12.0·y11.2·y10.1·y8.2·y7.1·y6.0·y5.2·y4.1·y3.0·y2.2·y1.1 = ω^{(13)}_1. All other 24 orbit representatives of degree 69
+(up to 3.25·10^6-dimensional) are injective. **P(13) holds** (no η-type defect; 13 is a jump step, 13 ∈ 𝓗_14).
+Consistent with THEORY 6.4(c)/6.3: in degrees < 69 + 13 = 82 the level-14 kernel embeds into the level-13 kernel.
+
+### G3. m = 14  (`taskG_run.py 14 10 69 82` in 16 resumable runs, `out_taskG_M14.txt`, `taskG_M14_a10.pkl`, summary `out_taskG_summary_M14.txt`)
+I = L_10 ⊕ … ⊕ L_13 (11 letters). Degrees ≤ 68 are covered by monotonicity (k_14 ≥ k_13 = 69).
+| n | 69 | 70 | 71 | 72 | 73 | 74 | 75 | 76 | 77 | 78 | 79 | 80 | 81 | **82** |
+|---|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+| orbit reps | 29 | 26 | 28 | 29 | 28 | 28 | 29 | 30 | 28 | 29 | 30 | 28 | 29 | 30 |
+| largest block | 6.3M | 5.9M | 6.5M | 8.3M | 7.8M | 8.5M | 10.7M | 10.0M | 10.8M | 13.5M | 12.6M | 13.5M | 16.8M | 15.5M |
+| candidates through layer tests | 106k | 113k | 141k | 212k | 199k | 229k | 323k | 293k | 327k | 453k | 471k | 558k | 762k | 834k |
+| **dim ker (all blocks)** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **3** |
+
+Every ρ-orbit representative of every degree 69..82 was computed exactly (nothing skipped, nothing randomized).
+**k_14 = 82 = d(14).** The kernel in degree 82 is one vector per ρ-orbit, in block (23,32,27) (+ rotations; block
+dimension 160): the single PBW monomial y13.1·y12.0·y11.2·y10.1·y8.2·y7.1·y6.0·y5.2·y4.1·y3.0·y2.2·y1.1 = ω^{(14)}_1.
+All other 29 representatives of degree 82 (up to 1.55·10^7-dimensional) are injective. **P(14) holds.**
+Largest single block: (27,27,27), n = 81, dimension 16 769 439, lifting page E_1 = 7260 + 94 882 + … candidates
+(layer tests (layer, #candidates, killed) = (1, 7260, 48), (2, 102142, 26476), (3, 85957, 85957), (4, 4266, 4266)).
+Typical structure for the big blocks: almost nothing dies at layer 1 (cokernels of level 10 near its middle degree are
+small), 25–40 % at layer 2, everything remaining at layer 3, and the few last candidates at layers 4–5.
+Timings: block times in `out_taskG_summary_M14.txt` (sum 67 000 s; for the 6 largest blocks of n = 79..82 they count only
+the last resumed session). Wall clock for m = 14 ≈ 32 h in 16 runs of ≤ 3 h (10 threads up to n = 79, 14 threads
+after), including ≈ 4 h lost to runs stopped by the 12 GB memory watchdog (`out_taskG_watchdog.txt`) before the
+memory-lean layer test (rows e_rem + D·e_killed instead of a dense combination matrix) and disk spilling were added;
+peak private memory of the final runs ≈ 2–6 GB, checkpoints up to ≈ 40 GB on disk (scratch, deleted after use).
+
+### G4. m = 15 (partial; stopped on request)  (`taskG_blocks.py`, `taskG_small.py`, `taskG_eta15.py`; outputs `out_taskG_blocks_M15.txt`, `out_taskG_small_M15_95.txt`, `out_taskG_small_M15_94.txt`, `out_taskG_eta15.txt`; pickles `taskG_blocks_M15.pkl`, `taskG_small_M15.pkl`)
+**What is proved.** k_15 ≤ 95 = d(15) − 1 [Proved + computation]: the block (36,32,27) of degree 95 (dimension 4613;
+= wt(ω^{(15)}_0) − β_0, ρ-orbit representative (27,36,32)) contains a nonzero element η_15 (85 split PBW terms) with
+η_15·σ' = 0 at level 15. It was produced by the exact lifting from level 10 (kernel of that block is exactly
+1-dimensional) and re-verified independently by straightening η_15·σ' with the plain engine (`taskG_eta15.py`).
+Hence dim ker(R_σ | (u_15)_95) ≥ 3 (ρ-rotations) and k_15 ≤ 95 (also for the original σF on u_15, THEORY 1.6).
+Structure (`out_taskG_eta15.txt`): **η_15 ≡ y13.1·ω^{(14)}_0 = c^{(1)}_{13}·ω^{(14)}_0 (mod L_14)** — exactly the
+window-edge form predicted in THEORY 6.8 (c^{(j+1)}_{m−2}·ω^{(m−1)}_j, as η_9 ≡ c^{(0)}_7·ω^{(8)}_2); η_15 is not
+annihilated by any of the 38 letters (cancellation type, like η_9). It **dies at the free step 15 → 16**: the same block
+at level 16 (dimension 5495) has zero kernel, while ω^{(16)}_0 (block (37,32,27), 8 terms) is in ker at level 16
+(`out_taskG_blocks_M16.txt`), as predicted (k_16 = d(16) = 96 conjecturally).
+**What was checked (not a proof of k_15 ≥ 95).** Exact kernels at level 15 on the ρ-orbit representatives with small
+E_1 (lifting-page size):
+* n = 95: 25 of 34 orbit representatives (all with E_1 ≤ 60000, block dimensions up to 2.74·10^6): kernel only in
+  (27,36,32) (dim 1, = η_15); the other 24 are injective. Not computed: 9 representatives with E_1 = 1.2·10^5 … 1.4·10^6.
+* n = 94: 21 of 34 orbit representatives (E_1 ≤ 20000, dimensions up to 9.9·10^5): all injective. 13 not computed.
+* n = 96: the ω-block (37,32,27) has kernel exactly span{ω^{(15)}_0} (8 terms); block (36,33,27) has a 1-dimensional
+  kernel (85 terms; not analysed further).
+* Degrees 83..93 at level 15: not computed (k_15 ≥ 82 is all that is proved).
+* An Ansatz search (`taskG_ansatz.py`, PBW monomials whose degree multiset differs from 𝓗_m by ≤ 2 replacements)
+  reproduces η_9 at m = 9 (r = 2) but finds nothing at m = 10..15 in degree d(m) − 1; at m = 15 this is because η_15
+  needs replacements of size 3 (terms such as y14.1·y13.0·y12.0·y12.1·y11.1·y10.0·y8.1·y7.0·y5.1·y2.1·y1.0)
+  (`out_taskG_ansatz_r2.txt`).
+Cost estimate for completing m = 15: E_1 per block grows to 1.4·10^6 (n = 95) with blocks of 10^7–4·10^7 dimensions;
+with the present method that is out of reach (estimated > 100 h and > 12 GB for the largest blocks).
+
+### G5. Status of the refined conjecture (THEORY 6.8)
+| m | 2–8 | 9 | 10 | 11 | 12 | **13** | **14** | **15** | 16 |
+|---|---|---|---|---|---|---|---|---|---|
+| prediction | d | d−1 | d | d | d | d = 69 | d = 82 | d−1 = 95 | d = 96 |
+| k_m | d | 35 = d−1 | 36 | 46 | 57 | **69** | **82** | **≤ 95, ≥ 82** | (η_15 dies at level 16) |
+| kernel at k_m | ω | η_9 | ω | ω | ω | **ω (exact)** | **ω (exact)** | η_15 found | – |
+
+So the conjecture is confirmed through m = 14, and its m = 15 prediction is confirmed in the upper-bound direction
+(the predicted defect exists, in the predicted block, with the predicted leading term c^{(j+1)}_{13}·ω^{(14)}_j, and it
+dies at level 16 as predicted). Open: k_15 ≥ 95.
+
+Timings: m = 13: 1.9 h of block time (one run); m = 14: ≈ 32 h wall clock (16 resumable runs); m = 15 partial: ~3.4 h (single-thread
+small-block runs); precomputed level-10 kernel bases / cokernel functionals / straightening tables are cached in
+`taskG_cache/` (10.9 GB; can be deleted, it is regenerated on demand; reusable for further levels with a = 10, M ≤ 20).
+
+Files (Task G): `taskG_core.py` (engine), `taskG_run.py` (driver, resumable), `taskG_blocks.py`, `taskG_small.py`,
+`taskG_eta15.py`, `taskG_ansatz.py`, `taskG_dims.py`, `taskG_e1est.py`, `taskG_summary.py`, `taskG_cktest.py`,
+`taskG_watchdog.py`, `taskG_chunk.ps1`, `taskG_bench.py`, `taskG_e2probe.py`; outputs `out_taskG_*.txt`; pickles
+`taskG_M13_a10.pkl`, `taskG_M14_a10.pkl`, `taskG_blocks_M13.pkl`, `taskG_blocks_M15.pkl`, `taskG_blocks_M16.pkl`,
+`taskG_small_M15.pkl`; cache `taskG_cache/`.

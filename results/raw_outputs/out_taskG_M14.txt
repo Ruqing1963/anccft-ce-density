@@ -802,3 +802,154 @@ M=14 n=81: 29 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
       [mem] pre-phase block (14, 15, 16) done (37/55): private 1.55 GB, tab 65 ker 4 cok 8
       [mem] pre-phase block (14, 16, 15) done (38/55): private 1.55 GB, tab 66 ker 4 cok 8
       [mem] pre-phase block (16, 18, 18) done (39/55): private 1.55 GB, tab 66 ker 4 cok 8
+      [mem] pre-phase block (15, 17, 16) done (40/55): private 1.56 GB, tab 67 ker 4 cok 8
+      [mem] pre-phase block (15, 16, 17) done (41/55): private 1.57 GB, tab 68 ker 4 cok 8
+      [mem] pre-phase block (16, 15, 17) done (42/55): private 1.57 GB, tab 69 ker 4 cok 8
+      [mem] pre-phase block (16, 17, 15) done (43/55): private 1.58 GB, tab 70 ker 4 cok 8
+      [mem] pre-phase block (16, 17, 18) done (44/55): private 1.59 GB, tab 71 ker 4 cok 8
+      [mem] pre-phase block (16, 18, 17) done (45/55): private 1.60 GB, tab 72 ker 4 cok 8
+      [mem] pre-phase block (14, 15, 15) done (46/55): private 1.60 GB, tab 73 ker 4 cok 8
+      [mem] pre-phase block (15, 15, 16) done (47/55): private 1.61 GB, tab 74 ker 4 cok 8
+      [mem] pre-phase block (15, 16, 15) done (48/55): private 1.62 GB, tab 75 ker 4 cok 8
+      [mem] pre-phase block (15, 16, 16) done (49/55): private 1.64 GB, tab 76 ker 4 cok 8
+      [mem] pre-phase block (16, 16, 17) done (50/55): private 1.65 GB, tab 77 ker 4 cok 8
+      [mem] pre-phase block (16, 17, 16) done (51/55): private 1.66 GB, tab 78 ker 4 cok 8
+      [mem] pre-phase block (16, 17, 17) done (52/55): private 1.67 GB, tab 79 ker 4 cok 8
+      [mem] pre-phase block (15, 15, 15) done (53/55): private 1.68 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (16, 16, 16) done (54/55): private 1.70 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (17, 17, 17) done (55/55): private 1.71 GB, tab 80 ker 4 cok 8
+    after layer 3: 6332 candidates in 166 groups
+      layer 4: 6332 candidates, survivors 0
+    after layer 4: 15 candidates in 9 groups
+      layer 5: 15 candidates, survivors 0
+    after layer 5: 0 candidates in 0 groups
+    after layer 6: 0 candidates in 0 groups
+    after layer 7: 0 candidates in 0 groups
+  gamma=(26, 28, 28) n=82 dim=9993554: layer tests (layer, #cand, rank) = [(1, 2972, 36), (2, 53546, 11680), (3, 74506, 74502), (4, 6332, 6332), (5, 15, 15)] -> ker = 0   [966.6s, total 967s]  {'t_tab': 0, 't_ker': 0, 't_cok': 0, 't_ech': 297}
+    after layer 0: 5509 candidates in 1 groups
+      layer 1: 5509 candidates, survivors 5477
+      [mem] pre-phase block (23, 23, 25) done (1/10): private 1.30 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (23, 24, 25) done (2/10): private 1.33 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (24, 23, 25) done (3/10): private 1.35 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (22, 23, 24) done (4/10): private 1.39 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (23, 22, 24) done (5/10): private 1.41 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (23, 24, 24) done (6/10): private 1.46 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (24, 23, 24) done (7/10): private 1.50 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (23, 23, 24) done (8/10): private 1.58 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (24, 24, 24) done (9/10): private 1.62 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (23, 23, 23) done (10/10): private 1.68 GB, tab 80 ker 4 cok 8
+    after layer 1: 87892 candidates in 12 groups
+      layer 2: 87892 candidates, survivors 72465
+      [mem] pre-phase block (19, 20, 22) done (1/32): private 1.80 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 19, 22) done (2/32): private 1.80 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 20, 21) done (3/32): private 1.81 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 18, 21) done (4/32): private 1.81 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 19, 21) done (5/32): private 1.82 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 18, 21) done (6/32): private 1.82 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 20, 22) done (7/32): private 1.95 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 21, 21) done (8/32): private 1.96 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (21, 19, 21) done (9/32): private 1.96 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 19, 21) done (10/32): private 1.97 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 20, 20) done (11/32): private 1.98 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 18, 20) done (12/32): private 1.98 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 18, 20) done (13/32): private 2.00 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 20, 21) done (14/32): private 2.05 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 19, 21) done (15/32): private 2.06 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 19, 20) done (16/32): private 2.08 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 18, 20) done (17/32): private 2.09 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 21, 21) done (18/32): private 2.22 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (21, 20, 21) done (19/32): private 2.24 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 20, 21) done (20/32): private 2.26 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 21, 20) done (21/32): private 2.26 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (21, 20, 20) done (22/32): private 2.28 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 20, 20) done (23/32): private 2.30 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 19, 20) done (24/32): private 2.32 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 20, 19) done (25/32): private 2.33 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 19, 20) done (26/32): private 2.34 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 20, 19) done (27/32): private 2.34 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 19, 19) done (28/32): private 2.36 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (18, 19, 19) done (29/32): private 2.37 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 18, 19) done (30/32): private 2.38 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (20, 20, 20) done (31/32): private 2.49 GB, tab 80 ker 4 cok 8
+      [mem] pre-phase block (19, 19, 19) done (32/32): private 2.54 GB, tab 80 ker 4 cok 8
+    checkpoint saved, deadline reached -> exit (state start, layer index 3)
+--- resume 10/05/2026 02:15:49
+M=14 from a=10: I-letters [(13, 0), (13, 1), (13, 2), (12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+M=14 n=80: 28 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+M=14 n=81: 29 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+    resumed at layer index 3, phase start
+--- resume with memory-lean layer test 10/05/2026 02:33:53
+M=14 from a=10: I-letters [(13, 0), (13, 1), (13, 2), (12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+M=14 n=80: 28 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+M=14 n=81: 29 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+    resumed at layer index 3, phase start
+      layer 3: 180192 candidates, survivors 2
+      [mem] pre-phase block (14, 16, 18) done (1/55): private 1.71 GB, tab 44 ker 0 cok 8
+      [mem] pre-phase block (16, 14, 18) done (2/55): private 1.71 GB, tab 44 ker 0 cok 8
+      [mem] pre-phase block (14, 14, 17) done (3/55): private 1.71 GB, tab 45 ker 0 cok 8
+      [mem] pre-phase block (15, 15, 18) done (4/55): private 1.71 GB, tab 45 ker 0 cok 8
+      [mem] pre-phase block (14, 17, 17) done (5/55): private 1.71 GB, tab 45 ker 0 cok 8
+      [mem] pre-phase block (17, 14, 17) done (6/55): private 1.71 GB, tab 45 ker 0 cok 8
+      [mem] pre-phase block (16, 16, 19) done (7/55): private 1.71 GB, tab 45 ker 0 cok 8
+      [mem] pre-phase block (14, 15, 17) done (8/55): private 1.71 GB, tab 46 ker 0 cok 8
+      [mem] pre-phase block (15, 14, 17) done (9/55): private 1.72 GB, tab 47 ker 0 cok 8
+      [mem] pre-phase block (14, 16, 17) done (10/55): private 1.72 GB, tab 48 ker 0 cok 8
+      [mem] pre-phase block (16, 14, 17) done (11/55): private 1.72 GB, tab 49 ker 0 cok 8
+      [mem] pre-phase block (15, 16, 18) done (12/55): private 1.72 GB, tab 49 ker 0 cok 8
+      [mem] pre-phase block (16, 15, 18) done (13/55): private 1.72 GB, tab 49 ker 0 cok 8
+      [mem] pre-phase block (15, 17, 18) done (14/55): private 1.72 GB, tab 49 ker 0 cok 8
+      [mem] pre-phase block (17, 15, 18) done (15/55): private 1.72 GB, tab 49 ker 0 cok 8
+      [mem] pre-phase block (14, 14, 16) done (16/55): private 1.72 GB, tab 50 ker 0 cok 8
+      [mem] pre-phase block (14, 16, 16) done (17/55): private 1.73 GB, tab 51 ker 0 cok 8
+      [mem] pre-phase block (16, 14, 16) done (18/55): private 1.73 GB, tab 52 ker 0 cok 8
+      [mem] pre-phase block (15, 15, 17) done (19/55): private 1.74 GB, tab 53 ker 0 cok 8
+      [mem] pre-phase block (15, 17, 17) done (20/55): private 1.74 GB, tab 54 ker 0 cok 8
+      [mem] pre-phase block (17, 15, 17) done (21/55): private 1.75 GB, tab 55 ker 0 cok 8
+      [mem] pre-phase block (16, 16, 18) done (22/55): private 1.75 GB, tab 55 ker 0 cok 8
+      [mem] pre-phase block (14, 15, 16) done (23/55): private 1.75 GB, tab 56 ker 0 cok 8
+      [mem] pre-phase block (15, 14, 16) done (24/55): private 1.76 GB, tab 57 ker 0 cok 8
+      [mem] pre-phase block (14, 16, 15) done (25/55): private 1.77 GB, tab 58 ker 0 cok 8
+      [mem] pre-phase block (16, 14, 15) done (26/55): private 1.77 GB, tab 59 ker 0 cok 8
+      [mem] pre-phase block (15, 16, 17) done (27/55): private 1.78 GB, tab 60 ker 0 cok 8
+      [mem] pre-phase block (16, 15, 17) done (28/55): private 1.79 GB, tab 61 ker 0 cok 8
+      [mem] pre-phase block (15, 17, 16) done (29/55): private 1.79 GB, tab 62 ker 0 cok 8
+      [mem] pre-phase block (17, 15, 16) done (30/55): private 1.80 GB, tab 63 ker 0 cok 8
+      [mem] pre-phase block (16, 17, 15) done (31/55): private 1.80 GB, tab 64 ker 0 cok 8
+      [mem] pre-phase block (17, 16, 15) done (32/55): private 1.81 GB, tab 65 ker 0 cok 8
+      [mem] pre-phase block (16, 17, 18) done (33/55): private 1.81 GB, tab 65 ker 0 cok 8
+      [mem] pre-phase block (17, 16, 18) done (34/55): private 1.81 GB, tab 65 ker 0 cok 8
+      [mem] pre-phase block (16, 18, 17) done (35/55): private 1.82 GB, tab 66 ker 0 cok 8
+      [mem] pre-phase block (18, 16, 17) done (36/55): private 1.82 GB, tab 66 ker 0 cok 8
+      [mem] pre-phase block (14, 14, 15) done (37/55): private 1.83 GB, tab 67 ker 0 cok 8
+      [mem] pre-phase block (14, 15, 15) done (38/55): private 1.84 GB, tab 68 ker 0 cok 8
+      [mem] pre-phase block (15, 14, 15) done (39/55): private 1.84 GB, tab 69 ker 0 cok 8
+      [mem] pre-phase block (15, 15, 16) done (40/55): private 1.86 GB, tab 70 ker 0 cok 8
+      [mem] pre-phase block (15, 16, 15) done (41/55): private 1.86 GB, tab 71 ker 0 cok 8
+      [mem] pre-phase block (16, 15, 15) done (42/55): private 1.87 GB, tab 72 ker 0 cok 8
+      [mem] pre-phase block (15, 16, 16) done (43/55): private 1.89 GB, tab 73 ker 0 cok 8
+      [mem] pre-phase block (16, 15, 16) done (44/55): private 1.90 GB, tab 74 ker 0 cok 8
+      [mem] pre-phase block (16, 16, 15) done (45/55): private 1.90 GB, tab 75 ker 0 cok 8
+      [mem] pre-phase block (16, 16, 17) done (46/55): private 1.92 GB, tab 76 ker 0 cok 8
+      [mem] pre-phase block (16, 17, 16) done (47/55): private 1.93 GB, tab 77 ker 0 cok 8
+      [mem] pre-phase block (17, 16, 16) done (48/55): private 1.94 GB, tab 78 ker 0 cok 8
+      [mem] pre-phase block (16, 17, 17) done (49/55): private 1.95 GB, tab 79 ker 0 cok 8
+      [mem] pre-phase block (17, 16, 17) done (50/55): private 1.97 GB, tab 80 ker 0 cok 8
+      [mem] pre-phase block (17, 17, 16) done (51/55): private 1.98 GB, tab 80 ker 0 cok 8
+      [mem] pre-phase block (15, 15, 15) done (52/55): private 1.99 GB, tab 80 ker 0 cok 8
+      [mem] pre-phase block (17, 17, 18) done (53/55): private 1.99 GB, tab 80 ker 0 cok 8
+      [mem] pre-phase block (16, 16, 16) done (54/55): private 2.00 GB, tab 80 ker 0 cok 8
+      [mem] pre-phase block (17, 17, 17) done (55/55): private 2.01 GB, tab 80 ker 0 cok 8
+    checkpoint saved, deadline reached -> exit (state start, layer index 4)
+--- resume 10/05/2026 05:29:50
+M=14 from a=10: I-letters [(13, 0), (13, 1), (13, 2), (12, 0), (12, 1), (11, 0), (11, 1), (11, 2), (10, 0), (10, 1), (10, 2)]
+M=14 n=80: 28 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+M=14 n=81: 29 orbit reps, kernel dim (reps) = 0, total = 3*... see blocks
+    resumed at layer index 4, phase start
+      layer 4: 6443 candidates, survivors 0
+    after layer 4: 8 candidates in 6 groups
+      layer 5: 8 candidates, survivors 0
+    after layer 5: 0 candidates in 0 groups
+    after layer 6: 0 candidates in 0 groups
+    after layer 7: 0 candidates in 0 groups
+  gamma=(27, 27, 28) n=82 dim=15543600: layer tests (layer, #cand, rank) = [(1, 5509, 32), (2, 87892, 15427), (3, 180192, 180190), (4, 6443, 6443), (5, 8, 8)] -> ker = 0   [271.0s, total 271s]  {'t_tab': 7, 't_ker': 0, 't_cok': 8, 't_ech': 0}
+M=14 n=82: 30 orbit reps, kernel dim (reps) = 1, total = 3*... see blocks

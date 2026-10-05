@@ -617,6 +617,29 @@ def _cleanup_spill():
             pass
 
 
+@njit(parallel=True)
+def hconcat_bits(A, ka, B, kb):
+    """rows of A (first ka bits) followed by rows of B (first kb bits), packed"""
+    n = A.shape[0]
+    W = max(1, (ka + kb + 63) // 64)
+    out = np.zeros((n, W + 1), dtype=np.uint64)
+    wa = (ka + 63) // 64
+    w0 = ka >> 6
+    s = ka & 63
+    wb = (kb + 63) // 64
+    for i in prange(n):
+        for w in range(wa):
+            out[i, w] = A[i, w]
+        for w in range(wb):
+            v = B[i, w]
+            if s == 0:
+                out[i, w0 + w] |= v
+            else:
+                out[i, w0 + w] |= v << np.uint64(s)
+                out[i, w0 + w + 1] |= v >> np.uint64(64 - s)
+    return out[:, :W].copy()
+
+
 def _ident(n):
     K = np.zeros((n, nwords(n)), dtype=np.uint64)
     idx = np.arange(n)
@@ -760,23 +783,28 @@ def lift_block2(LL, g, kerdims, verbose=False, ckdir=None, ckevery=1200):
             phase = "start"
         if nc > 0 and i > 0 and Sps:
             if phase in ("start", "test"):
-                Kacc = None
-                nrow = nc
+                # combination space kept as rows  e_{rem[i]} + D[i] . (killed coordinates kil)   (memory-lean)
                 k0 = 0
                 if phase == "test":
                     k0 = st["k"]
-                    Kacc = None if st["Kacc"] is None else np.array(CK.arr(st["Kacc"]))
-                    nrow = st["nrow"]
+                    rem = np.array(CK.arr(st["rem"]))
+                    kil = np.array(CK.arr(st["kil"]))
+                    D = np.array(CK.arr(st["D"]))
                     gfiles = st["groups"]
                 else:
-                    gfiles = None
+                    rem = np.arange(nc, dtype=np.int64)
+                    kil = np.zeros(0, dtype=np.int64)
+                    D = np.zeros((nc, 1), dtype=np.uint64)
+                    gfiles = st["groups"] if (st is not None and li == li0 and st["phase"] == "start") else None
                 for kk in range(k0, len(Sps)):
                     Sp = Sps[kk]
                     if CK.due():
                         if gfiles is None:
                             gfiles = save_groups(groups)
                         CK.save({"g": g, "li": li, "phase": "test", "info": info, "groups": gfiles, "k": kk,
-                                 "Kacc": None if Kacc is None else CK.put(Kacc), "nrow": nrow})
+                                 "rem": CK.put(rem), "kil": CK.put(kil), "D": CK.put(D)})
+                    if rem.size == 0:
+                        break
                     F = LL.cokfun(tgts[Sp])
                     c = F.shape[0]
                     if c == 0:
@@ -793,20 +821,42 @@ def lift_block2(LL, g, kerdims, verbose=False, ckdir=None, ckevery=1200):
                         o += r
                     if not anyres:
                         continue
-                    cur = Nsp if Kacc is None else matmul(Kacc, nc, Nsp)
+                    cur = Nsp[rem]
+                    if kil.size:
+                        cur ^= matmul(D, kil.size, np.ascontiguousarray(Nsp[kil]))
                     del Nsp
                     if not cur.any():
                         continue
-                    Kp, rk = left_kernel(cur, cur.shape[1] * 64)
+                    Wc = cur.shape[1]
+                    E = cur.copy()
+                    rank, piv, pw_, plb_, rest = elim_info(E, Wc)
+                    del E
+                    piv = np.array(piv)
+                    rest = np.array(rest)
+                    Wr = nwords(rank)
+                    A = np.zeros((rank, Wc + Wr), dtype=np.uint64)
+                    A[:, :Wc] = cur[piv]
+                    ii = np.arange(rank)
+                    A[ii, Wc + (ii >> 6)] = np.left_shift(np.uint64(1), (ii & 63).astype(np.uint64))
+                    rk2, piv2, pw2, plb2, rest2 = elim_info(A, Wc)
+                    assert rk2 == rank
+                    X = np.zeros((rest.size, Wc + Wr), dtype=np.uint64)
+                    X[:, :Wc] = cur[rest]
                     del cur
-                    Kacc = Kp if Kacc is None else matmul(Kp, nrow, Kacc)
-                    del Kp
-                    nrow = Kacc.shape[0]
-                    if nrow == 0:
-                        break
-                if Kacc is None:
-                    Kacc = _ident(nc)
-                nsurv = Kacc.shape[0]
+                    replay(X, A, piv2, pw2, plb2, Wc + Wr)
+                    assert not X[:, :Wc].any()
+                    Lam = np.ascontiguousarray(X[:, Wc:])          # rest x rank: coefficients on the pivot rows
+                    del X, A
+                    if kil.size:
+                        Dn = D[rest] ^ matmul(Lam, rank, np.ascontiguousarray(D[piv]))
+                        D = hconcat_bits(Dn, kil.size, Lam, rank)
+                        del Dn
+                    else:
+                        D = Lam if Lam.shape[1] else np.zeros((rest.size, 1), dtype=np.uint64)
+                    kil = np.concatenate([kil, rem[piv]])
+                    rem = rem[rest]
+                    del Lam
+                nsurv = rem.size
                 info.append((i, nc, nc - nsurv))
                 if verbose:
                     print(f"      layer {i}: {nc} candidates, survivors {nsurv}", flush=True)
@@ -814,8 +864,12 @@ def lift_block2(LL, g, kerdims, verbose=False, ckdir=None, ckevery=1200):
                     groups = []
                     newc = None
                 else:
-                    KT = transpose_bits(Kacc, nsurv, nc)          # nc x W(nsurv)
-                    del Kacc
+                    KT = np.zeros((nc, nwords(nsurv)), dtype=np.uint64)   # nc x W(nsurv): column i = survivor i
+                    if kil.size:
+                        KT[kil] = transpose_bits(D, nsurv, kil.size)
+                    ii = np.arange(nsurv)
+                    KT[rem, ii >> 6] |= np.left_shift(np.uint64(1), (ii & 63).astype(np.uint64))
+                    del D
                     newc = {}
                     est = nsurv * 8 * sum(nwords(LL.block(comps[S]).size)
                                           for S in set(S for _, cc in groups for S in cc))
