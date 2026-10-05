@@ -1,0 +1,6 @@
+﻿a=1: C_a fails somewhere in every interval [M, M+L], L <= 4 (worst M=3), for M in [1500,3000]: L <= 3
+a=2: C_a fails somewhere in every interval [M, M+L], L <= 12 (worst M=4), for M in [1500,3000]: L <= 11
+a=3: C_a fails somewhere in every interval [M, M+L], L <= 43 (worst M=5), for M in [1500,3000]: L <= 24
+a=4: C_a fails somewhere in every interval [M, M+L], L <= 79 (worst M=6), for M in [1500,3000]: L <= 42
+a=5: C_a fails somewhere in every interval [M, M+L], L <= 132 (worst M=7), for M in [1500,3000]: L <= 66
+a=6: C_a fails somewhere in every interval [M, M+L], L <= 194 (worst M=8), for M in [1500,3000]: L <= 96

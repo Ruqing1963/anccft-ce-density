@@ -963,3 +963,90 @@ Files (Task G): `taskG_core.py` (engine), `taskG_run.py` (driver, resumable), `t
 `taskG_watchdog.py`, `taskG_chunk.ps1`, `taskG_bench.py`, `taskG_e2probe.py`; outputs `out_taskG_*.txt`; pickles
 `taskG_M13_a10.pkl`, `taskG_M14_a10.pkl`, `taskG_blocks_M13.pkl`, `taskG_blocks_M15.pkl`, `taskG_blocks_M16.pkl`,
 `taskG_small_M15.pkl`; cache `taskG_cache/`.
+
+---------------------------------------------------------------------------------------------------
+## Task H — quadratic lower bound
+
+Goal: an unconditional k_m ≥ c·m², or at least k_m/m^{3/2} → ∞ along an infinite set, via the Task F route (C_a:
+ω_{K_a} ∈ u_mσ', then the window lemma). Proofs are in THEORY §8. Runs used NUMBA_NUM_THREADS ≤ 12 and < 2 GB RAM;
+the longest run took 7 min. taskG_cache was not needed and was not regenerated.
+
+**Verdict.** **Not achieved**: no superlinear lower bound for k_m is proved. The best unconditional bound is still
+k_m ≥ max(82, m − 3) (m ≥ 14). Instead, a **proved no-go result**: the main route cannot work, even in principle.
+* **Theorem 8.1 [Proved]:** C_a(m) ⟹ k_{m−a} ≤ T_a(m) − 3, where T_a(m) = Σ_{k=m−a}^{m−1} k·d_k (< 3am; T_3(m) ≤ 8m − 15) is
+  the top degree of u(K_a). The reason: when T_a(m) ≤ k_{m−a} + 2, R^{(m−a)} is onto in all degrees that the layers
+  of J_a = ker π_{m−a} need, so R_σ' is onto J_a near the top, and the integral Λ_{m−a} of u_{m−a} lifts to a kernel
+  vector of level m. More generally, every kernel vector of level m−a in degree > D + T_a(m) − 3 − k_{m−a} lifts
+  (D = top u_{m−a}).
+* **Consequences [Proved]:** C_a fails for infinitely many m, for every fixed a. **Conjecture C3 (Task F) is false.** It
+  fails at least once in every 61 consecutive levels (computation for M ≤ 3000: in every 44). Under (H2) it fails for
+  every m ≥ 27. A step size a(m) = o(√m) can never work for all large m, so the Task F hope "a = O(m^{1/2−ε})" is
+  self-contradictory. Under the conjectured k_m ≈ d(m), C_a(m) requires a ≥ 0.106·m.
+* **Theorem 8.3 [Proved]: ceiling.** Every bound produced by iterating Cor. 7.4 (any chain of steps) from a proved base b
+  is ≤ b + 4m^{3/2}. The numerical optimum is ≈ 1.32·m^{3/2}. By THEORY 6.1(c), O(m^{3/2}) is exactly what the
+  application cannot use. The same O(m^{3/2}) ceiling holds for chains through arbitrary ideals (Remark 8.4, assuming
+  two-sided threshold bounds), by a "top-degree budget" argument.
+
+### H1. Theorem 8.1 checked on small levels  [Verified; `taskH_lift_check.py m a`, outputs `out_taskH_lift_m{m}_a{a}.txt`]
+For each ρ-orbit block γ with ker R^{(m−a)}_γ ≠ 0, the script computes dim π_{m−a}(ker R^{(m)}_γ) exactly (rank of the
+J_a-rows; levels from `taskC1_m*.pkl`). It also tests the blockwise hypothesis of 8.1 (coker R^{(m−a)} = 0 in all blocks
+γ + δ − μ, μ a weight of a nonempty K_a-monomial).
+
+| (m, a) | (6,1) | (7,1) | (7,2) | (8,1) | (8,2) | (8,3) | (9,1) | (9,2) | (9,3) | (10,1) | (10,2) |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| blocks with hypothesis | 1 | 19 | 0 | 10 | 0 | 0 | 29 | 0 | 0 | 132 | 0 |
+| violations | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| n* = first n with π(ker^{(m)}_n) ≠ 0 | 20 | 25 | 26 | 32 | 36 | – | 35 | 48 | – | 36 | 50 |
+| n* − k_{m−a} (window needs ≥ m − a) | 10 (5) | 10 (6) | 16 (5) | 11 (7) | 21 (6) | ∞ | 7 (8) | 27 (7) | ∞ | 1 (9) | 22 (8) |
+
+(n* < k_{m−a} + m − a only at m = 9 (η, k_9 = d(9) − 1) and at the free step 9 → 10 (ω^{(10)} = ω^{(9)}), as expected.)
+Above n*, π(ker^{(m)}) quickly fills ker^{(m−a)}. E.g. m = 7, a = 1: all of it from n = 32 on. In the top degree D it
+always contains Λ_{m−a} when a ≤ 2: (7,1), (8,1), (9,1), (10,1), (7,2), (8,2), (9,2), (10,2). C3 = (·,3) holds for m ≤ 10,
+consistent with T_3(m) > k_{m−3} + 2 there.
+
+### H2. Where C_a is excluded  [`taskH_nogo.py`, `out_taskH_nogo.txt`; `taskH_gaps.py`, `out_taskH_gaps.txt`]
+* With proved values of k (k_m exact for m ≤ 14, k_m ≥ max(82, m − 3) beyond): C_1 is excluded for m = 7..29, 31, 34, 37,
+  40 (≤ 40 listed), and **C_2 is excluded at m = 16, 17**. C3 cannot be excluded at any explicit level with proved values,
+  but it fails somewhere in every interval [M, M+43] (M ≤ 3000; analytic bound [M, M+60] for all M).
+  Worst-case gaps for a = 1..6: 4, 12, 43, 79, 132, 194.
+* Under the refined conjecture 6.8, the first excluded level is m = 7, 16, 26, 31, 44, 54, 61, 71, 83, 91, 101, 110 for
+  a = 1..12. C3 is excluded for **all** m ≥ 26 (checked to 10^4, analytic beyond). Under (H2) alone: all m ≥ 27.
+* Least admissible step under 6.8: a*(m)/m = 0.20, 0.15, 0.125, 0.11, 0.107 (m = 10, 20, 40, 100, 1000) → 1 − √0.8.
+* Ceiling of the route, G(m) (best bound from any chain, granting every C_a not excluded):
+
+| m | 10 | 20 | 50 | 100 | 200 | 1000 | 4000 |
+|---|---|---|---|---|---|---|---|
+| G(m) | 36 | 113 | 428 | 1240 | 3608 | 41305 | 333943 |
+| G/m^{3/2} | 1.14 | 1.26 | 1.21 | 1.24 | 1.28 | 1.31 | 1.32 |
+| d(m) | 36 | 148 | 910 | 3456 | 13648 | 334200 | 5336808 |
+
+### H3. Other results and ideas examined  [THEORY 8.4–8.5]
+* **Degree-sensitive criterion [Proved]:** π_{m−a}(ker^{(m)}_n) = 0 ⟺ ω_{K_a}·(u_m)_{D−n} ⊂ σ'u_m. The route only needs
+  this for n < k_{m−a} + m − a, and the data (n* above) satisfy it with a large margin at jump steps. C_a is the case n = D,
+  which is the one that fails.
+* **Homological form [Proved]:** ker(R^{(m)} | (u_m)_n) ≅ Tor_1^{u(L_{≥m})}(F2, U/Uσ')_{n+3}. This uses U free over
+  F2[σ'] (Thm 7.1) and over u(L_{≥m}) (PBW). So a quadratic bound is a vanishing theorem for H_1(L_{≥m}; U/Uσ') below
+  degree c·m².
+* **Evaluation modules (idea 1) [Proved + computation]:** for every r, Ψ_r(σ')f_0^{⊗r} = (Σ t_s)f_0^{⊗r}. The triple
+  terms are supported on permutation tensors, and the pair terms cancel (Ψ_2(σ') = (t_1+t_2)I). So with K = 2^j,
+  s_1^{K−1}f_0^{⊗r} is a kernel vector of σ' on ⊗V*[t_s]/(t_s^K) for every r. Truncated evaluation modules cannot
+  certify injectivity beyond t-degree ≈ m/3, which is the linear barrier, and adding factors does not help. (This also
+  explains the factor s_1^{21} of det Ψ_3(σ').)
+* **Idea 2 (tensor decomposition u_m = u(K_a) ⊗ u_{m−a})** [Proved]: ω_{K_a} is central, but σ' is diagonal only on gr.
+  That gr-diagonality is precisely what forces Theorem 8.1, so this idea leads to the obstruction rather than a proof.
+* **Idea 3 (Frobenius dual form)** is the mirror statement π_{m−a}(ker L_σ') = 0. It is equally false for large m.
+* **Idea 4 (growing a)** needs a ≳ √m, and then the route is capped at O(m^{3/2}). Under the conjectured size of k
+  it needs a ≥ 0.106m, and then the route is only linear.
+* **Contractions + semicontinuity**: keeping all four terms of σ' leading forces the brackets [e1,e0], [e2,e1] and
+  [y1.0,y2.2] → y3.1 to survive. The contractions tried that kill more make σ' a product of letters, with a kernel in
+  degree ≤ 2. Nothing useful.
+
+### H4. Status
+* Proved: the no-go theorems above. Every statement of the form "every kernel element of level m dies in some quotient"
+  (C_a, any ideal) is limited to O(m^{3/2}).
+* Open: any superlinear lower bound. The task's main route (C3, or C_a with a = O(m^{1/2−ε})) is **refuted**. A proof
+  must be degree-sensitive: vanishing of π_{m−a} on the kernel only in a window above k_{m−a} (8.4(i)), or vanishing of
+  H_1(L_{≥m}; U/Uσ') in degrees < c·m².
+
+Files (Task H): `taskH_lift_check.py`, `taskH_nogo.py`, `taskH_gaps.py`; outputs `out_taskH_lift_m{6..10}_a{1,2,3}.txt`,
+`out_taskH_nogo.txt`, `out_taskH_gaps.txt`.

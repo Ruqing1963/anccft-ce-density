@@ -615,3 +615,142 @@ in the degrees within k_{m−3} of the top. So higher layers of the spectral seq
 * Not proved: any superlinear bound. In particular (H2) and its weakest useful form k_m/m^{3/2} → ∞ (6.1) remain open.
   Both follow from Conjecture C3 (or C_a with a = O(m^{1/2−ε})) via 7.3–7.4, and C3 is a single divisibility statement per
   level.
+  **[Update, Task H, §8: C3 is false for infinitely many m (it fails at least once in every 61 consecutive levels), and
+  under (H2) it fails for every m ≥ 27. The hypothesis "C_a with a = O(m^{1/2−ε}) for all large m" is self-contradictory.
+  Every bound obtainable by iterating 7.4 is ≤ b + 4m^{3/2}, so this route cannot reach k_m/m^{3/2} → ∞.]**
+
+---------------------------------------------------------------------------------------------------
+## 8. Quadratic lower bound (Task H)
+
+Notation as in §6–7. For 1 ≤ a < m: K_a := L^s_{[m−a, m)} ⊂ L_m (letters of degree m−a, …, m−1; a restricted ideal),
+J_a := u_m K_a = ker π_{m−a}, **T_a(m) := Σ_{k=m−a}^{m−1} k·d_k = top degree of u(K_a)**, D := top(u_{m−a}), Λ_{m−a} the
+integral (top monomial) of u_{m−a}. C_a(m) is the statement ω_{K_a} ∈ σ'u_m (⟺ ker R^{(m)} ⊂ J_a, Prop. 7.3).
+k^R, k^L: thresholds of R_σ', L_σ'; on u_m they coincide (Θ', §1.4). Scripts `taskH_*.py`; numbers in RESULTS "Task H".
+
+**Summary.** The goal (k_m ≥ c·m², or k_m/m^{3/2} → ∞ on an infinite set) was **not** reached. The main finding is
+negative and proved: **the Task F route cannot work.** The statement C_a(m) forces k_{m−a} ≤ T_a(m) − 3 ≈ (8/3)·a·m
+(Theorem 8.1). So C_a fails as soon as the threshold is superlinear, C3 is false for infinitely many m, and every lower
+bound obtainable by iterating Corollary 7.4 (with any steps a(m)) is O(m^{3/2}) (Theorem 8.3). That is exactly the
+borderline that Prop. 6.1(c) shows to be useless. Any successful argument has to be degree-sensitive (8.5).
+
+### 8.1 Forced lifting near the top  [Proved; verified on 9 pairs (m, a), `taskH_lift_check.py`]
+**Theorem 8.1.** Let γ be a Q-block, and let Ŝ be the set of Q-weights of the nonempty PBW monomials in the K_a-letters.
+If coker R^{(m−a)} = 0 in every block γ + δ − μ, μ ∈ Ŝ, then π_{m−a}(ker R^{(m)}_γ) = ker R^{(m−a)}_γ: every kernel
+vector of level m − a lifts to a kernel vector of level m.
+In principal degrees: π_{m−a}(ker^{(m)}_n) = ker^{(m−a)}_n for every n > D + T_a(m) − 3 − k_{m−a}.
+In particular, **if T_a(m) ≤ k_{m−a} + 2, there is y ∈ ker R^{(m)} of degree D with π_{m−a}(y) = Λ_{m−a}, so C_a(m)
+fails.** Equivalently: **C_a(m) ⟹ k_{m−a} ≤ T_a(m) − 3.**
+*Proof.* F^i := (u(K_a)^+)^i u_m is a finite decreasing filtration by right ideals, with F^1 = J_a. With the K_a-letters
+first in the PBW order, F^i = (u(K_a)^+)^i ⊗ V with V ≅ u_{m−a} via π, gr^i = gr^i u(K_a) ⊗ u_{m−a}, and
+gr R_σ' = 1 ⊗ R^{(m−a)} (§6.3; only the ideal property of K_a is used). Everything is Q-graded, and the weights of
+gr^{≥1} u(K_a) are the weights in Ŝ (same Hilbert series as the PBW monomials). By hypothesis 1 ⊗ R^{(m−a)} maps onto
+gr^i_{γ+δ} for every i ≥ 1. A map compatible with a finite filtration whose associated graded map is onto is onto, so
+R_σ' : (J_a)_γ → (J_a)_{γ+δ} is onto. Let x ∈ ker R^{(m−a)}_γ and let x̂ ∈ (u_m)_γ be a lift. Then π(x̂σ') = xσ' = 0, so
+x̂σ' = zσ' with z ∈ (J_a)_γ, and y := x̂ − z ∈ ker R^{(m)}_γ satisfies π(y) = x.
+Degree version: the blocks γ + δ − μ have degree n + 3 − e, where e = deg μ ∈ [m − a, T_a(m)]. By the Frobenius pairing
+of u_{m−a}, coker R^{(m−a)} in degree n + 3 − e is dual to (ker L_σ')_{D−n−3+e} (detection criterion, §6.4), and this
+vanishes when D − n − 3 + e < k^L_{m−a} = k_{m−a}. For n = D, x = Λ_{m−a} (Λσ' = 0 for degree reasons) and e ≤ T_a(m)
+this is the condition T_a(m) − 3 < k_{m−a}. Then y ∉ J_a, so ker R^{(m)} ⊄ J_a, which is the negation of C_a(m) (7.3). ∎
+[Verified] `taskH_lift_check.py` computes dim π_{m−a}(ker R^{(m)}_γ) exactly for every block (one per ρ-orbit) with
+ker R^{(m−a)}_γ ≠ 0, for (m, a) = (6,1), (7,1), (7,2), (8,1), (8,2), (8,3), (9,1), (9,2), (9,3), (10,1), (10,2). On all
+blocks where the hypothesis holds (1, 19, 0, 10, 0, 0, 29, 0, 0, 132, 0 blocks) lifting is complete. There are no violations.
+*Remark.* ω_{K_a} is central in u_m. For x of positive degree, ad x is a derivation preserving u(K_a) (K_a is an ideal) and
+raising degree, so it kills the top degree of u(K_a). This is the "tensor decomposition" of idea 2 in the task. It does not
+help: σ' acts diagonally only on gr (σ' does not commute with K_a). That diagonal action, together with the surjectivity
+of R^{(m−a)} near its top, is exactly what forces Theorem 8.1.
+
+### 8.2 Consequences for C_a  [Proved; constants by computation `taskH_nogo.py`, `taskH_gaps.py`]
+T_a(m) < 3am. More precisely T_3(m) ≤ 8m − 15, since one of m−3, m−2, m−1 is a multiple of 3, with d = 2.
+**Corollary 8.2.**
+(a) *(fixed a)* For each fixed a, C_a fails for infinitely many m. Indeed, C_a for all m ≥ M_0 gives k_m ≥ m²/(2a) − O(m) by
+7.4. Then T_a(m) < 3am ≤ k_{m−a} + 2 for large m, contradicting 8.1.
+(b) *(C3, quantitative, unconditional)* **Among any 61 consecutive levels M, …, M+60 there is one where C3 fails.** Proof:
+assume C3 on [M, M+60] and put x = M + 57. Iterating 7.4 twenty times, at x, x−3, …, x−57 ≥ M, gives
+k_x ≥ Σ_{i=0}^{19}(x − 3 − 3i) = 20x − 630. C3 at x + 3 requires k_x ≤ T_3(x+3) − 3 ≤ 8x + 6. These are incompatible
+because x ≥ 60. The exact worst-case gap from `taskH_gaps.py` (M ≤ 3000, using the known k_m, m ≤ 14) is 43 for a = 3. The
+analogous gaps are 4, 12, 43, 79, 132, 194 for a = 1..6 (24 for a = 3 when M ≥ 1500). So **Conjecture 7.5 (C3 for all
+m ≥ 6) is false.** No specific failing level is known for a = 3. With proved values only, C_1 is excluded for
+m = 7, …, 29, 31, 34, 37, 40 and C_2 for m = 16, 17 (k_14 = 82, k_15 ≥ 82).
+(c) *(growing a)* If a(m) = o(√m), then C_{a(m)} fails for infinitely many m. In particular the hypothesis "C_a with
+a = O(m^{1/2−ε})" of 7.5 is self-contradictory. Proof: assume C_{a(m)} for all m ≥ M_0 and put A(m) := max_{m/2≤j≤m} a(j).
+The chain m → m − a(m) → … stays in [m/2, m] for ≥ m/(2A(m)) steps, each gaining ≥ m/2, so k_m ≥ m²/(4A(m)) − O(m). Applied
+at m − a(m), this contradicts k_{m−a(m)} ≤ T_{a(m)}(m) − 3 < 3a(m)m once A(m)² < m/13. ∎
+(d) *(under the conjectured size of k)* If k_j ≥ d(j) − 1 for all j (the conjecture (H2)), then C3 fails for **every**
+m ≥ 27. Under the refined conjecture 6.8 it fails for every m ≥ 26 (checked up to 10^4; beyond that d(m−3) ≥ (m−4)²/3 − O(m)
+≫ 8m). Under 6.8, C_a(m) is possible only for a ≥ a*(m), where a*(m)/m = 0.20, 0.15, 0.13, 0.11, 0.107 at m = 10, 20, 40,
+100, 1000, and a*/m → 1 − √0.8 = 0.106. This is where (4/3)(2θ − θ²) = (1 − θ)²/3. With such a, 7.4 gives only
+k_m ≥ k_{0.9m} + 0.9m: a linear bound.
+The data of Task F are consistent with this: C3 holds for m ≤ 10 only because T_3(m) ≈ 8m still exceeds k_{m−3} there
+(first excluded level 26 under 6.8).
+
+### 8.3 Ceiling of the iterated route  [Proved; numerics `taskH_nogo.py`]
+**Theorem 8.3.** Let m = m_0 > m_1 > … > m_s with C_{a_i}(m_i), a_i = m_i − m_{i+1}, and let b ≤ k_{m_s} be a proved base
+value. Then the bound that Corollary 7.4 yields, B_0 := b + Σ_{i=1}^{s} m_i, satisfies **B_0 ≤ b + 4m^{3/2}**.
+*Proof.* Put B_i := b + Σ_{j>i} m_j. Then k_{m_i} ≥ B_i by 7.4, and Theorem 8.1 at m_i gives
+B_{i+1} ≤ k_{m_{i+1}} ≤ T_{a_i}(m_i) − 3 < 3a_i m_i. We show B_i ≤ b + 4m_i^{3/2} by downward induction (B_s = b).
+If a_i ≤ √m_i, then B_i = m_{i+1} + B_{i+1} ≤ m_i + 3m_i^{3/2} ≤ 4m_i^{3/2}. If a_i > √m_i, then m_{i+1} ≤ m_i − √m_i and
+B_i ≤ m_i + b + 4(m_i − √m_i)^{3/2} ≤ b + m_i + 4m_i^{3/2}(1 − m_i^{−1/2}) ≤ b + 4m_i^{3/2}, using (1−x)^{3/2} ≤ 1 − x. ∎
+Since every proved base value is O(m) (Theorem 7.1, monotonicity, finitely many computed k_m), **the route of §7.3 cannot
+prove k_m/m^{3/2} → ∞ along any sequence.** By Prop. 6.1(c), that is exactly what the application needs. The optimum over
+all chains, G(m) = max(base, max_a [(m−a) + min(G(m−a), T_a(m) − 3)]), is G(m)/m^{3/2} = 1.24, 1.28, 1.31, 1.32 at
+m = 100, 200, 1000, 4000 (G(m)/d(m) = 0.36, 0.26, 0.12, 0.06).
+**Remark 8.4 (any chain of ideals).** The same budget argument applies to chains of letter sets ∅ = S_0 ⊂ … ⊂ S_N = all
+letters of L_m, with each T_i = S_i \ S_{i−1} an ideal of span S_i, using the window lemma 6.3 and criterion 7.3 for T_i.
+This needs the proved bounds G_i to hold for both thresholds k^R and k^L of u(span S_i), e.g. for θ-stable S_i. A step gains
+mindeg T_i < m and needs top(u(T_i)) ≥ G_{i−1} + 3 (Theorem 8.1). The tops add up to top(u_m) = (4/3)m² + O(m).
+Consider the steps taken after G first reaches X/2: there are at least (X/2 − m)/m of them, and each costs more than X/2.
+So the final bound X satisfies X(X − 2m) ≤ (16/3)m³ + O(m²) (unless X ≤ 2G_0), i.e. X ≤ 2.31 m^{3/2}(1 + o(1)).
+[Proved, under the stated two-sided hypothesis.] So no choice of ideals rescues the "every kernel element dies in the
+quotient" mechanism.
+
+### 8.4 What a working argument must control  [Proved reformulations; Verified data]
+(i) *Degree-sensitive criterion.* For every n:
+        π_{m−a}(ker^{(m)}_n) = 0   ⟺   ω_{K_a}·(u_m)_{D−n} ⊂ σ'u_m .
+Proof: ker^{(m)}_n = ^⊥(σ'u_m) in degree top_m − n (Frobenius), J_a^⊥ = ω_{K_a}u_m (§7.3), and top_m − T_a(m) = D.
+By the window lemma, k_m ≥ k_{m−a} + (m−a) iff this holds for all n < k_{m−a} + m − a. C_a is the case n = D, the "worst"
+degree, and that is the case that fails. Define n*(m,a) := least n with π_{m−a}(ker^{(m)}_n) ≠ 0 (`taskH_lift_check.py`):
+| (m,a) | (6,1) | (7,1) | (8,1) | (9,1) | (10,1) | (7,2) | (8,2) | (9,2) | (10,2) | (8,3),(9,3) |
+| n* − k_{m−a} | 10 | 10 | 11 | 7 (η) | 1 (free step) | 16 | 21 | 27 | 22 | never (C3 holds) |
+| needed: m − a | 5 | 6 | 7 | 8 | 9 | 5 | 6 | 7 | 8 | 5, 6 |
+Above n* the image fills ker^{(m−a)}_n quickly (e.g. m = 7, a = 1: all of it from n = 32 on).
+(ii) *Homological form.* **ker(R^{(m)} | (u_m)_n) ≅ Tor_1^{u(L_{≥m})}(F2, U/Uσ')_{n+3}**, so k_m + 3 is the lowest degree of
+the restricted homology H_1(L^s_{≥m}; W) of the deep ideal L^s_{≥m} ⊂ n̂ with coefficients in W := U/Uσ'.
+Proof: U is free as a left u(L_{≥m})-module (PBW). It is free as a right F2[σ']-module: it is torsion free by Theorem 7.1,
+and a bounded-below graded torsion-free module over the graded PID F2[σ'] is free. So both ways of computing
+F2 ⊗^L_{u(L_{≥m})} U ⊗^L_{F2[σ']} F2 collapse: one gives Tor^{F2[σ']}(u_m, F2), with Tor_1 = ker R^{(m)} shifted by 3, the
+other gives Tor^{u(L_{≥m})}(F2, U/Uσ'). ∎ A quadratic bound is therefore a **vanishing theorem for H_1(L_{≥m}; W) in
+degrees < c·m²**. Note h_W = (1 − z³)h_U = h(U/Uc_3), so W is a "deformation" of U/Uc_3, whose H_1 starts in degree O(m)
+(6.7(a)). The vanishing must come from the non-leading terms of σ'.
+
+### 8.5 Other ideas examined  [Heuristic unless stated]
+* *Evaluation modules with truncation (idea 1).* If yσ' ∈ I_m, then Ψ_r(y)·Δ_r ∈ M(𝔞_K) with 𝔞_K = (t_1^K, …, t_r^K),
+  K = m/3, and Δ_r = det Ψ_r(σ') (or any "denominator" taken from the minimal polynomial). The modules ⊗V*[t_s]/(t_s^K)
+  are u_{3K}-modules, and the products of their matrix coefficients contain all of u_{3K−2}^*, so two levels are lost
+  [Proved]. Hence a colon-ideal statement (𝔞_K : Δ_r) ⊂ 𝔞_K in t-degree < f(m)/3 would prove injectivity directly. It
+  fails at t-degree K − 1 for K = 2^j and **every** r [Proved + computation: the pair cancellation is the identity
+  Ψ_2(σ') = (t_1+t_2)I of `taskF_symb.py`].
+  The reason is that Ψ_r(σ') = s_1·I + Σ_{triples} N_{abc}, where s_1 = Σ t_s. The pair terms are the mixed part of Ψ_2
+  placed at two factors, so they cancel. The triple term is
+  Σ_{π∈S_3} ρ*(e_{π0}) ⊗ ρ*(e_{π1}) ⊗ ρ*(e_{π2}) on the factors a, b, c (each cyclic word contributes all 6 assignments,
+  and 3 ≡ 1). Since ρ*(e_0), ρ*(e_1), ρ*(e_2) are matrix units with distinct sources, N_{abc} kills every basis tensor
+  whose indices at a, b, c are not a permutation of {0, 1, 2}, e.g. f_0^{⊗r}. So Ψ_r(σ')f_0^{⊗r} = s_1 f_0^{⊗r}, and
+  s_1 | det Ψ_r(σ') (for r = 3 this is the factor s_1^{21} of 7.2: 21 = 27 − 6 non-permutation tensors). Now
+  s_1·s_1^{K−1} = Σ t_s^K ∈ 𝔞_K (Frobenius in characteristic 2). Hence s_1^{K−1}f_0^{⊗r} is a nonzero kernel vector of σ'
+  on ⊗V*[t_s]/(t_s^K) in t-degree K − 1 for every r. This is the linear barrier of 7.2 again, and padding with more
+  factors cannot remove it.
+* *Contractions + semicontinuity.* For a superadditive weight ν on letters, gr_ν u_m = u(L^ν) (contracted bracket), and
+  k(σ') ≥ k(σ_0) for the leading form σ_0. If all four PBW terms of σ' stay leading, the brackets [e1,e0] → y2.1,
+  [e2,e1] → y2.2 and [y1.0,y2.2] → y3.1 must survive (equal ν-weights) [Proved]. In the two contractions tried by hand
+  that kill more brackets, σ_0 becomes a product of letters with a kernel in degree ≤ 2. If only y3.1 survives in
+  [y1.0, y2.2], then σ_0 = y2.2·y1.0, and y2.2 itself is in the kernel. If the e_i commute, then σ_0 = e0e1e2, and e0 is
+  in the kernel. No useful contraction was found.
+
+### 8.6 Status after Task H
+* Proved: Theorem 8.1 (C_a(m) ⟹ k_{m−a} ≤ T_a(m) − 3, with forced lifting near the top); C3 fails in every 61
+  consecutive levels; no a(m) = o(√m) works; every bound from iterating 7.4 is ≤ b + 4m^{3/2} (Theorem 8.3); the same
+  O(m^{3/2}) ceiling for general ideal chains (Remark 8.4, two-sided hypothesis); the Tor/H_1 reformulation 8.4(ii).
+* Not proved: any superlinear lower bound for k_m. The best unconditional bound is still k_m ≥ max(82, m − 3) (m ≥ 14).
+* [Conjecture] The degree-sensitive criterion 8.4(i) holds with large margin (n*(m,a) − k_{m−a} ≫ m − a at jump steps, as
+  in the table). A proof of k_m/m^{3/2} → ∞ has to establish vanishing of π_{m−a} on the kernel only in a window above
+  k_{m−a}, or equivalently vanishing of H_1(L_{≥m}; U/Uσ') below a superlinear degree. Statements that are uniform in the
+  degree (C_a, annihilators, integrals) are provably insufficient.
