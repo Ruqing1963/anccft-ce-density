@@ -52,6 +52,10 @@ non-zero-divisor in $\F_2[[P]]$. Finally we prove that $c_e=0$ follows from two
 explicit hypotheses on the kernel of the leading form (verified for $m\le10$ and $m\le14$ respectively), we prove that the
 natural level-by-level route to these hypotheses cannot succeed, and we give computational evidence that the zero divisors of
 $\gr\F_2[[P]]$ do not lift to $\F_2[[P]]$, consistent with Jaikin-Zapirain's pro-$p$ Atiyah conjecture.
+In a last section we treat the analogous graded algebras for all cyclic algebras of degree $\ell$ over $\F_p((t))$:
+the non-zero-divisor theorem holds whenever $p\nmid\ell$, the explicit kernels exist only for $(p,\ell)=(2,3)$ (because
+of a factor $2$ in a characteristic-$0$ obstruction) and for $\ell=2$, and for $\ell=2$ we find a second explicit kernel
+family, coming from the substitution $t\mapsto t^2$, and evidence that the excess over the maximal-rank baseline vanishes.
 \end{abstract}
 
 \maketitle
@@ -154,11 +158,15 @@ for $m\le10$, and we show that the excess of $\sigma'$ is a special-position eff
 weight has maximal rank on every block for $m\le8$. In Section~\ref{sec:lift} we show by exhaustive
 linear algebra that every zero-divisor pair of Theorem~A is obstructed at the first or second lifting step in
 $\F_2[[P]]$; thus they are artefacts of the filtration and give no counterexample to the pro-2 Kaplansky conjecture.
+In Section~\ref{sec:family} we compare with the other cyclic algebras: Theorem~\ref{thm:famnzd} extends the
+non-zero-divisor theorem to all $p\nmid\ell$, Proposition~\ref{prop:famcol} shows that the column mechanism behind
+Theorem~C is special to $(2,3)$ and $\ell=2$, and Theorem~\ref{thm:famtwo} gives two explicit kernel families for
+$\ell=2$, which together with occasional cancellation-type defects account for all computed thresholds there.
 
 \subsection*{Status of the statements}
 Results labelled \emph{Theorem}, \emph{Proposition} or \emph{Lemma} have complete proofs here, possibly relying on a
 finite exact computation which is then named explicitly (``proof by computation''). All computations are exact
-linear algebra over $\F_2$ and were cross-checked by independent implementations; see Appendix~\ref{app:comp}.
+linear algebra over $\F_2$ (over $\F_p$ in Section~\ref{sec:family}) and were cross-checked by independent implementations; see Appendix~\ref{app:comp}.
 
 %======================================================================
 \section{The graded algebra}\label{sec:graded}
@@ -646,6 +654,163 @@ graded algebra it stays at $0.625$.
 This is consistent with the pro-2 Kaplansky conjecture for $P$, but of course does not prove it.
 
 %======================================================================
+\section{Other cyclic algebras}\label{sec:family}
+%======================================================================
+
+The construction of Section~\ref{sec:split} makes sense for every prime $p$ and every degree $\ell\ge2$ (we write $\ell$
+for the degree, to avoid a clash with $d(m)$ and $d_k$). Let $A^s_{p,\ell}=\F_p^{\ell}[\varphi;s]$ with $s$ the cyclic
+shift of the idempotents $e_0,\dots,e_{\ell-1}$, let $t=(1,\dots,1)\varphi^\ell$, and put
+$L_{p,\ell}=(A^s_{p,\ell})_{>0}/t\F_p[t]$ with the commutator bracket and the $p$-th power map. Exactly as in
+Proposition~\ref{prop:split}, $L_{p,\ell}\otimes\F_{p^\ell}\cong\gr P_{p,\ell}\otimes\F_{p^\ell}$ for the pro-$p$ group
+$P_{p,\ell}=(1+\varphi\mathcal O)/(1+t\F_p[[t]])$, $\mathcal O=\F_{p^\ell}[[\varphi;\sigma]]$, $\varphi^\ell=t$, and for
+$p\nmid\ell$ the algebra $L_{p,\ell}$ is the positive part of $A_{\ell-1}^{(1)}$ in its principal grading. Write $u_m$,
+$k_m$ as before, with $y_{k,i}=e_i\varphi^k$, and let
+\[
+  \sigma'_{p,\ell}=\sum_{r\in\Z/\ell}e_re_{r+1}\cdots e_{r+\ell-1},\qquad e_i=y_{1,i},
+\]
+the cyclic sum of the Coxeter word. For $(p,\ell)=(2,3)$ this is the leading form $\sigma'$ of $F$ (step (1) of the proof
+of Theorem~\ref{thm:nzd}). We have not constructed lattices and Hecke elements for other $(p,\ell)$; the results of this
+section concern the graded model with $\sigma'_{p,\ell}$ as the natural candidate for the leading form. In this
+generality the analogue of Theorem~B holds verbatim, the non-zero-divisor theorem extends to all $p\nmid\ell$, and the
+explicit kernels of Theorem~C do \emph{not} extend, except for $\ell=2$.
+All computations of this section use an independent implementation for general $p$ (Appendix~\ref{app:comp}(f)).
+
+\begin{theorem}\label{thm:famnzd}
+If $p\nmid\ell$, then left and right multiplication by $\sigma'_{p,\ell}$ are injective on $u(L_{p,\ell})$; hence
+$k_m\ge m-\ell$ for all $m$.
+\end{theorem}
+
+\begin{proof}
+The proof of Theorem~\ref{thm:nzd} goes through with two changes. First, with
+$\pi(e_i)=E_{ii}$, $\pi(\varphi)=\sum_iE_{i+1,i}+tE_{0,\ell-1}$, the map $\rho(x)=\pi(x)-\ell^{-1}\operatorname{tr}\pi(x)\,I$
+kills $t\F_p[t]$ and is a restricted representation, because $(X-cI)^p=X^p-c^pI$, $\operatorname{tr}(X^p)=(\operatorname{tr}X)^p$
+in characteristic $p$, and $\ell^p\equiv\ell$; this is where $p\nmid\ell$ is used. Second, in
+$\rho^*(x)=-\rho(x)^T$ one has $\rho^*(e_i)=-E_{i-1,i}$ for $i\ne0$ and $\rho^*(e_0)=-tE_{\ell-1,0}$, so each cyclic word
+maps to $(-1)^\ell tE_{r-1,r-1}$ and $\rho^*(\sigma'_{p,\ell})=(-1)^\ell t\,I$; the triangularity argument then gives
+$\det\Psi_r(\sigma'_{p,\ell})|_{(t,0,\dots,0)}=\pm t^{\ell^r}$. Faithfulness is unchanged.
+\end{proof}
+
+\begin{remark}
+For $p\mid\ell$ the scalar loops are not split off and the argument fails. For $(p,\ell)=(2,2)$ one has
+$\sigma'=e_0e_1+e_1e_0=[e_0,e_1]=t=0$, and for $(3,3)$ the Coxeter term $y_{1,0}y_{1,1}y_{1,2}$ of $\sigma'$ has coefficient
+$3=0$. Nevertheless $\sigma'$ is injective on $u(L_{p,\ell})$ in all degrees $\le9$ for $(3,3)$ and $\le8$ for $(2,4)$
+(exact computation).
+\end{remark}
+
+\subsection{The column mechanism is a characteristic-$2$ phenomenon}
+Theorem~\ref{thm:kernel} rests on $\sigma'\in c_1u+c_2u+c_3u$ for the column letters $c_k=e_{k-1}\varphi^k$. The same
+argument works for any $(p,\ell)$, with $c_1,\dots,c_\ell$, as soon as $\sigma'_{p,\ell}$ lies in
+the right ideal $c_1u+\dots+c_\ell u$; the column integrals are then kernel elements in degree
+$(p-1)\bigl(\sum_{k<m,\,\ell\nmid k}k+\sum_{\ell p^r<m}\ell p^r\bigr)$.
+
+\begin{proposition}[proof by computation]\label{prop:famcol}
+$\sigma'_{p,\ell}$ lies in a column ideal (equivalently, by the rotation symmetry, in all of them) for $(p,\ell)=(2,3)$
+and for $\ell=2$, $p=3,5,7$. It lies in no column ideal and in no row ideal (letters $e_j\varphi^k$, $j$ fixed), for
+either orientation of the Coxeter word, for
+\[
+  (p,\ell)\in\{(5,3),(7,3),(3,3),(2,4),(3,4),(2,5),(3,5),(2,7)\}.
+\]
+For $\ell=2$ the
+column ideal contains the whole weight space $u_\delta$. Over $\Z$ (computed modulo a large prime and lifted), the class of
+$\sigma'_{\ell}$ modulo the column ideal in weight $\delta$ is $0$ for $\ell=2$, is
+$2\,(y_{3,0}-y_{2,0}y_{1,1})$ for $\ell=3$, and has coprime integer coordinates for $\ell=4,5,6$.
+\end{proposition}
+
+Thus for $\ell=3$ the explicit kernels of Theorem~\ref{thm:kernel} exist only because of the factor $2$ in this class,
+and for $\ell\ge4$ they do not exist for any $p>\ell$ nor for the small $p$ tested. In the cases without the column
+mechanism the first kernel lies elsewhere: for $(5,3)$ one finds $k_3=14>12$.
+
+\subsection{The case $\ell=2$, $p$ odd}
+Put $x_k=y_{k,0}$, $f_k=y_{k,1}$ ($k$ odd) and $h_k=y_{k,0}$ ($k$ even). Then
+$[x_i,f_j]=2h_{i+j}$, $[h_j,x_i]=x_{i+j}$, $[h_j,f_i]=-f_{i+j}$, all other brackets of letters vanish,
+$x_k^{[p]}=f_k^{[p]}=0$, $h_j^{[p]}=h_{pj}$, and $\sigma'=x_1f_1+f_1x_1=2x_1f_1-2h_2$: the loop algebra of
+$\mathfrak{sl}_2$ in its principal grading, and $\sigma'$ is the anticommutator of the two Chevalley generators.
+
+\begin{theorem}\label{thm:famtwo}
+Let $p$ be odd, $\ell=2$, $m\ge3$.
+\begin{enumerate}
+\item $H=\operatorname{span}\{x_k:k\ \text{odd}\}\oplus\operatorname{span}\{h_{2p^r}\}$ is a restricted subalgebra with
+$\sigma'\in Hu$, so its integral $\omega_H$ lies in $\ker R_{\sigma'}$, in degree
+$\mathrm{od}_p(m)=(p-1)\bigl(\sum_{k<m\ \mathrm{odd}}k+\sum_{2p^r<m}2p^r\bigr)$.
+\item $K=\operatorname{span}\{x_k\ (k\equiv1),\ f_k\ (k\equiv3),\ h_k\ (k\equiv0)\bmod 4\}$, the image of the loop algebra under
+$t\mapsto t^2$, is a restricted subalgebra, and for $0\le j<p$
+\[
+  f_1^j\,\sigma'\equiv-2(2j+1)\,h_2f_1^j\pmod{Ku_m}.
+\]
+Hence $\omega_Kf_1^j\in\ker R_{\sigma'}$ if and only if $j=(p-1)/2$, in degree
+\[
+  \kappa_p(m)=(p-1)\sum_{k<m,\ k\not\equiv2\ (4)}k+\frac{p-1}2 .
+\]
+\end{enumerate}
+Consequently $k_m\le\min(\mathrm{od}_p(m),\kappa_p(m))$.
+\end{theorem}
+
+\begin{proof}
+For a restricted subalgebra $K$ let $\omega_K$ be the product of the $(p-1)$-st powers of a homogeneous basis; as in
+Lemma~\ref{lem:integral} it spans the right integrals of $u(K)$, so $\omega_Kk=0$ for $k\in K$. Hence $zv\in Ku_m$
+implies $\omega_Kzv=0$. By PBW $u_m=u(K)\otimes V$ and $u_m/Ku_m\cong V$ has the PBW monomials in the letters outside $K$ as a basis. (1) Both terms
+of $2x_1f_1-2h_2$ begin with a letter of $H$. (2) Closure of $K$: $[x_{4a+1},f_{4b+3}]=2h_{4(a+b+1)}$,
+$[h_{4a},x_{4b+1}]=x_{4(a+b)+1}$, $[h_{4a},f_{4b+3}]=-f_{4(a+b)+3}$, $h_{4a}^{[p]}=h_{4ap}$. Since $f_3\in K$ commutes with
+$f_1$ and $[h_2,f_1]=-f_3$, one has $f_1^ah_2f_1^b\equiv f_1^{a+b}h_2\equiv h_2f_1^{a+b}$ modulo $Ku_m$. Expanding
+$[x_1,f_1^j]=2\sum_{a+b=j-1}f_1^ah_2f_1^b$ gives $f_1^jx_1f_1\equiv-2j\,h_2f_1^j$ and $f_1^{j+1}x_1\equiv-2(j+1)\,h_2f_1^j$,
+because $x_1(\cdots)\in Ku_m$. The sum is $-2(2j+1)h_2f_1^j$, and $h_2f_1^j$ is a basis vector of $V$.
+\end{proof}
+
+Both families were also checked by direct multiplication in $u_m$ ($p=3$: $m\le16$; $p=5$: $m\le12$; $p=7$: $m\le10$),
+including the uniqueness of the exponent $(p-1)/2$. At $p=2$ the coefficient $-2(2j+1)$ vanishes identically, in
+accordance with $\sigma'_{2,2}=0$. Asymptotically $\mathrm{od}_p(m)\sim(p-1)m^2/4<\kappa_p(m)\sim3(p-1)m^2/8$, so the second
+family matters only for small $m$.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{rrrrrrrrrrrr}
+\toprule
+$p$ & $m$ & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11\\
+\midrule
+3 & $\min(\mathrm{od},\kappa)$ & 2 & 3 & 9 & 12 & 22 & 27 & 41 & 48 & 66 & 66\\
+3 & $k_m$ & 2 & 3 & 9 & 12 & 22 & 27 & 41 & 48 & \textbf{64} & 66\\
+5 & $\min(\mathrm{od},\kappa)$ & 4 & 6 & 18 & 24 & 44 & 44 & & & & \\
+5 & $k_m$ & 4 & 6 & 18 & 24 & \textbf{42} & 44 & & & & \\
+7 & $\min(\mathrm{od},\kappa)$ & 6 & 9 & 27 & 36 & 66 & & & & & \\
+7 & $k_m$ & 6 & 9 & \textbf{26} & \textbf{34} & $\ge63$ & & & & & \\
+\bottomrule
+\end{tabular}
+\caption{Thresholds for $\ell=2$ (exact). Bold: levels where $k_m$ is below the bound of Theorem~\ref{thm:famtwo}.}
+\label{tab:famtwo}
+\end{table}
+
+At every level of Table~\ref{tab:famtwo} without a bold entry, the kernel in degree $k_m$ is spanned by the elements of
+Theorem~\ref{thm:famtwo} and their images under the symmetry $x\leftrightarrow f$. The bold entries are explained by
+cancellation-type elements of the kind met at $m=9,15$ in Section~\ref{sec:excess}: at $p=3$, $m=10$ the kernel in degree
+$64$ is spanned by a $24$-term lowering of $\omega_H$ and its mirror image. In every case the defect is at most $2$ and the
+element dies at the next level. For $p=3$, $m=11$ this gives $k_{11}=66$ by the following window argument. If $n<k_a+a$,
+the reduction $u_m\to u_a$ is injective on $\ker(R_{\sigma'}|(u_m)_n)$, block by block: filter $u_m$ by the powers of the
+right ideal generated by $L_{\ge a}/L_{\ge m}$ as in the proof of Proposition~\ref{prop:central}; a kernel element in the
+$i$-th step, $i\ge1$, would have a leading part in $\gr^iu(L_{\ge a})\otimes\ker R^{(a)}$ of $u_a$-degree $\le n-a<k_a$. With
+$a=10$, $k_{10}=64$ it suffices to check the six blocks that carry the level-$10$ kernel in degrees $64$ and $65$; all six
+have zero kernel at level $11$, and $\omega_H$ gives $k_{11}\le66$.
+
+The density behaves differently from the case $(2,3)$. Splitting $x_m=\dim\ker R_{\sigma'}/\dim u_m$ into the degree
+baseline $\sum_n\max(0,h_n-h_{n+2})/\dim u_m$ and an excess (this only overestimates the excess $e_m$ of
+Section~\ref{sec:excess}, which uses the block baseline $B^Q_m$), one finds:
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+case & levels & excess\\
+\midrule
+$\ell=2$, $p=3$ & $m=4,\dots,9$ & $0.0082,\ 0.0082,\ 0.0021,\ 0.00081,\ 0.00012,\ 0.00006$\\
+$\ell=2$, $p=5$ & $m=4,5,6$ & $0.0026,\ 0.0015,\ 0.00033$\\
+$(2,3)$, $e_m$ & $m=7,\dots,10$ & $0.0025,\ 0.0022,\ 0.0027,\ 0.0041$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The baseline is $O(m^{-1/2})$ by Lemma~\ref{lem:anticonc}, whose proof works with shift $2$. So the graded analogue of
+$c_e$ vanishes for $\ell=2$ if and only if the excess tends to $0$, and the data support this much more strongly than
+for $(2,3)$. Theorem~\ref{thm:conditional} transfers verbatim with $\deg\sigma'=2$: (H1) together with
+$k_m\ge\min(\mathrm{od}_p(m),\kappa_p(m))-O(1)$, or merely $k_m/m^{3/2}\to\infty$, implies that the graded cokernel
+density tends to $0$.
+
+%======================================================================
 \section{Questions}
 %======================================================================
 
@@ -676,8 +841,13 @@ hence be Ore; if moreover $\F_2[[P]]$ then embeds continuously into a division r
 \end{question}
 
 \begin{question}
-The same construction applies to other cyclic division algebras $(\F_{q^3}(t)/\F_q(t),\sigma,t)$ and to higher
-degree. Do the analogues of Theorems~B and~C hold, with $A_{d-1}^{(1)}$ in place of $A_2^{(1)}$?
+(a) Is $\sigma'_{p,\ell}$ a non-zero-divisor when $p\mid\ell$ (Remark after Theorem~\ref{thm:famnzd})?
+(b) For $\ell=2$, $p$ odd: is $k_m\ge\min(\mathrm{od}_p(m),\kappa_p(m))-2$ for all $m$, and does the excess tend to $0$?
+Here $\mathfrak{sl}_2$-representation theory might replace the evaluation-module arguments of Section~\ref{sec:nzd}.
+(c) For $\ell\ge3$, $(p,\ell)\ne(2,3)$: which mechanism produces the first kernel of $R_{\sigma'_{p,\ell}}$?
+(d) Lattices acting simply transitively on the vertices of $\tilde A_{\ell-1}$-buildings are obtained from cyclic division
+algebras over $\F_q(t)$ \cite{LSV}. Is the leading form of the corresponding Hecke element (the analogue of $F$, now
+$1-\bar f\cdots\bar f$ since the Laplacian is $-I+A$ modulo $p$) the cyclic Coxeter sum $\sigma'_{p,\ell}$?
 \end{question}
 
 %======================================================================
@@ -698,7 +868,11 @@ row and column permutations);
 checked against Jennings products in $\F_2[G_N]$ for $N\le12$;
 (d) the zero divisor of Theorem~\ref{thm:zd} was confirmed by plain group multiplication in $\F_2[G_9]$;
 (e) the graded cokernels for $m=9,10$ use the block decomposition of Corollary~\ref{cor:blocks}; for $m=10$ one block
-per rotation orbit was computed and the remaining blocks were spot-checked.
+per rotation orbit was computed and the remaining blocks were spot-checked;
+(f) Section~\ref{sec:family} uses a second, independent engine for general $p$ and $\ell$ (directory
+\texttt{code/family/}): monomials with exponents $<p$ encoded in base $p$, a compiled rewriting system with coefficients,
+and rank computations modulo $p$. A pure-Python version and a compiled version agree with each other on $21$ test cases
+and reproduce the $(2,3)$ values of Table~1 for $m\le7$ (kernel dimensions and thresholds).
 
 \subsection*{Acknowledgements}
 Computations and parts of the analysis were carried out with the assistance of an AI system (Claude, Anthropic).
@@ -720,6 +894,8 @@ of a building of type $\tilde A_2$, I, \emph{Geom.\ Dedicata} 47 (1993), 143--16
 \bibitem{Kac} V.~G.~Kac, \emph{Infinite dimensional Lie algebras}, 3rd ed., Cambridge Univ.\ Press, 1990.
 \bibitem{Lefschetz} T.~Harima, T.~Maeno, H.~Morita, Y.~Numata, A.~Wachi, J.~Watanabe, \emph{The Lefschetz Properties},
 Lecture Notes in Math.\ 2080, Springer, 2013.
+\bibitem{LSV} A.~Lubotzky, B.~Samuels, U.~Vishne, Explicit constructions of Ramanujan complexes of type $\tilde A_d$,
+\emph{European J.\ Combin.} 26 (2005), 965--993.
 \bibitem{EL} M.~Ershov, W.~L\"uck, The first $L^2$-Betti number and approximation in arbitrary characteristic,
 arXiv:1206.0474.
 \bibitem{Fraczyk} M.~Fraczyk, Growth of mod-2 homology in higher rank locally symmetric spaces, arXiv:1801.09283.

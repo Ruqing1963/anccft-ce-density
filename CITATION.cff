@@ -1,4 +1,4 @@
-cff-version: 1.2.0
+﻿cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 title: "The mod-2 cokernel density of a Hecke operator on a non-analytic pro-2 tower: split form, explicit kernels, and bounds"
 authors:
@@ -6,7 +6,7 @@ authors:
     given-names: Ruqing
     affiliation: "GUT Geoservice Inc., Montreal"
     email: ruqing@hotmail.com
-date-released: 2026-10-05
+date-released: 2026-10-06
 doi: 10.5281/zenodo.23125494
 repository-code: "https://github.com/Ruqing1963/anccft-ce-density"
 license: MIT
@@ -16,5 +16,5 @@ keywords:
   - restricted Lie algebras
   - affine Kac-Moody algebras
   - buildings of type A2-tilde
-  - Lück approximation
+  - LÃ¼ck approximation
   - Atiyah conjecture

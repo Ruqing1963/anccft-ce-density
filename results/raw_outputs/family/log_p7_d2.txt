@@ -1,0 +1,5 @@
+=== (p,d)=(7,2) orient=1: sigma' in PBW basis (level 4): 2*y1.0*y1.1 + 5*y2.0
+m=2: N=2 dim u=49 top=12 | ker total=13 density=0.265306 coker/(d*|G|)=0.132653 | k_m=6 odometer=6 first kernels={6: 2, 7: 2, 8: 2, 9: 2} | 3.6s
+m=3: N=3 dim u=343 top=24 | ker total=61 density=0.177843 coker/(d*|G|)=0.088921 | k_m=9 odometer=18 first kernels={9: 2, 10: 2, 11: 4, 12: 3} | 0.0s
+m=4: N=5 dim u=16807 top=60 | ker total=1337 density=0.079550 coker/(d*|G|)=0.039775 | k_m=26 odometer=36 first kernels={26: 3, 27: 4, 28: 6, 29: 12} | 1.0s
+m=5: N=6 dim u=117649 top=84 | ker total=7261 density=0.061717 coker/(d*|G|)=0.030859 | k_m=34 odometer=36 first kernels={34: 2, 35: 2, 36: 8, 37: 10} | 17.4s

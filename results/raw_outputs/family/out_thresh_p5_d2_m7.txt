@@ -1,0 +1,3 @@
+m=7 n=42: dim=26663 maxblock=6011 ker=0 (463s)
+m=7 n=43: dim=28414 maxblock=6143 ker=0 (264s)
+m=7 n=44: dim=30170 maxblock=6744 ker=2 (277s)

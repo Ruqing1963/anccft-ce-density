@@ -1,0 +1,9 @@
+=== (p,d)=(3,2) orient=1: sigma' in PBW basis (level 4): 2*y1.0*y1.1 + 1*y2.0
+m=2: N=2 dim u=9 top=4 | ker total=5 density=0.555556 coker/(d*|G|)=0.277778 | k_m=2 odometer=2 first kernels={2: 2, 3: 2, 4: 1} | 2.1s
+m=3: N=3 dim u=27 top=8 | ker total=11 density=0.407407 coker/(d*|G|)=0.203704 | k_m=3 odometer=6 first kernels={3: 2, 4: 1, 5: 2, 6: 3} | 0.0s
+m=4: N=5 dim u=243 top=20 | ker total=47 density=0.193416 coker/(d*|G|)=0.096708 | k_m=9 odometer=12 first kernels={9: 2, 10: 2, 11: 4, 12: 6} | 0.0s
+m=5: N=6 dim u=729 top=28 | ker total=111 density=0.152263 coker/(d*|G|)=0.076132 | k_m=12 odometer=12 first kernels={12: 2, 13: 2, 14: 4, 15: 6} | 0.0s
+m=6: N=8 dim u=6561 top=48 | ker total=659 density=0.100442 coker/(d*|G|)=0.050221 | k_m=22 odometer=22 first kernels={22: 4, 23: 6, 24: 11, 25: 18} | 0.3s
+m=7: N=9 dim u=19683 top=60 | ker total=1661 density=0.084388 coker/(d*|G|)=0.042194 | k_m=27 odometer=34 first kernels={27: 2, 28: 2, 29: 8, 30: 17} | 1.3s
+m=8: N=11 dim u=177147 top=88 | ker total=11223 density=0.063354 coker/(d*|G|)=0.031677 | k_m=41 odometer=48 first kernels={41: 2, 42: 4, 43: 10, 44: 68} | 59.8s
+m=9: N=12 dim u=531441 top=104 | ker total=29751 density=0.055982 coker/(d*|G|)=0.027991 | k_m=48 odometer=48 first kernels={48: 2, 49: 2, 50: 6, 51: 12} | 840.0s
