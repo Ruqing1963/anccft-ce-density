@@ -49,7 +49,8 @@ odometer'' along the imaginary root chain $3\cdot 2^r$), monotonicity statements
 $|G_{10}|=2^{24}$, the bound $c_e\le 0.030322$ (previously $0.0645$). Using evaluation representations of the loop
 algebra we prove that the leading form of $F$ is a non-zero-divisor in $\gr\F_2[[P]]$, hence that $F$ is a
 non-zero-divisor in $\F_2[[P]]$. Finally we prove that $c_e=0$ follows from two
-explicit hypotheses on the kernel of the leading form (verified for all levels $m\le10$), and we give computational evidence that the zero divisors of
+explicit hypotheses on the kernel of the leading form (verified for $m\le10$ and $m\le14$ respectively), we prove that the
+natural level-by-level route to these hypotheses cannot succeed, and we give computational evidence that the zero divisors of
 $\gr\F_2[[P]]$ do not lift to $\F_2[[P]]$, consistent with Jaikin-Zapirain's pro-$p$ Atiyah conjecture.
 \end{abstract}
 
@@ -96,7 +97,12 @@ depend on the chain. Hence
 \]
 is intrinsic to $(P,F)$. The pro-$p$ Atiyah conjecture \cite[Conj.~11.1]{JZsurvey} for the torsion-free group $P$
 would give $\rk_P(F)=1$, i.e.\ $c_e=0$. It is known for residually torsion-free $p$-adic analytic groups, free
-pro-$p$ groups and virtually free-by-$\Z_p$ groups \cite{JZS}, none of which covers $P$.
+pro-$p$ groups and virtually free-by-$\Z_p$ groups \cite{JZS}, none of which covers $P$. Note that the reduced norm
+maps the central subgroup $1+t\F_2[[t]]$ onto itself bijectively (it is cubing on a pro-$2$ group), so that
+$P\cong SL_1^1(\widehat D)$, the first principal congruence subgroup of the norm-one group of
+$\widehat D=D\otimes_{\F_2(t)}\F_2((t))$;
+$P$ is thus an anisotropic analytic group over the local field $\F_2((t))$, a class for which the pro-$p$ Atiyah
+conjecture is open. For the analogous questions on the growth of mod-$p$ homology along towers see \cite{EL,Fraczyk}.
 
 \subsection{Main results}
 Write $L=\gr P=\bigoplus_{k\ge1}L_k$ for the graded restricted Lie algebra of the filtration $(P_k)$,
@@ -121,11 +127,11 @@ which is homogeneous of weight $\delta=\alpha_0+\alpha_1+\alpha_2$ for the affin
 \end{theoremB}
 
 \begin{theoremC}[Sections~\ref{sec:kernel}--\ref{sec:filtration}]
-For every $m\ge2$ there are three explicit monomials $\omega_0,\omega_1,\omega_2\in u_m$ of degree
+For every $m\ge2$ there are three explicit monomials $\omega_0,\omega_1,\omega_2\in u_m\otimes\F_8\cong u^s_m\otimes\F_8$ of degree
 \[
   d(m)=\sum_{k\in\Hcal_m}k,\qquad \Hcal_m=\{1\le k<m:\ 3\nmid k\}\cup\{3\cdot 2^r<m\},
 \]
-such that $u_m\omega_0+u_m\omega_1+u_m\omega_2$ lies in the kernel of right multiplication by $\sigma F$.
+such that $u^s_m\omega_0+u^s_m\omega_1+u^s_m\omega_2$ lies in the kernel of right multiplication by $\sigma F$.
 Moreover the first non-injective degree $k_m$ of $R_{\sigma F}$ is non-decreasing in $m$, the kernel density
 $\dim\ker R_{\sigma F}/|G_m|$ is non-increasing in $m$, and $k_m\le d(m)\sim m^2/3$.
 \end{theoremC}
@@ -277,7 +283,8 @@ bijectively in each degree, and $t\mapsto(1,1,1)\varphi^3$. Restricted structure
 Let $\Pi=E_{10}+E_{21}+tE_{02}\in M_3(\F_2[t])$. Then $\sum_kD_k\varphi^k\mapsto\sum_kD_k\Pi^k$ ($D_k$ diagonal)
 identifies $A^s$ with the Iwahori order $\{X\in M_3(\F_2[t]):X(0)\text{ lower triangular}\}$, graded by the principal
 grading $\deg E_{ij}t^n=3n+(i-j)$, and identifies $L^s$ with the nilradical of the standard Iwahori subalgebra of
-$\mathfrak{sl}_3\otimes\F_2[t,t^{-1}]$, i.e.\ with the positive part $\hatn$ of $A_2^{(1)}$ in the principal grading.
+$\mathfrak{sl}_3\otimes\F_2[t,t^{-1}]$, i.e.\ with the positive part $\hatn$ of $A_2^{(1)}$ in the principal grading
+\cite[Ch.~7 and~14]{Kac}.
 The degree-one elements $e_p\varphi$ are the Chevalley generators; real root vectors square to zero and
 $(ht^n)^{[2]}=h^2t^{2n}$ for Cartan elements.
 \end{proposition}
@@ -405,8 +412,10 @@ $u_{m+1}/L_mu_{m+1}=u_m$, and for every degree (and, in the split model, every $
 \[
   \dim\ker R^{(m+1)}_\gamma\le\sum_{S}\dim\ker R^{(m)}_{\gamma-\mathrm{wt}(S)},
 \]
-the sum over subsets $S$ of a homogeneous basis of $L^s_m$. Consequently $k_{m+1}\ge k_m$ and
-$\dim\ker R^{(m+1)}/|G_{m+1}|\le\dim\ker R^{(m)}/|G_m|$.
+the sum over subsets $S$ of a homogeneous basis of $L^s_m$. Consequently
+\[
+  k_{m+1}\ge k_m\qquad\text{and}\qquad \dim\ker R^{(m+1)}/|G_{m+1}|\le\dim\ker R^{(m)}/|G_m| .
+\]
 \end{proposition}
 
 \begin{proof}
@@ -426,7 +435,7 @@ non-zero-divisor in $u(L)=\gr\F_2[[P]]$, $F$ is a two-sided non-zero-divisor in 
 $m$; in particular $k_m\ge\max(57,m-3)$ for $m\ge12$.
 \end{theorem}
 
-\begin{proof}[Proof sketch]
+\begin{proof}
 (1) With $e_i=y_{1,i}$ the three Chevalley generators one checks $\sigma'=e_0e_1e_2+e_1e_2e_0+e_2e_0e_1$.
 (2) Let $\rho^*(x)=(\pi(x)+\operatorname{tr}\pi(x)\,I)^{T}$, where $\pi$ is the natural representation of
 Proposition~\ref{prop:affine}; this is a graded restricted representation of $L^s$ over $\F_2[t]$, injective on $L^s$,
@@ -441,7 +450,8 @@ Thus for every $y\ne0$ there is $r$ with $\Psi_r(y)\ne0$, and $\Psi_r(y\sigma')=
 on the left. The statement for $\sigma F$ follows by Corollary~\ref{cor:blocks} (injectivity is invariant under
 $\otimes\F_8$). Since $\F_2[[P]]$ is complete for the filtration with $\gr\F_2[[P]]=u(L)$, a non-zero-divisor leading
 form forces $F$ to be a non-zero-divisor. Finally, $u_m$ and $U$ agree in degrees $<m$, so $R_{\sigma'}$ is injective on $(u_m)_n$ for
-$n+3<m$, i.e.\ $k_m\ge m-3$. Each step was also checked by machine.
+$n+3<m$, i.e.\ $k_m\ge m-3$. Each step was also checked by machine; a more detailed write-up of (3) and (4) is in
+\texttt{results/THEORY.md}, \S7.1, of the repository.
 \end{proof}
 
 \begin{remark}\label{rem:route}
@@ -604,7 +614,8 @@ and in each case the kernel at $d(m)$ is exactly the span of $\omega_0,\omega_1,
 every $m\ge14$ (Proposition~\ref{prop:central}). For $m=15$ we found the predicted exceptional element: an element
 $\eta_{15}\equiv y_{13,1}\,\omega^{(14)}_0\pmod{L_{14}}$ of degree $95=d(15)-1$ with $\eta_{15}\sigma'=0$, so $k_{15}\le95$; like $\eta$ at $m=9$, it is not annihilated by any single letter and it leaves the kernel at $m=16$.
 Injectivity below $95$ was checked only on the smaller blocks of degrees $94$ and $95$ (the only lower bound proved is
-$k_{15}\ge k_{14}=82$).
+$k_{15}\ge k_{14}=82$). For $m=11$ a partial computation (all blocks of dimension $\le 2\cdot10^4$,
+remaining blocks bounded via Proposition~\ref{prop:central}) gives $0.00051\le e_{11}\le 0.01693$.
 
 \begin{remark}
 The condition $k_m/m^{3/2}\to\infty$ is sharp for this method: if $k_m=O(m^{3/2})$, the central limit theorem keeps
@@ -612,8 +623,7 @@ $\Pr[X_m\le\mathrm{mid}-k_m]$ bounded below. One can also show that $k_m\to\inft
 injective on the untruncated algebra $u(\hatn)$, in which case $k_m\ge m-3$; otherwise $k_m$ is eventually constant
 ($\ge57$). Moreover, the column annihilators of Section~\ref{sec:kernel} cannot by themselves prove (H2): from $m=7$ on,
 the dual witnesses for the disappearance of $\omega_j$ at a jump step are of cancellation type.
-\end{remark} For $m=11$ a partial computation (all blocks of dimension $\le 2\cdot10^4$,
-remaining blocks bounded via Proposition~\ref{prop:central}) gives $0.00051\le e_{11}\le 0.01693$.
+\end{remark}
 
 %======================================================================
 \section{Graded zero divisors do not lift}\label{sec:lift}
@@ -629,10 +639,10 @@ The obstruction is a nonzero class in $\ker\ad_v/\operatorname{im}\ad_v$ in degr
 \end{proposition}
 
 These statements are exact: they solve the lifting equations as linear systems in $\gr\F_2[[P]]$, enumerating the
-full affine solution space where the equations become nonlinear (e.g.\ all $2^9$ choices in (2)). Moreover, for
-the lifts $\tilde v$ the kernel density of right multiplication on $\F_2[G_m]$ is $0.375,\,0.279,\,0.234$
-($m=5,6,7$), decreasing like that of a generic element of $I^4$ ($0.332,\,0.244,\,0.203$), whereas in the graded
-algebra it stays at $0.625$.
+full affine solution space where the equations become nonlinear (for instance all $2^9$ choices in (2)). Moreover,
+for the lifts $\tilde v$ the kernel density of right multiplication on $\F_2[G_m]$ is $0.375$, $0.279$, $0.234$
+for $m=5,6,7$, decreasing like that of a generic element of $I^4$ ($0.332$, $0.244$, $0.203$), whereas in the
+graded algebra it stays at $0.625$.
 This is consistent with the pro-2 Kaplansky conjecture for $P$, but of course does not prove it.
 
 %======================================================================
@@ -675,9 +685,9 @@ degree. Do the analogues of Theorems~B and~C hold, with $A_{d-1}^{(1)}$ in place
 \section{Computational methods}\label{app:comp}
 %======================================================================
 
-All code, data and logs are in the repository \url{https://github.com/Ruqing1963/anccft-ce-density}
-(directories \texttt{code/}, \texttt{data/}, \texttt{results/}); the figures are produced by
-\texttt{code/make\_data\_and\_figures.py}. The group $G_m$ is realised as normalised
+All code, data and logs are in the repository cited on the title page (directories \texttt{code/},
+\texttt{data/} and \texttt{results/}); the figures are produced by the script
+\texttt{make\_data\_and\_figures.py}. The group $G_m$ is realised as normalised
 truncated skew power series in $\F_8[[\varphi;\sigma]]/(\varphi^m)$, with conventions ported line by line from
 Chen's published scripts \cite{ChenIII}. Ranks over $\F_2$ use a bit-packed elimination with $64$-column panels
 and Four-Russians tables (numba). Independent checks:
