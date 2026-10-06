@@ -1,4 +1,4 @@
-﻿cff-version: 1.2.0
+cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 title: "The mod-2 cokernel density of a Hecke operator on a non-analytic pro-2 tower: split form, explicit kernels, and bounds"
 authors:
@@ -16,5 +16,5 @@ keywords:
   - restricted Lie algebras
   - affine Kac-Moody algebras
   - buildings of type A2-tilde
-  - LÃ¼ck approximation
+  - Lück approximation
   - Atiyah conjecture
